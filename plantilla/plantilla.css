@@ -27,10 +27,14 @@
 #boton{
     background-color: white;
     color: #E9636D;
-    margin-right: 100px;
+    /* margin-right: 10px; */
     font-family: 'Soleil', sans-serif;
     font-size: 1.3em;
     width: 100px;
     height:35px;
     line-height:1px;
+}
+
+.fondo{
+    background-color: #4bceeb;
 }
