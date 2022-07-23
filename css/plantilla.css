@@ -1,0 +1,40 @@
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8D8;
+    font-family: 'Soleil', sans-serif;
+}
+
+.img{
+    width: 355px;
+    height: 100px;
+}
+#icono{
+    width: 75px;
+    height: 75px;
+}
+.hea{
+    background-color: #4BCEEB;
+    
+}
+
+.iconify{
+    width: 75px;
+    height: 75px;
+}
+
+#boton{
+    background-color: white;
+    color: #E9636D;
+    /* margin-right: 10px; */
+    font-family: 'Soleil', sans-serif;
+    font-size: 1.3em;
+    width: 100px;
+    height:35px;
+    line-height:1px;
+}
+
+.fondo{
+    background-color: #4bceeb;
+}

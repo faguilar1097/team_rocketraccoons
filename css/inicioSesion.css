@@ -1,0 +1,38 @@
+
+#contenedor{
+    background-color: #44BAA0;
+}
+#inicio{
+    background-color: #FFFFFF;
+    color:#E9643D;
+    border-radius: 30px;
+}
+#boton{
+    background-color: #148FD4;
+    color:#FFFFFF;
+    width:50%;
+}
+
+.main-section{
+    margin:0 auto;
+    margin-top:25%;
+    padding:0;
+}
+
+.modal-content{
+    background-color: #44BAA0;
+    padding: 0 20px;
+}
+
+.form-group input{
+    height:42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 30px;
+}
+.imagenIzq{
+    background-image: url(https://cdn.pixabay.com/photo/2022/05/30/16/50/couple-7231599_960_720.jpg);
+    background-position: center center;
+}
+

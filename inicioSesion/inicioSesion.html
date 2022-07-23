@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio de Sesión</title>
+
+    <link rel="stylesheet" href="inicioSesion.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   <div class="container w-75 mt-4 rounded border shadow" id="contenedor">
+    <div class="row">
+        <div class="col imagenIzq d-none d-lg-block">
+            <!-- Aqui puede ir una poaible imagen -->
+        </div>
+        <div class="col">
+            <div class="fw-bold text-center my-4 border" id="inicio">
+                <!-- Aqui va ir el encabezado de incio -->
+                Inicio de Sesión
+                
+            </div>
+            <!-- FORMULARIO -->
+            <form action="#">
+                <div class="my-4 ">
+                    <input type="text" class="form-control text-center" name="email" placeholder="Correo electrónico o número celular">
+                </div>
+                <div class="mb-4">
+                    <input type="password" class="form-control text-center" name="password" placeholder="Contraseña">
+                </div>
+                <div class="mb-4">
+
+                </div>
+                <div class="display: flex">
+                    <button type="submit" class="btn rounded-pill justify-content:center" id="boton">Iniciar Sesión</button>
+                </div>
+                <div>
+                    <span><a href=""><i>¿Olvidaste tu contraeña?</i></a></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+   </div>
+
+    <script src="inicioSesion.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
