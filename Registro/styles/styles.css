@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #dedede;
+}
+header{
+    height: 10%;
+}
+section{
+    height: 90%;
+}
+
+section div{
+    max-width: 90%;
+}
+
+div{
+    padding-bottom: 20px;
+}

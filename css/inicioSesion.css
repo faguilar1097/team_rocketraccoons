@@ -1,3 +1,13 @@
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8D8;
+    font-family: 'Soleil', sans-serif;
+}
+
+
+/* Pertenece al Inicio de Sesion */
 
 #contenedor{
     background-color: #44BAA0;
@@ -7,7 +17,7 @@
     color:#E9643D;
     border-radius: 30px;
 }
-#boton{
+#boton2{
     background-color: #148FD4;
     color:#FFFFFF;
     width:50%;
@@ -34,5 +44,54 @@
 .imagenIzq{
     background-image: url(https://cdn.pixabay.com/photo/2022/05/30/16/50/couple-7231599_960_720.jpg);
     background-position: center center;
+    height: 500px;
 }
+
+#colDer{
+    background-color: #44BAA0;
+}
+
+.forma{
+    background-color: #44BAA0;
+}
+
+.forma2{
+    border-radius: 35px;
+}
+
+/* Pertenece a la plantilla Header y Footer */
+
+.img{
+    width: 355px;
+    height: 100px;
+}
+#icono{
+    width: 75px;
+    height: 75px;
+}
+.hea{
+    background-color: #4BCEEB;
+    
+}
+
+.iconify{
+    width: 75px;
+    height: 75px;
+}
+
+#boton{
+    background-color: white;
+    color: #E9636D;
+    /* margin-right: 10px; */
+    font-family: 'Soleil', sans-serif;
+    font-size: 1.3em;
+    width: 100px;
+    height:35px;
+    line-height:1px;
+}
+
+.fondo{
+    background-color: #4bceeb;
+}
+
 
