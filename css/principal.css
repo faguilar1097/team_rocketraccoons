@@ -99,14 +99,48 @@ font-weight: bolder;
 
 #botonContacto{
     background-color:#DA0000;
-    color: #E9636D;
+    color: #ffffff;
     font-family: 'Soleil', sans-serif;
-    font-size: 1.3em;
+    font-size: 2em;
+    font-weight: bolder;
     width: 420px;
     height:95px;
     line-height:1px;
-    box-shadow: 10px 10px gray;
+    border: 0em;
+ 
 }
+
+#divContacto :hover{
+    box-shadow: 5px 5px 10px rgba(100,100,100,1);
+
+ }
+ #teamRRText{
+    color:#E9633D;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+#mapacheLogo{
+    width: 16em;
+
+}
+
+#linkedinLogo{
+    width: 15em;
+
+}
+
+.fotosRR{
+    width: 8em;
+    height: 8em;
+    padding:5em;
+    background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-pure-red-background-simple-picture-image_1204479.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+   /* float:left; */
+   display:inline-block;
+}
+
 
 /* #separador2{
     color:black;
