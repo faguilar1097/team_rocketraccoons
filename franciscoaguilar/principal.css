@@ -1,4 +1,4 @@
-*{
+ll*{
     box-sizing: none;
     margin: 0;
     padding: 0;
@@ -105,8 +105,14 @@ font-weight: bolder;
     width: 420px;
     height:95px;
     line-height:1px;
-    box-shadow: 10px 10px gray;
+
 }
+
+/* #botonContacto :hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+    /* ejex ejey difuminado rgba(color1,color2,color3, transparencia) 
+} */
 
 /* #separador2{
     color:black;
