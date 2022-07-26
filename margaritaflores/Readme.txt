@@ -1,3 +1,0 @@
-Archivo Readme.
-
-Margarita Flores

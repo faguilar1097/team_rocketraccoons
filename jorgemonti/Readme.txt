@@ -1,1 +1,0 @@
-Este es el archivo readme, prueba de que mi rama esta enlazada correctamente.
