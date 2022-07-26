@@ -119,3 +119,15 @@ div, img-public {
     font-family: 'Soleil', sans-serif;
     font-size: 4em;
   }
+
+  .icon3{
+        width: 40px;
+        height: 40px;
+        color: black;
+        align-items: left;
+        display: block;
+        position: absolute;
+        bottom: 17px;
+        /* color: white; */
+        /* background-color: white; */
+   }
