@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 *{
     box-sizing: none;
     margin: 0;
@@ -15,8 +17,7 @@
     height: 75px;
 }
 .hea{
-    background-color: #4BCEEB;
-    
+    background-color: #4BCEEB;   
 }
 
 .iconify{
@@ -40,71 +41,446 @@
 }
 
 #paisaje{
-    width: 100%;
-    height: 300px;  
-    margin:0 0 15px 0; 
+  object-fit: cover;
+  width: 100%;
+  height: 300px ;
+  margin: 0 0 15px 0 ;
     
 }
 
-#friends{
-    background-color: white;
-    width: 24%;
-    height: 300px;
-    border-radius: 1rem;
-    margin: 0 0 15px 0;
+#img_secundaria{
+   display: block;
+   margin:0px auto;
+   border-radius: 50%;
+   position:absolute;
+   right: 100px;
+   left: 130px;
+   top: 320px;
+   min-width: 50px;
+   min-height: 50px;
+
 }
-#wish{
+
+/* .iconomas{
     background-color: white;
-    width: 24%;
-    height: 300px;
     border-radius: 1rem;
-    margin: 10px 0 0 0;
+} */
+/* .image{
+    background-color: white;
+} */
+/* .ubi{
+    background-color: white;
+} */
+/* .feeld{
+    background-color: white;
+} */
+
+/**Comence desde aquí*/
+.grid{
+    display:grid;
+    margin:0 60px 20px 60px;
+    
+}
+/*Mejorar el tamaño de las imagenes*/
+.grid div{
+    background-color:#D8D8D8;
+    padding:1em;
+}
+
+.grid div:hover{
+    border: 1px solid #e3ac97;
+
+}
+.SegundoIntento{
+    margin:0 0 0 0;
+    margin-right: 5px;
+    margin-left: 25px;
+}
+
+#Cuadro1{
+    background-color:white;
+    margin:0 0 0 0;
+    text-align: center;
+}
+#Cuadro2{
+    background-color: white;
+    text-align: center;
+}
+#Cuadro3{
+    background-color: white;
+    margin: 0 0 0 0;
+    text-align: center;
+ 
+
+}
+#Cuadro4{
+    background-color: white;
+    margin:0 0 0 0;
+      text-align: center;
+}
+#friends1{
+    background-color: white;
+    height: 450px;
+    margin:15px 0 35px 0;
+    
+}
+#wish1{
+    background-color: white;
+    height: 666px;
+    margin:0 0 0 0;
+}
+
+#Cuadro_Principal{
+    background-color:white;
+    height: 1000px;
+    margin: 16px 0 0 0;
+}
+#Amigos_1{
+    background-color:white;
    
 }
-.cuadro_Interes{
-    background-color: white;
-    margin: 0 59px 20px 59px;
-    border-radius: 1rem;
-    width:92%;
+#Amigos_2{
+    background-color:white;
 }
-.Datos{
-    background-color: white;
-    border-radius: 1rem;
-}
-.interes{
+#Amigos1{
     background-color: white;
 }
-.followers{
+#Amigos2{
+    background-color: white;
+    border-radius: 50%;
+}
+#Amigos3{
     background-color: white;
 }
-.places{
+#Amigos4{
     background-color: white;
-    border-radius: 1rem;
+}
+#Amigos5{
+    background-color: white;
+}
+#Amigos6{
+    background-color: white;
+}
+#Amigos7{
+    background-color: white;
+}
+#Amigos8{
+    background-color: white;
+}
+#title{
+    background-color: white;
+    text-align:center;
+    font-size: 25px; 
+    margin: 15px 0 0 0 ;
+    color:#da0000;
+    
 }
 
-#cuadro_Principal{
+#img5{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+    
+}
+#img6{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+#img7{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+#img8{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+
+#wish_img_1{
     background-color: white;
-    width: 74%;
-    height: 300px;
-    border-radius: 1rem;
-    margin: 0 0 0 20px;
+    
+}
+
+#deseo1{
+    width: 330px;
+    height: 515px;
+    color:#da0000;
+    font-size: 25px;
+    text-align: justify;
+    margin:0 0 0 25px;  
+}
+#Cuadro_Principal1{
+    background-color: white;
+}
+#Cuadro_Principal2{
+    background-color: white;
+}
+#Cuadro_Principal3{
+    background-color: white;
+}
+<<<<<<< HEAD
+=======
+>>>>>>> 0b91f7bbbabb9f31d1a2731cab0604a5846836f4
+
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8D8;
+    font-family: 'Soleil', sans-serif;
+}
+
+.img{
+    width: 355px;
+    height: 100px;
+}
+#icono{
+    width: 75px;
+    height: 75px;
+}
+.hea{
+    background-color: #4BCEEB;   
+}
+
+.iconify{
+    width: 75px;
+    height: 75px;
+}
+
+#boton{
+    background-color: white;
+    color: #E9636D;
+    margin-right: 100px;
+    font-family: 'Soleil', sans-serif;
+    font-size: 1.3em;
+    width: 100px;
+    height:35px;
+    line-height:1px;
+}
+
+#trip{
+    text-decoration: solid;
+}
+
+#paisaje{
+  object-fit: cover;
+  width: 100%;
+  height: 300px ;
+  margin: 0 0 15px 0 ;
+    
+}
+
+#img_secundaria{
+   /* display:flexbox; */
+   margin:0px auto;
+   border-radius: 50%;
+   position:absolute;
+   right: 100px;
+   left: 130px;
+   top: 310px;
   
 }
-#cuadro_2{
-    background-color: whites;
+
+.grid{
+    display:grid;
+    margin:0 62px 0 62px;
+    
+}
+/*Mejorar el tamaño de las imagenes*/
+.grid div{
+    background-color:#D8D8D8;
+    padding:1em;
 }
 
-.iconomas{
-    background-color: white;
-    border-radius: 1rem;
+.grid div:hover{
+    border: 1px solid #e3ac97;
+
 }
-.image{
-    background-color: white;
+#Principal{
+    border-radius: 1.5rem;
+    margin:0 0 0 0;
 }
-.ubi{
-    background-color: white;
+#Cuadro1{
+    background-color:white;
+    margin: 0 0 0 0;
+    text-align: center;
 }
-.feeld{
+#Cuadro2{
     background-color: white;
+    text-align: center;
+}
+#Cuadro3{
+    background-color: white;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+#Cuadro4{
+    background-color: white;
+    margin:0 0 0 0;
+    text-align: center;
+}
+/*CSS CONTENIDO PRINCIPAL*/
+
+.Contenido_Principal{
+    background-color: white;
+    border-radius: 1.5em; 
 }
 
+#friendsto{
+ background-color: white;
+ border:1px solid #e3ac97;
+ border-radius: 1.5em; 
+}
+#friendsto1{
+    background-color: white;
+    border:1px solid #e3ac97;
+    border-radius: 1.5em; 
+}
+#friendsto2{
+    background-color: white;
+    border:1px solid #e3ac97;
+    border-radius: 1.5em;  
+   }
+
+#Cuadro_Interes_Principal{
+    background-color: white;
+    border-radius: 1.5em;
+    text-align: center;
+    height: 120px;
+}
+
+/*DE AYER*/
+/* #friends1{
+    background-color: white;
+    height: 450px;
+    margin:15px 0 35px 0;
+    
+} */
+/* #wish1{
+    background-color: white;
+    height: 666px;
+    margin:0 0 0 0;
+} 
+
+ #Cuadro_Principal{
+    background-color:white;
+    height: 1000px;
+    margin: 16px 0 0 0;
+} 
+ #Amigos_1{
+    background-color:white;
+   
+} 
+ #Amigos_2{
+    background-color:white;
+}
+#Amigos1{
+    background-color: white;
+}
+#Amigos2{
+    background-color: white;
+    border-radius: 50%;
+}
+#Amigos3{
+    background-color: white;
+}
+#Amigos4{
+    background-color: white;
+}
+#Amigos5{
+    background-color: white;
+}
+#Amigos6{
+    background-color: white;
+}
+#Amigos7{
+    background-color: white;
+}
+#Amigos8{
+    background-color: white;
+} 
+#title{
+    background-color: white;
+    text-align:center;
+    font-size: 25px; 
+    margin: 15px 0 0 0 ;
+    color:#da0000;
+    
+} 
+
+#img5{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+    
+}
+#img6{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+#img7{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+#img8{
+    background-color: #da0000;
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+
+#wish_img_1{
+    background-color: white;
+    
+}
+
+#deseo1{
+    width: 330px;
+    height: 515px;
+    color:#da0000;
+    font-size: 25px;
+    text-align: justify;
+    margin:0 0 0 25px;  
+}
+#Cuadro_Principal1{
+    background-color: white;
+}
+#Cuadro_Principal2{
+    background-color: white;
+}
+#Cuadro_Principal3{
+    background-color: white;
+}
+>>>>>>> margaritaflores
+#Cuadro_Principal4{
+    background-color: white;
+}
+#ultima1{
+    background-color: white;
+}
+#ultima2{
+    background-color: white;
+}
+#ultima3{
+    background-color: white;
+}
+#ultima4{
+    background-color: white;
+} */ */
