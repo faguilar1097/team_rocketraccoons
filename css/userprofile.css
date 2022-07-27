@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Soleil', sans-serif;
+    background-color: gray;
  
     }
 body{
     background-color: red;
 }
-     
-
  .container-bg{
     background:red;
 }
@@ -19,11 +18,13 @@ body{
     width: 100%;
 }
 #hea{
-    background-color: #4BCEEB;   
+    background-color: #4BCEEB; 
+    
 }
 .iconify{
     width: 75%;
     height: 60px;
+    background-color: #4BCEEB; 
 
 } 
 
@@ -35,24 +36,28 @@ body{
 
 #trip{
     text-decoration: solid;
+    background-color: #4BCEEB; 
 } 
 #img{
     width: 355px;
     height: 100px;
+    background-color: #4BCEEB; 
 } 
 
  #Profile_users{
     border-radius: 50%;
     object-fit: cover;
     width: 60%; 
-    margin-bottom: 100px;  
+    margin-bottom: 100px;
+    background-color: #4BCEEB;   
+
  } 
 
- #perfil{
-    background-color:rgba(219,26,26);
+ /* #perfil{
+    background-color:#4BCEEB;
     background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131,21,21,0.5) 25px, rgba(131,21,21,0.5)40px);
- 
-}
+    
+} */
 
 #ribbon::after{
     content: '';
@@ -63,7 +68,8 @@ body{
     margin: 9 auto;
     position: relative;
     left: auto;
-    margin-top: -40px
+    margin-top: -40px;
+ 
 } 
 
 #birthday{
@@ -73,4 +79,5 @@ body{
     z-index: 10;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     border-radius: 1.5em;
+    
 } 
