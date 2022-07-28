@@ -95,3 +95,33 @@
 }
 
 
+.text-rac{
+   position:absolute;
+   bottom:5px;
+   left:0px;
+   right: 0px;
+}
+/* // Pantallas grandes */
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 1.3em;
+  }
+}
+
+/* // Tabletas  */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 1.3em;
+  }
+}
+
+/* // Celulares  */
+
+@media (max-width: 450px) {
+  html {
+    font-size: .5em;
+  }
+}
+
