@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "email": "pacolatinojr@gmail.com",
+        "contraseña":"SuperPacoCH14!",
+        "first_name": "Francisco",
+        "last_name": "Aguilar",
+        "avatar": "https://i.ibb.co/gRWz9pH/francisco.jpg",
+        "estado": "Jalisco",
+        "titleImg1":"Tapalpa",
+        "img1":"https://haciendasycasonas.com/wp-content/uploads/2021/03/hotelmontecruz1_0_o.jpg",
+        "titleImg2":"Tapalpa",
+        "img2":"https://img10.naventcdn.com/avisos/18/00/61/91/30/37/720x532/273117672.jpg",
+        "titleImg3":"Guachimontones",
+        "img3":"https://www.ilam.org/media/k2/items/cache/850e17edce6779cc111d239710be36ab_XL.jpg?t=20200511_223059",
+        "titleImg4":"San Sebastian del Oeste",
+        "img4":"https://mxcity.mx/wp-content/uploads/2021/06/49203533_2393621624042370_7237533133761937408_n.jpeg"
+
+    },
+    {
+        "id": 2,
+        "email": "elgiorgio7@gmail.com",
+        "contraseña":"elbicho777",
+        "first_name": "Jorge",
+        "last_name": "Montalvo",
+        "avatar": "https://i.ibb.co/54kC5dY/jorge.jpg",
+        "estado": "Chiapas",
+        "img1":"https://turisteandoymas.com/wp-content/uploads/2021/05/Chiapa-de-Corzo-1068x801.jpg",
+        "titleImg1":"Chiapa De Corzo",
+        "img2":"https://mxcity.mx/wp-content/uploads/2020/06/ca%C3%B1on-del-sumidero-1-768x617.jpg",
+        "titleImg2":"Cañon del Sumidero",
+        "img3":"https://4.bp.blogspot.com/-0ad69xqznk8/UdXC3aA64UI/AAAAAAAAAFE/D5lFvQYz0uM/s400/1372954669.jpg",
+        "titleImg3":"Laguna Miramar",
+        "img4": "http://preparandolasmaletas.com/wp-content/uploads/2017/08/lagunas-de-montebello.png",
+        "titleImg4":"Lagunas de Montebello"
+    }
+
+]
