@@ -34,7 +34,7 @@
     font-family: 'Soleil', sans-serif;
     font-size: 2vw;
     font-weight: bolder;
-    width: 10vw;
+    width: 12vw;
     height:3.5vw;
     margin-right: .5vw;
     line-height:1px;
@@ -47,7 +47,7 @@
     font-family: 'Soleil', sans-serif;
     font-size: 2vw;
     font-weight: bolder;
-    width: 13.2vw;
+    width: 15vw;
     height:3.5vw;
     margin-right: .5vw;
     line-height:1px;
@@ -56,18 +56,18 @@
 }
 #boton1d{
     background-color: transparent;
-    font-size: 2vw;
+    font-size: 1.8vw;
     transform: translate(0,-1.5px); 
 
 }
 #boton2d{
     background-color: transparent;
-    font-size: 2vw;
+    font-size: 1.8vw;
     transform: translate(0,-2px);
     
 
 }
-@media (max-width:480px){
+@media (max-width:510px){
     #boton{
         width: 15vw;
         height:3.5vw;
