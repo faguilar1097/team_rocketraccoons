@@ -2,32 +2,29 @@
     box-sizing: none;
     margin: 0;
     padding: 0;
+    background-color: #D8D8D8;
     font-family: 'Soleil', sans-serif;
-    background-color: gray;
- 
-    }
-body{
-    background-color: red;
 }
- .container-bg{
-    background:red;
+
+#img{
+    height: 100px;
+    width: 350x;
 }
- #Paisaje_Principal{
+/*CSS NAVBAR*/
+#Paisaje_Principal{
     object-fit: cover;
     height: 300px;
     width: 100%;
 }
-#hea{
-    background-color: #4BCEEB; 
-    
-}
 .iconify{
-    width: 75%;
+    width: 15vw;
     height: 60px;
     background-color: #4BCEEB; 
-
 } 
 
+.iconos{
+    background-color: #4BCEEB;
+}
 #botton{ 
     background-color: #4BCEEB; 
     color: #E9636D;
@@ -38,46 +35,108 @@ body{
     text-decoration: solid;
     background-color: #4BCEEB; 
 } 
+/*CSS IMAGEN DE FONDO*/
 #img{
     width: 355px;
     height: 100px;
-    background-color: #4BCEEB; 
-} 
-
- #Profile_users{
-    border-radius: 50%;
-    object-fit: cover;
-    width: 60%; 
-    margin-bottom: 100px;
     background-color: #4BCEEB;   
-
- } 
-
- /* #perfil{
-    background-color:#4BCEEB;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131,21,21,0.5) 25px, rgba(131,21,21,0.5)40px);
-    
-} */
-
-#ribbon::after{
-    content: '';
-    background-color: transparent;
-    display: block;
-    height: 20px;
-    width: 50%;
-    margin: 9 auto;
-    position: relative;
-    left: auto;
-    margin-top: -40px;
- 
 } 
+/*CSS IMAGEN DE USUARIO*/
+#img_secundaria{
+   margin:0px auto;
+   border-radius: 50%;
+   position:absolute;
+   right: 120px;
+   left: 80px;
+   top: 310px;  
+}
 
-#birthday{
-    background-color:#4BCEEB;
-    position:relative;
-    margin-top: -20px;
-    z-index: 10;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.grid div:hover{
+    border: 1px solid #e3ac97;
+
+}
+
+/*CSS CONTENIDO PRINCIPAL*/
+
+#Cuadro_Amigos{
+ background-color: white;
+ border:1px solid #e3ac97;
+ border-radius: 1.5rem; 
+ width: 360px;
+
+}
+
+
+#friendsto1{
+    background-color: white;
+    border:1px solid #e3ac97;
+    border-radius: 1.5rem;
+    width: 360px;
+    height: 315px;
+   
+    
+}
+#Presentate{
+    background-color: white;
+    border:1px solid #e3ac97;
     border-radius: 1.5em;
-    
-} 
+    margin-top: 40px;
+
+   }
+
+   #collage{
+    background-color: white;
+    border:1px solid #e3ac97;
+    border-radius: 1.5em;
+    width: 800px;
+    height: 550px;
+   }
+
+#Cuadro_Interes_Principal{
+    background-color: white;
+    border-radius: 1.5em;
+    text-align: center;
+    height: 180px;
+   
+}
+
+/*
+CSS Wish List
+*/
+
+ .Wish{
+    border-radius: 50%;  
+    text-align: center;
+}
+
+.text{
+    font-size: 1.vw;
+}
+#iconos_collage{
+    background-color: white;
+    color:#44BAA0;
+}
+
+#Columna_Imagenes{
+    background-color: #E9636D;   
+}
+
+#Place1{
+    border-radius: 1.5rem;
+
+}
+#Place2{
+    border-radius: 1.5rem;
+
+}
+
+#friends{ 
+        width: 5vw;
+        height: 10vw;
+        background-size: cover;
+        border-radius: 50%;
+        margin: 0px auto;
+        display:block;  
+        background-color: white; 
+}
+
