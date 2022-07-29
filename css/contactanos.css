@@ -10,104 +10,150 @@
     width: 355px;
     height: 100px;
 }
+
 #icono{
     width: 75px;
     height: 75px;
 }
+
 .hea{
     background-color: #4BCEEB;
-    
 }
 
 .iconify{
+    color: white; 
+    background-color: #4bceeb;
     width: 75px;
     height: 75px;
 }
 
 .mapa{
+    background-color: #4BCEEB;
     width: 75px;
     height: 70px;
-    background-color: #4BCEEB;
     margin-right: 50px;
 }
 
-form{
-    width: 80%;
-    margin: auto;
-    background-color: #E3AC97;
-    padding: 40px 120px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    display: grid;
-    gap: 18px;
+.parche{
+    background-color: #D8D8D8;
+    color:#D8D8D8;
+    width: 100%;
+    max-width: 2500px;
 }
 
+form{
+    background-color: #E3AC97;
+    width: 80%;
+    margin: auto;
+    padding: 40px 80px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: grid;
+    gap: 16px;
+}
+
+.error{
+    color:black;
+    text-align: center;
+    background-color: #E3AC97;
+    text-shadow: unset;
+}
 
 h2{
-    margin-left: 25%;
-    margin-right: 25%;
     text-align: center;
-    background-color: #FFFFFF;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 30px;
-    font-size: 1.3em;
-    padding: 12px;
+    padding: 10px;
+}
+
+.textConocenos{
+    background-color: #FFFFFF;
+    color:#E9633D; 
+    font-weight: 600;
 }
 
 .atencion{
-    width: 25px;
-    height: 25px;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; 
+    width: 23px;
+    height: 23px;
 }
 
 input{
+    background-color: #FFFFFF;
+    text-align: center;
+    border:none;
     border-radius: 20px;
-    width: 100%;
-    border: none;
     padding: 10px;
 }
 
 textarea{
-    width: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
     border-radius: 20px;
     border:none;
     min-height:50px;
-    max-height: 200px;
-    padding: 20px;
+    max-height: 100px;
+    padding: 15px;
 }
-
 
 #enviar{
     background: #148FD4;
     color: #FFFFFF;
-    height: 50px;
+    height: 40px;
+    width: 200px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    font-size: 1.3em;
     font-weight: bold;
 }
 
-h3{
+#enviar:hover{
+    background-color: #E9633D;
+}
+
+.pregunta{
     background-color: #44BAA0;
+    color:#E9633D;
     text-align: center;
     width: 80%;
     margin: auto;
     border-radius: 15px;
     padding: 20px 10px;
+    font-size: 28px;
 }
 
 p{
-    color: black;
     background-color: #44BAA0;
-    padding: 20px 10px;
-    font-size: 1em;
+    color: black;
+    padding: 10px 10px;
 }
 
-/* @media (max-width:480px){
+@media (max-width:480px){
+    .img{
+        width: 148px;
+        height: 50px;
+    }
+    .iconify{
+        width: 30px;
+        height: 30px;
+    }
+    .mapa{
+        width: 30px;
+        height: 28px;
+    }
     form{
-        width: 100%;
+        width: 94%;
+        padding: 20px 10px;
+        gap: 10px;
     }
-    h3{
-        width: 100%;
+    .textConocenos{
+        font-size: 20px; 
     }
-} */
+    .pregunta{
+        width: 94%;
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+}
