@@ -75,16 +75,14 @@
                <!-- FORMULARIO -->
                <form class="my-5 forma" action="#">
                    <div class="my-4 mx-5 forma2">
-                       <input type="text" class="form-control text-center " name="email" placeholder="Correo electrónico o celular">
+                       <input type="text" id="usuario"class=" form-control text-center " name="usuario" placeholder="Usuario">
                    </div>
                    <div class="mb-4 mx-5 forma2">
-                       <input type="password" class="form-control text-center" name="password" placeholder="Contraseña">
+                       <input type="password" id="password" class="form-control text-center" name="password" placeholder="Contraseña">
                    </div>
-                   <div class="mb-4">
-   
-                   </div>
+                  
                    <div class="text-center forma">
-                       <button type="submit" class="btn rounded-pill justify-content:center fw-bold" id="boton2">Iniciar Sesión</button>
+                       <button onclick="VincularJSON()" type="submit" class="btn rounded-pill justify-content:center fw-bold" id="boton2">Iniciar Sesión</button>
                    </div>
                    <div class="text-center my-2 forma">
                        <span ><a style="color: white;" href=""><i class="forma">¿Olvidaste tu contraeña?</i></a></span>
