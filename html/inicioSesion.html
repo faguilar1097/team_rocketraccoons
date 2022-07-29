@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Plantilla</title>
+    <title>Inicio de Sesión</title>
 
-    <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet" />
-
-    <link rel="stylesheet" href="/css/plantilla.cssgit status" />
+    <link rel="stylesheet" href="/css/inicioSesion.css"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,9 +13,8 @@
       crossorigin="anonymous"
     />
   </head>
+  <body style="background-color: #D8D8D8;">
 
-  <body>
-    
     <header class="fondo">
       <nav class="navbar navbar-expand-md fondo" >
         <div class="container-fluid fondo">
@@ -62,16 +59,53 @@
     </header>
     <!-- </section> -->
 
-    <main></main>
+    <main>
 
-    <footer class="text-center">Developed by: Rocket Raccoons © 2022.</footer>
+      <div class="container w-75 mt-4 rounded border shadow" id="contenedor">
+       <div class="row">
+           <div class="col imagenIzq d-none d-md-block">
+               <!-- Aqui puede ir una poaible imagen -->
+           </div>
+           <div class="col rounded-end" id="colDer">
+               <div class="fw-bold text-center my-4 mx-5 border" id="inicio">
+                   <!-- Aqui va ir el encabezado de incio -->
+                   Inicio de Sesión <span class="iconify" data-icon="clarity:airplane-solid" style="background-color: white; color: #E9633D; height: 30px; height: 30px;"></span>
+                   
+               </div>
+               <!-- FORMULARIO -->
+               <form class="my-5 forma" action="#">
+                   <div class="my-4 mx-5 forma2">
+                       <input type="text" class="form-control text-center " name="email" placeholder="Correo electrónico o celular">
+                   </div>
+                   <div class="mb-4 mx-5 forma2">
+                       <input type="password" class="form-control text-center" name="password" placeholder="Contraseña">
+                   </div>
+                   <div class="mb-4">
+   
+                   </div>
+                   <div class="text-center forma">
+                       <button type="submit" class="btn rounded-pill justify-content:center fw-bold" id="boton2">Iniciar Sesión</button>
+                   </div>
+                   <div class="text-center my-2 forma">
+                       <span ><a style="color: white;" href=""><i class="forma">¿Olvidaste tu contraeña?</i></a></span>
+                   </div>
+               </form>
+           </div>
+   
+       </div>
+      </div>
+    </main>
 
+    <footer class="text-center mt-4 text-rac">Developed by: Rocket Raccoons © 2022.</footer>
+
+
+    <script src="/js/inicioSesion.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </body>
 </html>
