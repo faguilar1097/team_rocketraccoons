@@ -2,7 +2,7 @@
     box-sizing: none;
     margin: 0;
     padding: 0;
-    /* background-color: #D8D8D8; */
+    background-color: #D8D8D8;
     font-family: 'Soleil', sans-serif;
 }
 
@@ -11,16 +11,15 @@
     height: 100px;
 }
 
-/* #icono{
-    width: 75px;
-    height: 75px;
-} */
-
 .hea{
     background-color: #4BCEEB;
+    /* width: 100%;
+    max-width: 2500px; */
 }
 
 .iconify{
+    color: white; 
+    background-color: #4bceeb;
     width: 75px;
     height: 75px;
 }
@@ -36,7 +35,61 @@
     line-height:1px;
 }
 
+/* Responsive Navbar azul */
+@media (max-width:480px){
+    .img{
+        width: 150vw; /* 150px */
+        height: 50vw; /* 50px */
+    }
+    .iconify{
+        width: 30px;
+        height: 30px;
+    }
+    #boton{
+        width: 50px;
+        height: 25px;
+        font-size: .8em;
+        line-height: .5px;
+    }
+}
+/* ------------------------------------------- */
+
+.parche{
+    background-color: #d8d8d8; 
+    color: #d8d8d8;
+    width: 100%;
+    max-width: 2500px;
+}
+/* ------------------------------------------- */
+
+.navbar-filtro{
+    /* background-color: white; */
+    background-color: transparent;
+    margin: auto;
+    top: 25%;
+    right: 2%;
+}
+
+/* Comparte tu aventura */
+.titulo1{
+    background-color: white;
+    color: #00000050;
+    font-family: 'Soleil', sans-serif;
+    /* font-weight: bolder;*/
+    font-size: 2.5vw;
+}
+
+/* Iconos publicaciones fotos/ruta/tips */
+.icon2{
+    width: 10%; /* 40px */
+    height: 10%; /* 40px */
+    color: #44BAA0;
+    background-color: white;
+}
+
+/* Foto de perfil */
 .perfil{
+    /* position: sticky right; */
     align-self: center;
     border-radius: 50%;
     width: 100%;
@@ -44,28 +97,69 @@
     background-color: white;
 }
 
-.navbar-filtro{
-    background-color: white;
+/* Estado - Municipio - Intereses */
+.input-filtro{
     margin: auto;
+    background-color:transparent;
+    justify-content: center;
+    width: 8vw; /* 100px */
+    /*height: 1vw;  35px */
+    max-width: 30vw;
+    /* max-height: 8vw; */
+    line-height: 1px;
 }
 
-.icon2{
-    width: 40px;
-    height: 40px;
-    color: #44BAA0;
-    background-color: white;
+input::placeholder {
+    /* color: #00000050; */
+    color: red;
+    /* font-size: 1.5vw; */
+    font-family: 'Soleil', sans-serif;
+  }
+
+/* Responsive Navbar filtro */
+@media (max-width:480px){
+    /* .iconify{
+        width: 1vw;
+        height: 1vw;
+    } */
+    .perfil{
+        width: 10vw; /* 150px */
+        height: 10vw; /* 50px */
+    }
+    .input-filtro{
+        width: 10vw; /* 100px */
+        height: 1vw; /* 35px */
+        font-size: .8vw;
+    }
+    #boton2{
+        width: 50px;
+        height: 25px;
+        font-size: .8vw;
+        line-height: .5px;
+    }
 }
 
+/* Boton busqueda azul navbar-filtro */
 #boton2{
     background-color: #148FD4;  
     color: white; 
-    margin-right: 155px;
+    /* margin-right: 155px; */
+    /* margin-right: 0vw; */
+    margin-bottom: 1vw;
+    justify-content: center;
+    align-content: end;
     font-family: 'Soleil', sans-serif;
     font-size: 1.3em;
-    width: 100px;
-    height:35px;
+    width: 15vw; /* 100px */
+    height: 5vw; /* 35px */
     line-height:1px;
 }
+
+    .boton-letra{
+        background-color: #148FD4;  
+        color: white; 
+        font-size: 3vw;
+    }
 
 /* Navbar azul */
 .menu-fixed-1{
@@ -86,10 +180,15 @@
     /* width: 500%;
     max-width: 1500px; */
     box-shadow: 0px 5px 3px rgba(0,0,0,.2);
+    background-color: white;
 }
 
-.publicaciones{
+.publicaciones-general{
     columns: 2, 375px;
+}
+
+.publicaciones-individuales{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
 }
 
 .img-public{
@@ -102,32 +201,70 @@ div, img-public {
     display: block;
     position: relative;	/* */	
     width: 300px;
+    /* border: 0; */
   }
   
+  /* Media querys */
   div p {
-    background-color: rgba(0,0,0,.15);
+    background-color: rgba(55, 25, 25, 0.01);
+    /* background-color: rgba(55, 25, 25, 0.10); */
     /* border-radius: 5%; */
     display: block;
     position: absolute;
     bottom: 17px;
-    /* left: 0; */
-    /* padding: 5px; */
-    width:93%;
+    width:92%;
     text-align: left;
-    margin-left: 5px;
-    margin-bottom: 0px;
+    left: 20px;
+    bottom: 0px;
     font-family: 'Soleil', sans-serif;
-    font-size: 4em;
+    font-size: 4vw; /* 4em */
   }
 
+  /* Icono Pin */
   .icon3{
-        width: 40px;
-        height: 40px;
-        color: black;
-        align-items: left;
-        display: block;
-        position: absolute;
-        bottom: 17px;
-        /* color: white; */
-        /* background-color: white; */
-   }
+    width: 20%; /* 70px */
+    height: 20%; /* 70px */
+    color: white;
+    display: block;
+    position: absolute;
+    right: 1.5%; /* 20px */
+    bottom: 10%; /* 20px */
+    background-color: #ffffff01; 
+  }
+
+  /* Icono Like */
+  .icon4{
+    width: 20%;
+    height: 20%;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 15%; /* 90px */
+    bottom: 10%; /* 20px */
+    background-color: #ffffff01; 
+  }
+
+  /* Responsive */
+  @media (max-width:480px){
+    .img{
+        width: 150px;
+        height: 50px;
+    }
+    .iconify{
+        width: 30px;
+        height: 30px;
+    }
+    .mapa{
+        width: 30px;
+        height: 28px;
+    }
+    form{
+        width: 95%;
+        padding: 10px 10px;
+        font-weight: lighter;
+    }
+    .pregunta{
+        width: 95%;
+        padding: 10px 10px;
+    }
+}
