@@ -2,172 +2,221 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Plantilla</title>
-  <!--Links-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Plantilla</title>
+    <!--Links-->
 
-  <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/userprofile.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <!--Encabezado-Navbar-->
+    <link rel="stylesheet" href="/css/userprofile.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!--Encabezado-Navbar-->
 </head>
 
 <body>
-  <section id="header">
-    <header class="border">
-      <nav class=" d-flex justify-content-between hea">
-        <div class="col-4 bordr text-start align-self-center hea"> <img class="img hea"
-            src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png" alt="logo de viaje"></div>
-        <div class="col-4 text-center align-self-center hea"><span class="iconify" data-icon="uiw:global"
-            style="color: white; background-color: #4bceeb;"></span></div>
-        <div class="col-4 borer text-end align-self-center hea">
-          <div id="trip" class="col-4 text-center align-self-center hea"><span class="iconify" data-icon="entypo:map"
-              style="color: white; background-color: #4bceeb;"></span></div>
-          <button type="button" class="btn rounded-pill justify-content:center " id="boton">
-            <strong style="background-color: white;">Salir</strong>
-          </button>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #4BCEEB">
+        <div class="container-fluid" style="background-color: #4BCEEB">
+            <a class="navbar-brand" href="#" style="background-color: #4BCEEB">
+                <img id="img" src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png" id="img"class="w-75"alt="Logo de DViaje">
+            </a>
+            <button style="background-color: #4BCEEB" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon" style="background-color: #4BCEEB"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #4BCEEB">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link"
+                            style="background-color: #4BCEEB" href="#"><span class="iconify" class="col-sm-"
+                                data-icon="uiw:global"></span></a></li>
+                    <li class="iconos" ><a class="nav-link"
+                            style="background-color: #4BCEEB" href="#"><span class="iconify" data-icon="entypo:map"
+                                class="col-sm-6" ></span></a></li>
+                    <li class="iconos"><a class="nav-link"
+                          href="#" id="botton" class="col-sm-6"
+                           >Salir</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    </header>
-  </section>
-  <!--Imagen principal seleccionada por el usuario-->
-  <section>
+    </nav>
+    <!--IMAGEN PAISAJE -->
+    <div class="">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="Paisaje_Principal">
+                <img src="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_1280.jpg" alt="Imagen seleccionada"
+                    class="d-block w-100">
+            </div>
+        </div>
+    </div>
+    <!--Imagen de perfil usuario-->
     <div>
-      <img class="img-fluid" id="paisaje" src="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_1280.jpg"
-        alt="Paisaje de Bacalar">
+  <img style="height: 208px; width: 200px;" class="mb-10" id="img_secundaria" class="img-thumbnail"
+        src="https://pps.whatsapp.net/v/t61.24694-24/294154608_780799692928484_15414480157774218_n.jpg?ccb=11-4&oh=01_AVxAYIvKjNurqFufFJ3jvsOdVUkXE0VG3YjZBUR9tE_L2g&oe=62ECA3E6"
+        alt="Imagen de perfil seleccionada por el usuario">
     </div>
-  </section>
-  <!--Imagen de perfil usuario-->
-  <img style="height: 208px; width: 200px ;" id="img_secundaria"
-    src="https://pps.whatsapp.net/v/t61.24694-24/294154608_780799692928484_15414480157774218_n.jpg?ccb=11-4&oh=01_AVxAYIvKjNurqFufFJ3jvsOdVUkXE0VG3YjZBUR9tE_L2g&oe=62ECA3E6"
-    alt="Imagen de perfil seleccionada por el usuario">
-  <!--Cuadro principal de intereses-->
-  <!--columnas de imagenes GRID-->
-  <main>
- 
-<div class="container">
-  <div class="row">
-    <div class="row-sm-4" id="friendsto2">
-      <div>
-        <div class="row"  id="Cuadro_Interes_Principal">
-            <div class="col-3"  id="Cuadro_Interes_Principal">
-              Margarita Flores<br>Mazatlán, Sinalo, México. <br> Local Traveler <br> Conociendo México
+  
+    <!--Cuadro principal de intereses-->
+    <!--columnas de imagenes GRID-->
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="row-4" id="Presentate">
+                    <div>
+                        <div class="row" id="Cuadro_Interes_Principal">
+                            <div class="col-3 ms-1 me-2 p-4" id="Cuadro_Interes_Principal">
+                                Margarita Flores<br>Mazatlán, Sinaloa<br> Local Traveler <br> 
+                            </div>
+                            <div class="col-2 p-4 me-4 mx-p-4" id="Cuadro_Interes_Principal">
+                                Intereses</b><br> #Playa #Comida <br>
+                                #Paisaje #Ciclismo <br> #Friends
+                            </div>
+                            <div class="col-3 ms-4 p-4 me-2 pe-0" id="Cuadro_Interes_Principal" style="text-align: center;">
+                               Lugares visitados<br> Cancún, Cabos
+                                San Lucas <br> Guadalajara, Puebla 
+                            </div>
+                            <div class="col-2 p-4 ps-1 " id="Cuadro_Interes_Principal">
+                                Seguidores <br> 4K
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 my-4" id="columna_friends">
+                    <!--Columna de Perfiles de Amigsos-->
+                    <div id="Cuadro_Amigos" class=" mx-auto">
+                        <h1 style="background-color: white; color:#E9636D" class="Wish">Amigos</h1>
+                        <div class="row mx-2 ps-1 my-2" style="background-color: white">
+                                <div class="row" class="friends" style="background-color: white">
+                                    <div class="col-2 "id="friends" style="background-color: white">
+                                            <img class="me-2"id="friends"src="https://i.ibb.co/gRWz9pH/francisco.jpg" alt="">
+                                    </div>
+                                    <div class="col-2" id="friends" >
+                                        <img class="me-2"id="friends"src="https://i.ibb.co/54kC5dY/jorge.jpg"  alt="">
+                                    </div>
+                                    <div class="col-2"id="friends" >
+                                        <img id="friends"src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="">
+                                    </div>
+                                    <div class="col-2"id="friends"style="background-color: white">
+                                        <img class="mx-2"id="friends" src="https://i.ibb.co/6mjmGqz/beyra.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row mx-0 ps-0 my-3 " style="background-color: white">
+                                    <div class="col-2" id="friends">
+                                        <img id="friends"src="https://i.ibb.co/wCjTfdD/max.jpg" alt="">
+                                    </div>
+                                    <div class="col-2" id="friends">
+                                     <img id="friends"src="https://i.ibb.co/LPmCLm4/lupita.jpg" alt="">
+                                    </div>
+                                    <div class="col-2" id="friends">
+                                        <img id="friends" src="https://i.ibb.co/YhM1w9B/juancarlos.jpg" alt="">
+                                    </div>
+                                    <div class="col-2"id="friends">
+                                        <img class=""id="friends"src="https://i.ibb.co/5W4YhRm/margarita.png" alt="">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!--Columna de Wish-->
+                    <div id="friendsto1" class="mx-auto my-4">
+                        <h1 style="background-color: white; color:#E9636D" class="Wish">Wishlist</h1>
+                        <div class="grid">
+                            <div class="row mx-0" style="background-color: white;">
+                                <div style="background-color: white" class="col-6">
+                                    <img src="https://www.eternal-expat.com/wp-content/uploads/2022/03/Oaxaca-beaches-9-720x540.jpg.webp"
+                                        alt="Lugar de anelo por visitar" id="Place1" class="w-75  h-100 mx-4" />
+                                </div>
+                                <div style="background-color: white" class="col-6">
+                                    <img src="https://i0.wp.com/blog.vivaaerobus.com/wp-content/uploads/2019/11/Playas-en-Merida.jpg?fit=1024%2C576&ssl=1"
+                                        alt="Lugar de anelo por visitar" id="Place2" class="w-75 h-100" />
+                                </div>
+                                <div class="row mx-0" style="background-color: white;">
+                                    <div style="background-color: white" class="col-6">
+                                       
+                                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2019/11/termas-san-joaquin-aguas-termales-coahuila-1200.jpg"
+                                            alt="Lugar de anelo por visitar" id="Place1" class="w-75 h-100 my-3 mx-3" />
+                                    </div>
+                                    <div style="background-color: white" class="col-6">
+                                        <img src="https://digitalnomads.world/wp-content/uploads/2021/12/puerto-escondido-digital-nomads.jpg"
+                                            alt="Lugar de anelo por visitar" id="Place2" class="w-75 h-100 my-3 ms-1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--collage-->
+                    <div class="container my-4" id="collage">
+                        <div class="row mx-2" style="background-color:white">
+                            <div class="col-3  my-2" id="iconos_collage">
+                                <span class="iconify w-25" data-icon="bi:plus-square" id="iconos_collage"></span>
+                            </div>
+                            <div class="col-3  my-2" id="iconos_collage">
+                                <span class="iconify w-25" data-icon="icon-park-outline:picture-one"
+                                    id="iconos_collage"></span>
+                            </div>
+                            <div class="col-3  my-2" id="iconos_collage">
+                                <span class="iconify w-25" data-icon="ep:map-location" id="iconos_collage"></span>
+                            </div>
+                            <div class="col-3  my-2 " id="iconos_collage">
+                                <span class="iconify w-25" data-icon="bi:layout-text-window-reverse"
+                                    id="iconos_collage"></span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row my-lg-3 ms-lg-5">
+                            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="background-color: white;">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                                    class="w-75 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
+                                    id="first_image" />
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                                    class="w-75 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"
+                                    id="second_image" />
+                            </div>
+
+                            <div class="col-lg-4 mb-4 mb-lg-0" style="background-color: white;">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                                    class="w-75 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"
+                                    id="third_image" />
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                                    class="w-75 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
+                                    id="four_image" />
+                            </div>
+
+                            <div class="col-lg-4 mb-4 mb-lg-0" style="background-color: white;">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                                    class="w-75 shadow-1-strong rounded mb-4" alt="Waves at Sea" id="five_image" />
+
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                                    class="w-75 shadow-1-strong rounded mb-4" alt="Yosemite National Park"
+                                    id="six_image" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="col-3"  id="Cuadro_Interes_Principal">
-              Intereses<br> #Playa #Comida <br> #Paisaje #Ciclismo <br> #Friends
-            </div>
-            <div class="col-3"  id="Cuadro_Interes_Principal">
-              Seguidores <br> 4K
-            </div>
-            <div class="col-3"  id="Cuadro_Interes_Principal">
-              Lugares visitados <br> Cancún, Cabos San Lucas <br> Guadalajara, Puebla <br>Vallarta, Monterrey
-            </div>
-            
-        </div>
-<<<<<<< HEAD
-=======
-        <div class="row" id="Segundo_Intento2">
-          <div class="row" id="deseo1" style="background-color: white" class="deseo_1">Wishlist
-            <div class="row" style="background-color:white;">
-              <div class="col-6" id="wish_1" style="background-color:white;">
-                <img id="wish_img_1" class="img-fluid" src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="imagen de amigos">
-              </div>
-              <div class="col-6" id="wish_2" style="background-color:white;">
-                <img id="wish_img_1" class="img-fluid" src="https://i.ibb.co/Dt8sxh0/rafa.png" style="border: 5px;"
-                  alt="imagen de amigos">
-              </div>
-<<<<<<< HEAD
-            </div>
-            <div class="row" style="background-color:white;">
-              <div class="col-6" id="wish_3" style="background-color:white;">
-                <img id="wish_img_1" class="img-fluid" src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="imagen de amigos">
-              </div>
-              <div class="col-6" id="wish_4" style="background-color:white;">
-                <img id="wish_img_1" class="img-fluid" src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="imagen de amigos">
-              </div>
-            </div>
-=======
-            </div>
-            <div class="row" style="background-color:white;">
-              <div class="col-6" id="wish_3" style="background-color:white;">
-                <img id="wish_img_1" class="img-fluid" src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="imagen de amigos">
-              </div>
-              <div class="col-6" id="wish_4" style="background-color:white;">
-                <img id="wish_img_1" class="img-fluid" src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="imagen de amigos">
-              </div>
-            </div>
->>>>>>> margaritaflores
-          </div>
-        </div>
 
->>>>>>> 0b91f7bbbabb9f31d1a2731cab0604a5846836f4
-      </div>
-
-<<<<<<< HEAD
-=======
-      </div>
-<<<<<<< HEAD
-    </div>
-    </div>
-
-    </div>
-
-
-
-
-  </main>
-
-=======
-    </div>
->>>>>>> 0b91f7bbbabb9f31d1a2731cab0604a5846836f4
-    </div>
-    <div class="col-sm-4" id=""> 
-      <div id="friendsto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias in molestiae deleniti blanditiis veniam sapiente nam quidem? Nostrum alias laborum quo, assumenda facilis incidunt quod illo nam beatae at reiciendis.
-      Sed assumenda est ad eos quos placeat, explicabo tempore excepturi optio libero eum eligendi ab quas qui nemo, dolores omnis sapiente illo ipsam deserunt quisquam ullam maiores in at. Similique.</div>
-    <div id="friendsto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consectetur fugiat tenetur architecto dolores quaerat nisi dolorum, ex laboriosam est ducimus quo tempore, repellendus, autem voluptas tempora praesentium expedita odio?
-    Obcaecati tempore quo quaerat a tenetur. At esse, nisi laudantium exercitationem quam maxime quia totam eum fugit modi officia tenetur ipsam accusantium placeat cum eveniet perferendis provident non, explicabo aperiam.</div>
-  </div>
-
-    <div class="col-sm-8" id="friendsto2"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis exercitationem laborum animi quibusdam nulla, eveniet illo quod tenetur tempore tempora unde laboriosam quaerat praesentium molestiae veritatis facilis ad, minima ipsum.
-    Alias neque dignissimos sed nisi dolore id optio illum, fugiat ipsum aliquam nobis ipsa quidem harum perspiciatis at, et laudantium est debitis quasi laboriosam enim cum recusandae iste officia. Ipsam.
-    Rerum temporibus recusandae expedita id pariatur molestias fuga est provident in necessitatibus fugiat similique praesentium dolor, debitis nam dicta voluptate fugit autem eaque, consequatur doloremque. Id voluptates aperiam rerum sapiente.
-    Nostrum, est deserunt. Quibusdam deleniti sunt quisquam aliquid dignissimos voluptas accusantium natus error reprehenderit et mollitia autem aliquam ad quas est sequi corporis soluta iste, odio recusandae fugit consequatur ut!
-    Facilis consequuntur, cum corrupti aut quidem a alias placeat earum culpa quas blanditiis impedit quisquam illum possimus repellendus dolorum esse excepturi autem modi reprehenderit! Doloremque error ipsum hic eius recusandae?
-    Iure mollitia delectus vitae officia nulla quas eaque dolor excepturi magnam distinctio laborum reprehenderit quo sunt natus fugiat quibusdam saepe perferendis possimus velit optio commodi, maiores totam corporis a! Ad.
-    Dolor reiciendis assumenda voluptate magnam suscipit in consectetur, ea doloremque nisi deleniti illo debitis sequi numquam nostrum dicta nesciunt et rerum. Dolores cumque error animi corporis voluptas neque hic laborum?
-    Nesciunt sunt impedit maiores velit, labore voluptatum laudantium ut eaque in. Facilis optio ipsum voluptas ex autem, velit tempora nesciunt molestias cupiditate quia blanditiis fuga amet pariatur! Expedita, cumque veritatis!
-    Molestiae unde at aspernatur officia dignissimos nisi voluptate cumque facilis, corporis dolorem quibusdam magni soluta iure repudiandae, tenetur accusamus officiis necessitatibus dolores ullam, animi velit impedit. Odio, ipsam! Vero, accusantium!
-    Soluta earum totam aliquid suscipit deserunt odit cumque esse labore perferendis hic consequatur iste ratione nemo velit, ipsum mollitia voluptatem distinctio expedita eos. Nostrum omnis maxime sequi quo quod non?</div>
-
-  </div>
-
-</div>
-
-
-
-
-
-
-<<<<<<< HEAD
-</main>
-=======
->>>>>>> margaritaflores
->>>>>>> 0b91f7bbbabb9f31d1a2731cab0604a5846836f4
-  <!--Footer-->
-  <footer class="text-center">
-    Developed by: Rocket Raccoons © 2022.
-  </footer>
-  <!--Scriptsß-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    </main>
+</body>
+<!--Scriptsß-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-
-  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
-</body>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
 </html>
