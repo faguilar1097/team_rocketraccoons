@@ -29,15 +29,80 @@
 }
 
 #boton{
-    background-color: white;
-    color: #E9636D;
-    margin-right: 100px;
+    background-color:white;
+    color: #E9633D;
     font-family: 'Soleil', sans-serif;
-    font-size: 1.3em;
-    width: 100px;
-    height:35px;
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 10vw;
+    height:3.5vw;
+    margin-right: .5vw;
     line-height:1px;
+    border: 0em;
+    border-radius: 20px;
 }
+#boton2{
+    background-color:white;
+    color: #E9633D;
+    font-family: 'Soleil', sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 13.2vw;
+    height:3.5vw;
+    margin-right: .5vw;
+    line-height:1px;
+    border: 0em;
+    border-radius: 20px;
+}
+#boton1d{
+    background-color: transparent;
+    font-size: 2vw;
+    transform: translate(0,-1.5px); 
+
+}
+#boton2d{
+    background-color: transparent;
+    font-size: 2vw;
+    transform: translate(0,-2px);
+    
+
+}
+@media (max-width:480px){
+    #boton{
+        width: 15vw;
+        height:3.5vw;
+    }
+    #boton2{
+        width: 18vw;
+        height:3.5vw;
+    }
+    #boton1d{
+        background-color: transparent;
+        font-size: 2.2vw;
+        transform: translate(0,-1.5px);
+    }
+    #boton2d{
+        background-color: transparent;
+        font-size: 2.1vw;
+        transform: translate(0,-2px);
+    }
+
+
+}
+ #iconoNav{
+   background-color: transparent;
+   margin-left: 5%;
+     width: 1.8vw;
+    height: 1.8vw;
+}
+#iconoNav2{
+    background-color: transparent;
+    margin-left: 5%;
+     width: 2vw;
+     height: 2vw;
+ }
+
+
 #bienvenida{
     color: #E9633D;
     font-size: 3vw;
@@ -105,7 +170,7 @@ margin-right: 15px;
 
 .conocenos{
     background-color: white;
-     width: 95%;
+    width: 95%;
     height: 40%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
