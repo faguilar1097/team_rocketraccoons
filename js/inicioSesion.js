@@ -1,7 +1,8 @@
 console.log("Succes!!");
 
 function VincularJSON() {
-    fetch('./assets/users/users.json')
+    // fetch('../assets/users/users.json')
+    fetch('../assets/users/users.json')
   .then(responseJSON =>{ return responseJSON.json()} )
   .then(usuarios => {
     console.log(usuarios) 

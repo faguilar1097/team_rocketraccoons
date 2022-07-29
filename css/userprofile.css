@@ -6,6 +6,10 @@
     font-family: 'Soleil', sans-serif;
 }
 
+.class{
+    background-color:#4BCEEB ;
+}
+
 #img{
     height: 100px;
     width: 350x;
@@ -132,7 +136,7 @@ CSS Wish List
 
 #friends{ 
         width: 5vw;
-        height: 10vw;
+        height: 5vw;
         background-size: cover;
         border-radius: 50%;
         margin: 0px auto;
