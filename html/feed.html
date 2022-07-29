@@ -7,7 +7,7 @@
 
     <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet" />
 
-    <link rel="stylesheet" href="feed.css" />
+    <link rel="stylesheet" href="../css/feed.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -107,38 +107,29 @@
           /></a>
         </div>
         <!-- Filtros de busqueda -->
-        <div class="navbar-filtro col-5 align-self-center">
-          <div class="navbar-filtro row mx-2 justify-content-center">
+        <div class="col-5 " style="background-color: white;">
+          <div class="row d-flex justify-content-center " style="background-color: transparent;">
             <!-- Busqueda de Estados -->
-            <div class="input-filtro navbar-filtro col-6">
+            <div class="col-4 " style="background-color: transparent;">
               <input
                 type="text"
                 name="Estado"
                 alt="Estado"
                 placeholder="Estado"
-                class="input-filtro form-control form-control-sm btn-outline-light text-center rounded-pill"
+                id="inputEstado"
+                class="text-center"
               />
             </div>
 
-            <!-- Busqueda de Municipio -->
-            <!-- <div class="navbar-filtro col-4">
-              <input
-                type="text"
-                name="Municipio"
-                alt="Municipio"
-                placeholder="Municipio"
-                class="input-filtro form-control form-control-sm text-center rounded-pill"
-              />
-            </div> -->
-
             <!-- Busqueda de Intereses -->
-            <div class="input-filtro navbar-filtro col-6">
+            <div class="col-4 " style="background-color: transparent;">
               <input
                 type="text"
                 name="Intereses"
                 alt="Intereses"
                 placeholder="#Intereses"
-                class="input-filtro form-control form-control-sm text-center rounded-pill"
+                id="inputInteres"
+                class="text-center"
               />
             </div>
           </div>
