@@ -130,9 +130,11 @@ path:hover{
 }
 
 
-#imgcard1 {
-    width: 35vw;  
-    border-radius: 15px;
+.imgcard1 {
+    background-color:white;
+    padding: 10px;
+    width: 22vw;  
+    border-radius: 20px;
 }
 
 #separador{
