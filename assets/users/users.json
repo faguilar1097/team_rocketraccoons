@@ -33,6 +33,50 @@
         "titleImg3":"Laguna Miramar",
         "img4": "http://preparandolasmaletas.com/wp-content/uploads/2017/08/lagunas-de-montebello.png",
         "titleImg4":"Lagunas de Montebello"
+    },
+    {
+        "id": 3,
+        "email": "rafalba.o5@gmail.com",
+        "contraseña":"t4c05_t0d4y",
+        "first_name": "Rafa",
+        "last_name": "Alba",
+        "avatar": "https://i.ibb.co/Dt8sxh0/rafa.png",
+        "estado": "Aguascalientes",
+        "img1":"https://www.lja.mx/wp-content/uploads/2019/06/44094354234_8a6220968b_z-1.jpg",
+        "titleImg1":"Atardeceres de Ags",
+        "img2":"https://a.travel-assets.com/findyours-php/viewfinder/images/res40/202000/202120-Plaza-En-Aguascalientes.jpg",
+        "titleImg2":"Templo de San Antonio ",
+        "img3":"https://a.travel-assets.com/findyours-php/viewfinder/images/res40/201000/201340-Jardin-De-San-Marcos.jpg",
+        "titleImg3":"Jardin De San Marcos",
+        "img4": "https://innovacioneconomica.com/wp-content/uploads/2021/01/PARQUE-TRES-CENTURIAS.jpg",
+        "titleImg4":"Antiguo Complejo Ferrocarrilero Tres Centurias",
+        "img5": "http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2019/03/aguas-fbgob.jpg",
+        "titleImg5":"Exahedra, Plaza de armas Ags.",
+        "img6": "https://ultranoticias.com.mx/media/k2/items/cache/e8b2735bf596ca25f1a2c29f31adadba_XL.jpg",
+        "titleImg5":"'Los Alamitos', Sierra Fría, Ags."
+    },
+    {
+        "id": 4,
+        "email": "enriquezbeyra@gmail.com",
+        "contraseña":"enriquez2022",
+        "first_name": "Beyra",
+        "last_name": "Enriquez",
+        "avatar": "https://i.ibb.co/Dt8sxh0/rafa.png",
+        "estado": "Ciudad de México",
+        "img1":"https://www.lja.mx/wp-content/uploads/2019/06/44094354234_8a6220968b_z-1.jpg",
+        "titleImg1":"Xochimilco",
+        "img2":"https://a.travel-assets.com/findyours-php/viewfinder/images/res40/202000/202120-Plaza-En-Aguascalientes.jpg",
+        "titleImg2":"Basilica de Guadalupe",
+        "img3":"https://a.travel-assets.com/findyours-php/viewfinder/images/res40/201000/201340-Jardin-De-San-Marcos.jpg",
+        "titleImg3":"Piramides de Teotihuacán",
+        "img4": "https://innovacioneconomica.com/wp-content/uploads/2021/01/PARQUE-TRES-CENTURIAS.jpg",
+        "titleImg4":"Antiguo Complejo Ferrocarrilero Tres Centurias",
+        "img5": "http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2019/03/aguas-fbgob.jpg",
+        "titleImg5":"Exahedra, Plaza de armas Ags.",
+        "img6": "https://ultranoticias.com.mx/media/k2/items/cache/e8b2735bf596ca25f1a2c29f31adadba_XL.jpg",
+        "titleImg5":"'Los Alamitos', Sierra Fría, Ags."
     }
+
+    
 
 ]
