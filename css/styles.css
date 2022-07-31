@@ -1,0 +1,93 @@
+#login {
+  max-width: 750px;
+}
+
+#login div {
+  max-width: 100%;
+}
+
+body {
+  box-sizing: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d8d8d8;
+  font-family: "Soleil", sans-serif;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.img {
+  max-width: 355px;
+  max-height: 100px;
+}
+#icono {
+  width: 75px;
+  height: 75px;
+}
+.hea {
+  background-color: #4bceeb;
+}
+
+.iconify {
+  width: 75px;
+  height: 75px;
+}
+
+#boton {
+  background-color: white;
+  color: #e9636d;
+  margin-right: 100px;
+  font-family: "Soleil", sans-serif;
+  font-size: 1.3em;
+  width: 100px;
+  height: 35px;
+  line-height: 1px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+.btnCont{
+    height: 45px;
+    padding-bottom: 10px;
+}
+
+.iconAvion{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 700px) {
+  .img {
+    max-width: 250px;
+  }
+  .iconify {
+    width: 50px;
+    height: 50px;
+  }
+  #boton {
+    margin-right: 50px;
+    width: 100px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img {
+    max-width: 130px;
+  }
+  .iconify {
+    width: 30px;
+    height: 30px;
+  }
+  #boton {
+    margin-right: 20px;
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+  }
+}

@@ -1,7 +1,8 @@
 console.log("Succes!!");
 
 function VincularJSON() {
-    fetch('./assets/users/users.json')
+    // fetch('./assets/users/users.json')
+    fetch('users.json')
   .then(responseJSON =>{ return responseJSON.json()} )
   .then(usuarios => {
     console.log(usuarios) 
@@ -56,7 +57,3 @@ function llenarDatos(datosUsuarios,estado){
         console.log("Fotos insertadas");
     
  }
-
-
-
-
