@@ -1,11 +1,10 @@
 console.log("Succes!!");
 
-<<<<<<< HEAD
+
 function vincularJSON() {
-=======
-function VincularJSON() {
+
     // fetch('../assets/users/users.json')
->>>>>>> 8c63bbc9c087fbca6cc0925a1c534a091417275c
+
     fetch('../assets/users/users.json')
   .then(responseJSON =>{ return responseJSON.json()} )
   .then(usuarios => {
