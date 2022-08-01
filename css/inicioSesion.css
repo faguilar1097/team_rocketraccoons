@@ -101,6 +101,14 @@
    left:0px;
    right: 0px;
 }
+
+#mensaje{
+    background-color: #44BAA0;
+    font-family: 'Soleil', sans-serif;
+    font-size: 1.3em;
+    color: #E9636D;
+    text-align: center;
+}
 /* // Pantallas grandes */
 
 @media (max-width: 1400px) {
