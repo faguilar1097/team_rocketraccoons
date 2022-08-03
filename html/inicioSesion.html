@@ -61,26 +61,28 @@
 
     <main>
 
-      <div class="container w-75 mt-4 rounded border shadow" id="contenedor">
-       <div class="row">
-           <div class="col imagenIzq d-none d-md-block">
+      <div class="container w-75 mt-4 rounded shadow" id="contenedor">
+       <div class="row align-items-stretch">
+           <div class="col imagenIzq bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
                <!-- Aqui puede ir una poaible imagen -->
            </div>
-           <div class="col rounded-end" id="colDer">
+           <div class="col p-5 rounded-end" id="colDer">
                <div class="fw-bold text-center my-4 mx-5 border" id="inicio">
                    <!-- Aqui va ir el encabezado de incio -->
-                   Inicio de Sesión <span class="iconify" data-icon="clarity:airplane-solid" style="background-color: white; color: #E9633D; height: 30px; height: 30px;"></span>
+                   Inicio de Sesión <span class="iconify rounded-5" data-icon="clarity:airplane-solid" style="background-color: white; color: #E9633D; height: 30px; height: 30px;"></span>
                    
                </div>
 
                <h2 id="mensaje">  </h2>
                <!-- FORMULARIO -->
                <form class="my-5 forma needs-validation" novalidate action="#">
-                   <div class="my-4 mx-5 forma2">
+                   <div class="my-4 mx-5 forma2 position-relative">
                        <input type="text" id="usuario"class=" form-control text-center " name="usuario" placeholder="Usuario" required>
+                       <div class="invalid-tooltip">Ingrese su correo</div>
                    </div>
-                   <div class="mb-4 mx-5 forma2">
+                   <div class="my-4 mx-5 forma2 position-relative">
                        <input type="password" id="password" class="form-control text-center" name="password" placeholder="Contraseña" required>
+                       <div class="invalid-tooltip">Ingrese su contraseña</div>
                    </div>
                   
                    <div class="text-center forma">
@@ -98,7 +100,7 @@
       </div>
     </main>
 <div>
-  <footer class="text-center mt-4 mt-md-0 text-rac">Developed by: Rocket Raccoons © 2022.</footer>
+  <footer class="text-center mt-4 mt-md-0">Developed by: Rocket Raccoons © 2022.</footer>
 </div>
     
 
