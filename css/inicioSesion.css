@@ -46,11 +46,11 @@
     padding-left: 54px;
     border-radius: 30px;
 }
-.imagenIzq{
+/* .imagenIzq{
     background-image: url(https://cdn.pixabay.com/photo/2022/05/30/16/50/couple-7231599_960_720.jpg);
     background-position: center center;
     
-}
+} */
 
 #colDer{
     background-color: #44BAA0;
@@ -62,6 +62,12 @@
 
 .forma2{
     border-radius: 35px;
+}
+.transparente{
+    background-color: transparent;
+}
+.carrusel{
+    height: 30em;
 }
 
 /* Pertenece a la plantilla Header y Footer */
