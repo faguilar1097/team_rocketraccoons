@@ -8,6 +8,11 @@
 
 
 /* Pertenece al Inicio de Sesion */
+.mainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
 
 #contenedor{
     background-color: #44BAA0;
@@ -20,7 +25,7 @@
 #boton2{
     background-color: #148FD4;
     color:#FFFFFF;
-    width:50%;
+    
 }
 
 .main-section{
@@ -62,8 +67,8 @@
 /* Pertenece a la plantilla Header y Footer */
 
 .img{
-    width: 355px;
-    height: 100px;
+    width: 10vw;
+    height: 1.5vh;
 }
 #icono{
     width: 75px;
@@ -115,21 +120,45 @@
   html {
     font-size: 1.3em;
   }
+  .avion{
+    height: 2em;
+    width: 2em;
+  }
+  .forma2{
+    border-radius: 35px;
+    margin-bottom: 2.2em;
+}
 }
 
 /* // Tabletas  */
 
 @media (max-width: 768px) {
   html {
-    font-size: 1.1em;
+    font-size: 1.125em;
   }
+  .avion{
+    height: 2em;
+    width: 2em;
+  }
+  .forma2{
+    border-radius: 35px;
+    margin-bottom: 2.2em;
+}
 }
 
 /* // Celulares  */
 
 @media (max-width: 450px) {
   html {
-    font-size: .5em;
+    font-size: 0.8125em;
   }
+  .avion{
+    height: 2em;
+    width: 2em;
+  }
+  .forma2{
+    border-radius: 35px;
+    margin-bottom: 2.2em;
+}
 }
 

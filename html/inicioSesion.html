@@ -50,7 +50,7 @@
               id="boton"
               width="100px"
             >
-              <a href="../html/pagError.html"><strong style="background-color: white">Salir</strong></a>
+              <a href="../html/pagError.html" class="text-muted text-decoration-none"><strong style="background-color: white" >Salir</strong></a>
             </button>
             </form>
           </div>
@@ -64,23 +64,23 @@
       <div class="container w-75 mt-4 rounded shadow" id="contenedor">
        <div class="row align-items-stretch">
            <div class="col imagenIzq bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
-               <!-- Aqui puede ir una poaible imagen -->
+               <!-- Aqui debo colocar el carrousel -->
            </div>
            <div class="col p-5 rounded-end" id="colDer">
-               <div class="fw-bold text-center my-4 mx-5 border" id="inicio">
+               <div class="fw-bold text-center my-4 mx-2 border" id="inicio">
                    <!-- Aqui va ir el encabezado de incio -->
-                   Inicio de Sesión <span class="iconify rounded-5" data-icon="clarity:airplane-solid" style="background-color: white; color: #E9633D; height: 30px; height: 30px;"></span>
+                   Inicio de Sesión <span class="iconify rounded-5 avion" data-icon="clarity:airplane-solid" style="background-color: white; color: #E9633D;"></span>
                    
                </div>
 
                <h2 id="mensaje">  </h2>
                <!-- FORMULARIO -->
                <form class="my-5 forma needs-validation" novalidate action="#">
-                   <div class="my-4 mx-5 forma2 position-relative">
+                   <div class="mx-2 forma2 position-relative">
                        <input type="text" id="usuario"class=" form-control text-center " name="usuario" placeholder="Usuario" required>
                        <div class="invalid-tooltip">Ingrese su correo</div>
                    </div>
-                   <div class="my-4 mx-5 forma2 position-relative">
+                   <div class=" mx-2 forma2 position-relative">
                        <input type="password" id="password" class="form-control text-center" name="password" placeholder="Contraseña" required>
                        <div class="invalid-tooltip">Ingrese su contraseña</div>
                    </div>
@@ -90,7 +90,7 @@
                        <button type="submit" class="btn rounded-pill justify-content:center fw-bold" id="boton2">Iniciar Sesión</button>
                    </div>
                    <div class="text-center my-2 forma">
-                       <span ><a style="color: white;" href=""><i class="forma">¿Olvidaste tu contraseña?</i></a></span>
+                       <span ><a style="color: white;" href=""><i class="forma text-decoration-none">¿Olvidaste tu contraseña?</i></a></span>
 
                    </div>
                </form>
