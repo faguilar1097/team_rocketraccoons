@@ -46,12 +46,12 @@ function llenarDatos(datosUsuarios,estado){
    }
     
         document.getElementById("imgcard1").src =datosUsuarios[i].img1 ;
-        document.getElementById("imgcard2").src =datosUsuarios[i].img2 ;
-        document.getElementById("imgcard3").src =datosUsuarios[i].img3 ;
-        document.getElementById("imgcard4").src =datosUsuarios[i].img4 ;
         document.getElementById("TextoTarjeta1").innerHTML =datosUsuarios[i].titleImg1 ;
+        document.getElementById("imgcard2").src =datosUsuarios[i].img2 ;
         document.getElementById("TextoTarjeta2").innerHTML =datosUsuarios[i].titleImg2 ;
+        document.getElementById("imgcard3").src =datosUsuarios[i].img3 ;
         document.getElementById("TextoTarjeta3").innerHTML =datosUsuarios[i].titleImg3 ;
+        document.getElementById("imgcard4").src =datosUsuarios[i].img4 ;
         document.getElementById("TextoTarjeta4").innerHTML =datosUsuarios[i].titleImg4 ;
         
         console.log("Fotos insertadas");
