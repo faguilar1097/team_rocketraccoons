@@ -142,20 +142,34 @@ path:hover{
     margin-left: 2%;
 }
 
+#tarjetasImgs{
+
+    background-color: white;
+    width: 22vw;  
+    height: 12vw;
+    /*   */
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+
+}
 
 .imgcard1 {
-    background-color:white;
-    padding: 5px;
-    width: 20vw;  
-    border-radius: 15px;
+
+    width: 20vw; 
+    height: 10vw; 
+    border-radius: 4%;
+    /* transform: translate(-3.5vw);  */
+   
 }
+
 .TextoTarjeta{
     background-color: transparent;
     color:white;
     font-weight: 800;
-    font-size: 1vw;
-    transform: translate(2.5vw,-3vw);
- 
+    font-size: 1vw; 
+    position: absolute;
+    bottom: 20px;
+    left: 25px; 
+    word-wrap: keep-all;
 
 }
 
@@ -167,6 +181,7 @@ height: 5vw;
 border-top-left-radius: 25px;
 border-bottom-left-radius: 25px;
 margin-right: 15px;
+
 }
 #SeparadorTexto{
     color:white;
@@ -199,8 +214,9 @@ margin-right: 15px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     justify-self:start;
-
+    margin-top:5%;    
 }
+
 #infoConocenos{
     color:#E9633D;
     font-weight: bolder;
@@ -258,3 +274,21 @@ margin-right: 15px;
     margin: 0px auto;
     display:inline-block;
 }
+/* 
+
+ .publicaciones-individuales{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+} */
+/* 
+.img-public{
+    border-radius: 4%;
+    /* width: 355px;
+    height: 100px; 
+ } */
+/* 
+div, img-public {
+    display: block;
+    position: relative;		
+    width: 300px;
+    /* border: 0; 
+  }   */
