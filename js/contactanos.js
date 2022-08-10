@@ -1,5 +1,3 @@
-// Validación de formulario contactanos
-
 const asunto = document.getElementById('asunto');
 const mensaje = document.getElementById('mensaje');
 const form = document.getElementById('form');
