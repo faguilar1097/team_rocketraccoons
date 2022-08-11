@@ -111,8 +111,14 @@ textarea{
     width: 155px;
 }
 
+/* Para implemetar JSON type=button */
+.myButton{
+    display: flex;
+    justify-content: center;
+}
+
 .accordion{
-    background-color: #44BAA0;
+    background-color: #FFFFFF;
     width: 76%;
     margin: auto;
     padding: 40px 80px;
@@ -122,7 +128,7 @@ textarea{
 }
 
 .accordion-body{
-    background-color: #44BAA0;
+    background-color: #FFFFFF;
 }
 
 @media (max-width: 930px){
