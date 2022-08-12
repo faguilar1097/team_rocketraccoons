@@ -173,7 +173,7 @@ CSS Wish List
 /*Pantallas lg */
 @media (max-width: 992px) {
     html {
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
     .avion{
       height: 2em;
