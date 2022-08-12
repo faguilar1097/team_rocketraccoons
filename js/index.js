@@ -17,6 +17,7 @@ function VincularJSON() {
 }
 VincularJSON();
 
+
 function leerDatos(estado){
     console.log(estado);
     let datosUsers=[];
