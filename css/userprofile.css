@@ -146,7 +146,7 @@ CSS Wish List
 } */
 
 /*Pantallas mas grandes*/
-@media (max-width: 1440px) {
+@media (max-width: 1840px) {
   html {
     font-size: 1.3em;
   }
@@ -173,7 +173,7 @@ CSS Wish List
 /*Pantallas lg */
 @media (max-width: 992px) {
     html {
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
     .avion{
       height: 2em;
@@ -193,7 +193,13 @@ CSS Wish List
     
     background-color: white; 
 }
-  }
+
+/* .div-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  left:0
+  } */
+}
   
   /* // Tabletas  */
   
