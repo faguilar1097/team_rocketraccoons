@@ -1,35 +1,32 @@
 console.log("probando");
 
-function captura() {
-    let tituloViaje=document.getElementById("titulo").value;
-    let rutaViaje=document.getElementById("ruta").value;
-    let tipoClima=document.getElementById("clima").value;
-    let categoriaV=document.getElementById("catego").value;   
-    let mejorFecha=document.getElementById("fecha").value;
-    let desViaje=document.getElementById("descripcion").value;
-    let tipsViajes=document.getElementById("tips").value;
-    let vipsViajes=document.getElementById("seguridad").value;
-    let estadoRep=document.getElementById("estado").value;
-    
-console.log(tituloViaje);
-console.log(rutaViaje);
-console.log(tipoClima);
-console.log(categoriaV);
-console.log(mejorFecha);
-console.log(desViaje)
-console.log(tipsViajes);
-console.log(vipsViajes);
-console.log(estadoRep);
+obtener_localstorage();
+guardar_localstorage();
+
+function obtener_localstorage(){
+
+if(localStorage.getItem("nombre")){
+    let viaje=JSON.parse(localStorage.getItem("nombre"));
+        console.log(viaje);
+}else{
+    console.log("No hay entradas en el local storage");
+}
 }
 
-// const titulo = document.querySelector("#titulo");
+function guardar_localstorage(){
 
-// //creamos el evento
-// titulo.addEventListener("submit", validartitulo)
+    let viaje ={
+     título: "En el mar la vida es más sabrosa",  
+     ruta: "https://goo.gl/maps/a4MzPDLVbtBHnzz48",
+     clima: "Parcialmente nublado",
+     categoría: "",
+     fecha: "cualquiera", 
+     descripcion: "Antiguo pueblo de pescadores",
+     tips: "Animada vida nocturna", 
+     seguridad: "Zona segura",
+     estado:"Oaxaca"
+        
+    };
 
-// //mis funciones
-
-// function validartitulo(e) {
-//     e.preventDefault();
-//     consol.log("validando");
-// }
+     localStorage.setItem("nombre", JSON.stringify(viaje));
+}
