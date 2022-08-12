@@ -32,27 +32,24 @@
       
     <main>
       <div class="parche">.</div>
-        <form id="form">
+        <!-- Formulario de contacto -->
+        <form id="form"  action="https://formspree.io/f/mnqwebag" method="POST">
 
           <h3 class="textConocenos">Ayúdanos a mejorar  
             <img class="atencion" src="https://i.ibb.co/y0CCRY0/Atencion.png" alt="atencion">
           </h3>
           <div id="error" class="error"></div>
         
-          <input type="text" placeholder="Asunto" id="asunto">
-          <textarea placeholder="Mensaje" id="mensaje"></textarea>
-          <!-- Botón enviar para JSON -->
+          <input type="text" placeholder="Asunto" id="asunto" name="message">
+          <textarea placeholder="Mensaje" id="mensaje" name="message"></textarea>
           <div class="myButton" style="background-color: #E3AC97;">
-            <input type="button" value="Enviar" id="enviar">
+            <input class="btn btn-primary" type="submit" value="Enviar" id="enviar">
           </div>
-          <!-- Botón para validación -->
-          <!-- <button class="btn btn-primary mx-auto" type="submit" id="enviar"> 
-            Enviar
-          </button> -->
           
 
         </form>
 
+        <!-- Accordion de preguntas y dudas frecuentes -->
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">

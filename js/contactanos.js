@@ -1,6 +1,5 @@
 //Validación del formulario
-
-/* const asunto = document.getElementById('asunto');
+const asunto = document.getElementById('asunto');
 const mensaje = document.getElementById('mensaje');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
@@ -18,7 +17,7 @@ form.addEventListener('submit', (e) => {
       errorElement.innerText = messages.join('')
     }
   }
-) */
+)
 
 //************************ JSON ************************* */
 let main = function(){
@@ -42,12 +41,13 @@ let dataRead = function(){
   };
   console.log(myObject);
 
-  //JSON necesita pasar el objeto a String
-  console.log(JSON.stringify(myObject)); //Sirve para ver que hace el stringify
+//JSON necesita pasar el objeto a String
+console.log(JSON.stringify(myObject)); //Sirve para ver que hace el stringify
 
-  //Guardamos los datos en Local Storage (Persistencia de datos)
-  save_localStorage(myObject);
+//Guardamos los datos en Local Storage (Persistencia de datos)
+save_localStorage(myObject);
 }
+
 let save_localStorage = function(myObj) {
   localStorage.setItem("miInfo", JSON.stringify(myObj));
 }
