@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contactanos</title>
+    <title>Contáctanos</title>
 
     <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet">
-               
-    <link rel="stylesheet" href="../css/contactanos.css" />
+    
+    <link rel="shortcut icon" href="https://i.ibb.co/sWX3KVT/Rocket-Raccoons-removebg-preview.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/contactanos.css"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +24,7 @@
         
           <div class="col-4 bordr text-start align-self-center hea"> <img class="img hea" src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png" alt="logo de viaje"></div>
           <div class="col-4 text-center align-self-center hea"><a href="../index.html"><span class="iconify" data-icon="uiw:global"></span></div></a>
-          <div class="col-4 borer text-end align-self-center hea"> <a href="../html/feed.html"> <img class="mapa" src="https://i.ibb.co/KbG2fDM/Group-56.png" alt="mapa"></div></a>
+          <div class="col-4 borer text-end align-self-center hea"> <a href="../html/feed.html" style="background-color:#4BCEEB"> <img class="mapa" src="https://i.ibb.co/KbG2fDM/Group-56.png" alt="mapa"></div></a>
           
         </nav>
       </header>
@@ -30,26 +32,64 @@
       
     <main>
       <div class="parche">.</div>
-        <form id="form">
+        <!-- Formulario de contacto -->
+        <form id="form"  action="https://formspree.io/f/mnqwebag" method="POST">
 
-          <h2 class="textConocenos">Ayúdanos a mejorar  
+          <h3 class="textConocenos">Ayúdanos a mejorar  
             <img class="atencion" src="https://i.ibb.co/y0CCRY0/Atencion.png" alt="atencion">
-          </h2>
+          </h3>
           <div id="error" class="error"></div>
         
-          <input type="text" placeholder="Asunto" id="asunto">
-          <textarea placeholder="Mensaje" id="mensaje"></textarea>
-          <button class="btn btn-primary mx-auto" type="submit" id="enviar"> 
-            Enviar
-          </button>
+          <input type="text" placeholder="Asunto" id="asunto" name="message">
+          <textarea placeholder="Mensaje" id="mensaje" name="message"></textarea>
+          <div class="myButton" style="background-color: #E3AC97;">
+            <input class="btn btn-primary" type="submit" value="Enviar" id="enviar">
+          </div>
+          
 
         </form>
-        <div class="pregunta">¿Qué debo hacer si olvidé mi contraseña?
-          <p>No te preocupes, lo que debes hacer es  ir al apartado de inciar sesión y en la parte inferior 
-            <br>se muestra lo siguiente: <a href=" " style="background-color: #44BAA0">
-            ¿Olvidaste tu contraseña?<br>
-            </a> A continuación da click y te redireccionará a la página para restablecer tu contraseña.
-          </p>
+
+        <!-- Accordion de preguntas y dudas frecuentes -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+                Iniciar sesión
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> 
+                Para iniciar sesión requieres tener a la mano tu correo electrónico y contraseña, ingresa estos datos en el siguiente formulario: <a href="../html/inicioSesion.html" style="background-color: #FFFFFF;">
+                Inicio de sesión</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Registro
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Para registrarte en D'viaje necesitas ingresar algunos datos personales y de contacto, que deberás llenar en el siguiente apartado: <a href="../html/registro.html" style="background-color: #FFFFFF">
+                Crear cuenta</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Recuperar contraseña
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Para recuperar el acceso a tu cuenta es necesario introducir el correo electrónico o número de teléfono con el que te registraste, puedes hacerlo en la siguiente liga: <a href="../html/rContra.html" style="background-color: #FFFFFF;">
+                Recuperar contraseña</a>
+              </div>
+            </div>
+          </div>
         </div>
 
       <div class="parche">.</div>
