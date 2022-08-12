@@ -38,6 +38,7 @@ function validacion(correo, contra) {
         acceso = true;
         console.log("ACCESO CONCEDIDO");
         document.getElementById("mensaje").innerHTML = "¡Bienvenido " + listaUsuarios[u].first_name + " " + listaUsuarios[u].last_name + "!";
+        location.href = "prueba.html";
     }
 }
 return acceso;
@@ -58,6 +59,7 @@ function iniciarSesion(){
     console.log(acceso);
 
 }
+
 
 
 
