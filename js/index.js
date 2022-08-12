@@ -1,4 +1,6 @@
+
 console.log("Succes!!");
+fotosDefault();
 const estadosRep = ["Baja California","Baja California Sur","Coahuila","Chihuahua","Durango","Sinaloa",
 "Sonora","Zacatecas","Nuevo Leon","San Luis Potosi","Tamaulipas","Aguascalientes","Colima","Jalisco",
 "Michoacan","Nayarit","Campeche","Oaxaca","Puebla","Tabasco","Tlaxcala","CDMX","Guanajuato","Guerrero",
@@ -73,4 +75,16 @@ function llenarDatos(datosUsuarios){
         
         console.log("Fotos insertadas");
     
+ }
+
+
+ function fotosDefault(){
+    document.getElementById("imgcard1").src ="https://i.ibb.co/wgGQhGg/Basilica.jpg";
+    document.getElementById("TextoTarjeta1").innerHTML = "Basilica de Guadalupe";
+    document.getElementById("imgcard2").src ="https://www.travelreport.mx/wp-content/uploads/2019/08/las-islas-del-lago-de-patzcuaro-pescadores.jpg";
+    document.getElementById("TextoTarjeta2").innerHTML ="Lago de Pátzcuaro";
+    document.getElementById("imgcard3").src ="https://sinaloa.travel/images/pages/home/atractivos_turisticos.jpg";
+    document.getElementById("TextoTarjeta3").innerHTML ="Faro,Mazatlán";
+    document.getElementById("imgcard4").src ="https://noticiasenfasis.com.mx/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-9.44.24-AM.jpeg";
+    document.getElementById("TextoTarjeta4").innerHTML ="La Quebrada Acapulco";
  }
