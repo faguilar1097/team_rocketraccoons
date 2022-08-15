@@ -1,0 +1,250 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+    justify-content: center;
+	align-items: center;
+	font-family: 'Soleil', sans-serif;
+}
+
+
+body {
+	background: #fff;
+	font-family: 'Soleil', sans-serif;
+}
+
+
+.contenedor {
+	width: 90%;
+	max-width: 100px;
+	margin: 20px auto;
+}
+
+.contenedor article {
+	line-height: 28px;
+}
+
+.contenedor article h1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 50px 0;
+}
+
+.contenedor article p {
+	margin-bottom: 20px;
+}
+
+.contenedor article .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Soleil', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* POPUP */
+/* ------------------------- */
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	/*color: #BBBBBB;*/
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 40px;
+	margin-left: 400px;
+	margin-right: 400px;
+	font-family: 'Soleil', sans-serif;
+	padding: 30px;
+	width: 1100px;
+	height: 75vh;
+	text-align: left;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {	transform: scale(1.4); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo 1s ease 1s forwards; }
+.popup.active p { animation: entradaSubtitulo 5s ease .3 forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/*Contenedor dentro del boton de post*/
+
+.containernew{
+    position: relative;
+    width: 70%;
+    height: 98vh;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containernew .left{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containernew .left .imagen{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.containernew .left .imagen image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.containernew .right{
+    position: relative;
+    width: calc(100% - 60%);
+    height: 100%;
+    background: #fff;
+}
+.containernew .right .top{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logoBx .logo{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.logoBx .logo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.logoBx {
+    margin-left: 0px;
+    color: #E9633D;
+    cursor: pointer;
+}
+
+.pin{
+    width: 25px;
+    height: 25px;
+    background-color: #FFFFFF;
+}
+h3{
+    color: #E9633D;
+    text-shadow: 1px 1px 2px black;
+}
+p{
+    padding-left: 10px;
+    font-size: 18px;
+}
+/*parrafos de yucatan/cancun/ruta*/
+.parrafos{
+    display: flex;
+}
+.pf1{
+    margin-right: 0px;
+}
+.pf2{
+    margin-right: 0px;
+}
