@@ -35,151 +35,157 @@
             </nav>
         </header>
     </section>
-
-    <section id="login" class=" rounded-50 d-flex flex-column 
+    <main>
+        <!-- <section id="login" class=" rounded-50 d-flex flex-column 
                     align-items-center justify-content-center p-5 mx-auto">
         <div class="row d-flex justify-content-center align-items-center "
             style="background: #E3AC97; border-radius: 10px;">
             <h1 class="bg-white w-75 rounded-5 text-center m-4">Crea una cuenta nueva
                 <span class="iconAvion iconify" data-icon="ic:round-airplane-ticket" style="color: #E9633D;"></span>
-            </h1>
+            </h1> -->
+        <!--Formulario-->
+        <section class="section"style="background-color:#E3AC97">
+            <br>
+            <h1> Crea una nueva cuenta</h1>
+        <form action="" class="formulario" id="formulario">
+            <!--Nombre-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                    <!-- <i class="fas fa-check-circle formulario__validacion-estado"></i> -->
+                </div>
+                <p class="formulario__input-error">El nombre tiene que ser 4 a 16 caracteres y solo puede contener letras.  
+                </p>
+            </div>
+            <!--/ Finalización Nombre-->
+            <!--apellido-->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">El apellido tiene que ser 4 a 16 dígitos y solo puede contener letras
+                </p>
+            </div>
+            <!--/ Finalización apellido-->
 
-            <form action="" class="formulario" id="formulario">
-                <div class="row p-1">
-                    <div class="col-md-6 my-1">
-                        <!--Nombre-->
-                        <div class="formulario__grupo" id="grupo__nombre">
-                            <label for="nombre" class="formulario__label">Nombre</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text"
-                                    class="formulario__input"
-                                    name="nombre" id="nombre" placeholder="Nombre">
-                                <i class="fas fa-times-circle formulario__validacion-estado"></i>
-                                <i class="fas fa-check-circle formulario__validacion-estado"></i>
-                                <p class="formulario__input-error">El nombre tiene que ser 4 a 16 dígitos y solo puede
-                                    contener letras</p>
-                            </div>
-                        </div>
-                        <!--/ Finalización Nombre-->
-                    </div>
-                    <div class="col-md-6  my-1">
-                        <!--apellido-->
-                        <div class="formulario__grupo" id="grupo__apellido">
-                            <label for="apellido" class="formulario__label">Apellido</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text"
-                                    class="formulario__input"
-                                    name="apellido" id="apellido" placeholder="Apellido">
-                                <i class="fas fa-times-circle formulario__validacion-estado"></i>
-                                <p class="formulario__input-error">El apellido tiene que ser 4 a 16 dígitos y solo puede contener letras</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ Finalización apellido-->
-                    <div class="col-md-6  my-1">
-                        <label for="password" class="formulario__label">Selecciona tú estado</label>
-                        <select id="inputState"
-                            class="formulario__input" id="estado"
-                            name="estado" required>
-                            <option selected>Estado</option>
-                            <option value="Aguascalientes">Aguascalientes</option>
-                            <option value="Baja California">Baja California</option>
-                            <option value="Baja California Sur">Baja California Sur</option>
-                            <option value="Campeche">Campeche</option>
-                            <option value="Chiapas">Chiapas</option>
-                            <option value="Chihuahua">Chihuahua</option>
-                            <option value="CDMX">Ciudad de México</option>
-                            <option value="Coahuila">Coahuila</option>
-                            <option value="Colima">Colima</option>
-                            <option value="Durango">Durango</option>
-                            <option value="Estado de México">Estado de México</option>
-                            <option value="Guanajuato">Guanajuato</option>
-                            <option value="Guerrero">Guerrero</option>
-                            <option value="Hidalgo">Hidalgo</option>
-                            <option value="Jalisco">Jalisco</option>
-                            <option value="Michoacán">Michoacán</option>
-                            <option value="Morelos">Morelos</option>
-                            <option value="Nayarit">Nayarit</option>
-                            <option value="Nuevo León">Nuevo León</option>
-                            <option value="Oaxaca">Oaxaca</option>
-                            <option value="Puebla">Puebla</option>
-                            <option value="Querétaro">Querétaro</option>
-                            <option value="Quintana Roo">Quintana Roo</option>
-                            <option value="San Luis Potosí">San Luis Potosí</option>
-                            <option value="Sinaloa">Sinaloa</option>
-                            <option value="Sonora">Sonora</option>
-                            <option value="Tabasco">Tabasco</option>
-                            <option value="Tamaulipas">Tamaulipas</option>
-                            <option value="Tlaxcala">Tlaxcala</option>
-                            <option value="Veracruz">Veracruz</option>
-                            <option value="Yucatán">Yucatán</option>
-                            <option value="Zacatecas">Zacatecas</option>
-                            </option>
-                        </select>
-                    </div>
-                    <div class="col-md-6  my-1">
-                        <!--interes-->
-                        <!-- <input type="text" class="form-control form-control-sl text-center rounded-pill" placeholder="#Intereses" aria-label="Intereses" id="intereses" name="intereses" required> -->
-                        <div class="formulario__grupo" id="grupo__intereses">
-                            <label for="intereses" class="formulario__label">Intereses</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text"
-                                    class="formulario__input"
-                                    name="intereses" id="intereses" placeholder="#Intereses">
-                                <i class="fas fa-times-circle formulario__validacion-estado"></i>
-                                <p class="formulario__input-error">Tiene que ser de 4 a 16 letras</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/ Finalización interes-->
+            <div class="formulario__grupo" id="grupo__estado">
+                <label for="estado" class="formulario__label">Selecciona tú estado</label>
+                <div class="formulario__grupo-input">
+                    <select id="inputState" class="formulario__input" id="estado" name="estado" required>
+                        <option selected>Estado</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="CDMX">Ciudad de México</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Estado de México">Estado de México</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                        </option>
+                    </select>
+
                 </div>
-                <div class="col-md-12  my-1">
-                    <!--correo-->
-                    <div class="formulario__grupo" id="grupo__correo">
-                        <label for="correo" class="formulario__label">Correo Electrónico</label>
-                        <div class="formulario__grupo-input">
-                            <input type="email"
-                                class="formulario__input"
-                                name="correo" id="correo" placeholder="Correo@correo.com">
-                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
-                            <p class="formulario__input-error">El correo no es adecuado</p>
-                        </div>
-                    </div>
+            </div>
+            <!--interes-->
+            <div class="formulario__grupo" id="grupo__intereses">
+                <label for="intereses" class="formulario__label">Intereses</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="intereses" id="intereses"
+                        placeholder="#Intereses">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <!--/Finalización correo-->
-                <div class="col-md-12 my-1">
-                    <!--password-->
-                    <div class="formulario__grupo" id="grupo__password">
-                        <label for="password" class="formulario__label">Contraseña</label>
-                        <div class="formulario__grupo-input">
-                            <input type="password"
-                                class="formulario__input"
-                                name="password" id="password" placeholder="Contraseña">
-                            <i class="fas fa-times-circle formulario__validacion-estado"></i>
-                            <p class="formulario__input-error">La contraseña solo puede contener letras, números.</p>
-                        </div>
-                    </div>
+                <p class="formulario__input-error">Tiene que ser de 4 a 16 letras</p>
+            </div>
+            <!--/ Finalización interes-->
+            <!--correo-->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="Correo@correo.com">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <!--/Finalización password-->
-                <div class="col-md-12 text-center  my-3">
-                    <!--Botones-->
-                    <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <button type="submit" class="formulario__btn ">Registrate</button>
-                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
-                    </div>
-                    <!--mensaje error-->
-                    <div class="formulario__mensaje" id="formulario__mensaje">
-                        <i class="fas fa-exclamation-triangle formulario__validacion-estado"></i>
-                        <p><b>Error:</b> Por favor rellena el formulario correctamente</p>
-                    </div>
+                <p class="formulario__input-error">El correo no es adecuado</p>
+            </div>
+            <!--/Finalización correo-->
+            <!--password-->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password"
+                        placeholder="Contraseña">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-            </form>
-        </div>
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos</p>
+            </div>
+            <!--contraseña dos-->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Repetir contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2"
+                        placeholder="Contraseña">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error"> La contraseña no coincide</p>
+            </div> 
+             <!--/Finalización password-->
+            <!--Telefono-->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="66911223456">
+                    <i class="fas fa-times-circle formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error"> El teléfono solo puede contener números</p>
+            </div>
+            <!--Finalización de Telefono-->       
+            <!--mensaje error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
+                    </i><b>Error:</b> Por favor rellena el formulario correctamente</p>
+            </div>
+            <!--Botones-->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn ">Registrate</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
+            </div>
+        </form>
+    </section>
         <div class="col-md-12 text-center">
             <a href="../html/contactanos.html"><button type="button" class="btnCont btn btn-lg my-3 text-white fw-bold"
                     style="background-color: #DA0000;">Contactanos <span class="icon iconify iconifyContactanos"
                         data-icon="bi:signpost-split-fill" style="color: white; "></span></button></a>
         </div>
+    </main>
     </section>
     <footer class="text-center">
         Developed by: Rocket Raccoons © 2022.
