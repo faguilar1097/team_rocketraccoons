@@ -63,17 +63,17 @@
 
       <div class="container w-75 mt-4 rounded shadow" id="contenedor">
        <div class="row align-items-stretch">
-           <div class="col imagenIzq d-none d-lg-block col-md-6 col-lg-6 col-xl-7 rounded m-0 p-0" style="background-position:center center;">
+           <div class="col imagenIzq d-none d-lg-block col-md-6 col-lg-6 col-xl-7 rounded m-0 p-0 h-auto" style="background-position:center center;">
                <!-- Aqui debo colocar el carrousel -->
 
-               <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+               <div id="carouselExampleDark" class="carousel carousel-dark slide h-auto" data-bs-ride="carousel">
                 <div class="carousel-indicators transparente">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="70000">
+                  <div class="carousel-item active" data-bs-interval="7000">
                     <img src="https://d3tf9yuhsp2bpn.cloudfront.net/images/2020/08/29/20200829-1598670367-Paseo-al-Mercado-de-Tlacolula-tu-experiencia.jpg" class="d-block carrusel" alt="tlacolula">
                     <div class="carousel-caption d-none d-md-block" style="background-color: transparent;">
                       <!-- <h5 class="transparente">First slide label</h5>
@@ -87,7 +87,7 @@
                       <p class="transparente">Some representative placeholder content for the second slide.</p> -->
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="5000">
                     <img src="https://heraldodemexico.com.mx/u/fotografias/m/2021/3/24/f925x521-343400_412264_5050.jpg" class="d-block carrusel" alt="Yerbabuena">
                     <div class="carousel-caption d-none d-md-block bg-transparent">
                       <!-- <h5 class="transparente">Third slide label</h5>
@@ -95,14 +95,6 @@
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
 
            </div>
@@ -115,15 +107,42 @@
 
                <h2 id="mensaje">  </h2>
                <!-- FORMULARIO -->
-               <form class="my-5 forma needs-validation" novalidate action="#">
-                   <div class="mx-2 forma2 position-relative">
+               <form class="my-5 forma formulario" id="formulario">
+                  <!--Correo-->
+            <div class="formulario__grupo" id="grupo__correo">
+              
+              <div class="formulario__grupo-input mx-2 forma2">
+                  <input type="text" class="formulario__input" name="correo" id="correo" placeholder="email">
+                  <i class="fas fa-times-circle formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error">El correo solo puede contener letras, números, puntos y guiones.  
+              </p>
+          </div>
+          <!--/ Finalización Correo-->
+            <!--Contraseña-->
+            <div class="formulario__grupo" id="grupo__password">
+              
+              <div class="formulario__grupo-input mx-2 forma2">
+                  <input type="password" class="formulario__input" name="password" id="password" placeholder="contraseña">
+                  <i class="fas fa-times-circle formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 caracteres  
+              </p>
+          </div>
+          <!--/ Finalización Contraseña-->
+                   <!-- <div class="mx-2 forma2 position-relative">
                        <input type="text" id="usuario"class=" form-control text-center " name="usuario" placeholder="Usuario" required>
                        <div class="invalid-tooltip">Ingrese su correo</div>
                    </div>
                    <div class=" mx-2 forma2 position-relative">
                        <input type="password" id="password" class="form-control text-center" name="password" placeholder="Contraseña" required>
                        <div class="invalid-tooltip">Ingrese su contraseña</div>
-                   </div>
+                   </div> -->
+                   <!--mensaje error-->
+            <div class="formulario__mensaje my-4" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
+                  </i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+          </div>
                   
                    <div class="text-center forma">
 
@@ -133,6 +152,12 @@
                        <span ><a style="color: white;" href=""><i class="forma text-decoration-none">¿Olvidaste tu contraseña?</i></a></span>
 
                    </div>
+
+                           <!--mensaje error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
+                  </i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+          </div>
                </form>
            </div>
    
@@ -151,27 +176,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-    </script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   </body>
 </html>
