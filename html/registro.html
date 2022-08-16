@@ -36,19 +36,13 @@
         </header>
     </section>
     <main>
-        <!-- <section id="login" class=" rounded-50 d-flex flex-column 
-                    align-items-center justify-content-center p-5 mx-auto">
-        <div class="row d-flex justify-content-center align-items-center "
-            style="background: #E3AC97; border-radius: 10px;">
-            
-            </h1> -->
         <!--Formulario-->
         <section class="section"style="background-color:#E3AC97">
             <br>
             <div id="login">
                 <div class="col-12 d-flex text-center">
                     <h1 class="bg-white w-75 text-center m-4 rounded-5"> 
-                       Crea una nueva cuenta <span class="iconAvion iconify"
+                       Crear tu cuenta de D´Viaje <span class="iconAvion iconify"
                         data-icon="ic:round-airplane-ticket" style="color: #E9633D;"></span>
                        </h1>
                 </div>
@@ -60,7 +54,6 @@
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
-                    <!-- <i class="fas fa-check-circle formulario__validacion-estado"></i> -->
                 </div>
                 <p class="formulario__input-error">El nombre tiene que ser 4 a 16 caracteres y solo puede contener letras.  
                 </p>
@@ -73,13 +66,13 @@
                     <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <p class="formulario__input-error">El apellido tiene que ser 4 a 16 dígitos y solo puede contener letras
+                <p class="formulario__input-error">El apellido tiene que ser 4 a 16 caracteres y solo puede contener letras.
                 </p>
             </div>
             <!--/ Finalización apellido-->
 
             <div class="formulario__grupo" id="grupo__estado">
-                <label for="estado" class="formulario__label">Selecciona tú estado</label>
+                <label for="estado" class="formulario__label">Selecciona tu estado</label>
                 <div class="formulario__grupo-input">
                     <select id="inputState" class="formulario__input" id="estado" name="estado" required>
                         <option selected>Estado</option>
@@ -128,7 +121,7 @@
                         placeholder="#Intereses">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <p class="formulario__input-error">Tiene que ser de 4 a 16 letras</p>
+                <p class="formulario__input-error">Los intereses tiene que ser de 4 a 16 caracteres</p>
             </div>
             <!--/ Finalización interes-->
             <!--correo-->
@@ -139,7 +132,7 @@
                         placeholder="Correo@correo.com">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <p class="formulario__input-error">El correo no es adecuado</p>
+                <p class="formulario__input-error">El correo solo puede contener, letras, números, puntos y guiones.  </p>
             </div>
             <!--/Finalización correo-->
             <!--password-->
@@ -150,17 +143,17 @@
                         placeholder="Contraseña">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos</p>
+                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 caracteres</p>
             </div>
             <!--contraseña dos-->
             <div class="formulario__grupo" id="grupo__password2">
                 <label for="password2" class="formulario__label">Repetir contraseña</label>
                 <div class="formulario__grupo-input">
                     <input type="password" class="formulario__input" name="password2" id="password2"
-                        placeholder="Contraseña">
+                        placeholder="Repetir contraseña">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <p class="formulario__input-error"> La contraseña no coincide</p>
+                <p class="formulario__input-error"> La contraseña no coincide.</p>
             </div> 
              <!--/Finalización password-->
             <!--Telefono-->
@@ -171,18 +164,18 @@
                         placeholder="66911223456">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
-                <p class="formulario__input-error"> El teléfono solo puede contener números</p>
+                <p class="formulario__input-error"> El teléfono solo puede contener números y el máximo son 14 caracteres.</p>
             </div>
             <!--Finalización de Telefono-->       
             <!--mensaje error-->
             <div class="formulario__mensaje" id="formulario__mensaje">
                 <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
-                    </i><b>Error:</b> Por favor rellena el formulario correctamente</p>
+                    </i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
             </div>
             <!--Botones-->
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="formulario__btn ">Registrate</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente.</p>
             </div>
         </form>
     </section>
