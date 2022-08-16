@@ -13,7 +13,12 @@ body {
   background-color: #d8d8d8;
   font-family: "Soleil", sans-serif;
 }
-
+main{
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
 h1{
     font-size: 35px;
 }
@@ -58,9 +63,12 @@ h1{
 
 /* Margarita */
 .section{
-margin:20px 20px 20px 20px;
+margin:50px 20px 20px 20px;
 border-radius: 1.5rem;
 text-align: center;
+}
+#login{
+  margin: 0 0 0 100px;
 }
 .formulario{
   display:grid;
@@ -233,4 +241,5 @@ Estilos para validacion
     height: 25px;
     font-size: 15px;
   }
+  
 }
