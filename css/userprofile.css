@@ -240,9 +240,7 @@ background-color: white;
 }
 
 #img_secundaria{
-  /* position: relative;
-  margin-top: -40px; */
-z-index: 1; /* gray box will be above both green and black box */
+z-index: 1;
 background: lightgray;
 height: 10em;  
 width: 10em;
