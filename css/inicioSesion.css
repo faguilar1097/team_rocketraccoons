@@ -67,7 +67,7 @@
     background-color: transparent;
 }
 .carrusel{
-    height: 30em;
+    height:35em;
 }
 
 /* Pertenece a la plantilla Header y Footer */
@@ -132,7 +132,7 @@
   }
   .forma2{
     border-radius: 35px;
-    margin-bottom: 2.2em;
+    margin-bottom: 1.1em;
 }
 }
 
@@ -156,7 +156,7 @@
 
 @media (max-width: 450px) {
   html {
-    font-size: 0.8125em;
+    font-size: 0.9125em;
   }
   .avion{
     height: 2em;
