@@ -50,7 +50,7 @@
               id="boton"
               width="100px"
             >
-              <a href="../html/pagError.html" class="text-muted text-decoration-none"><strong style="background-color: white" >Salir</strong></a>
+              <a href="../html/pagError.html" class="text-muted text-decoration-none"><strong style="background-color: white; color:#E9633D" >Salir</strong></a>
             </button>
             </form>
           </div>
@@ -109,24 +109,24 @@
                <!-- FORMULARIO -->
                <form class="my-5 forma formulario" id="formulario">
                   <!--Correo-->
-            <div class="formulario__grupo" id="grupo__correo">
+            <div class="formulario__grupo" id="grupo__correo" style="background-color: transparent;">
               
               <div class="formulario__grupo-input mx-2 forma2">
-                  <input type="text" class="formulario__input" name="correo" id="correo" placeholder="email">
+                  <input type="text" class="formulario__input" name="correo" id="correo" placeholder="Email">
                   <i class="fas fa-times-circle formulario__validacion-estado"></i>
               </div>
-              <p class="formulario__input-error">El correo solo puede contener letras, números, puntos y guiones.  
+              <p class="formulario__input-error mb-2">El correo solo puede contener letras, números, puntos y guiones.  
               </p>
           </div>
           <!--/ Finalización Correo-->
             <!--Contraseña-->
-            <div class="formulario__grupo" id="grupo__password">
+            <div class="formulario__grupo" id="grupo__password" style="background-color: transparent;">
               
               <div class="formulario__grupo-input mx-2 forma2">
-                  <input type="password" class="formulario__input" name="password" id="password" placeholder="contraseña">
+                  <input type="password" class="formulario__input" name="password" id="password" placeholder="Contraseña">
                   <i class="fas fa-times-circle formulario__validacion-estado"></i>
               </div>
-              <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 caracteres  
+              <p class="formulario__input-error mb-2">La contraseña tiene que ser de 4 a 12 caracteres  
               </p>
           </div>
           <!--/ Finalización Contraseña-->
@@ -141,7 +141,7 @@
                    <!--mensaje error-->
             <div class="formulario__mensaje my-4" id="formulario__mensaje">
               <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
-                  </i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                  </i><b>Llene los datos correctamente</b></p>
           </div>
                   
                    <div class="text-center forma">
@@ -154,10 +154,15 @@
                    </div>
 
                            <!--mensaje error-->
-            <div class="formulario__mensaje" id="formulario__mensaje">
-              <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
+            <div class="formulario__mensaje" id="formulario__mensaje" >
+              <p><i class="fas fa-exclamation-triangle formulario__validacion-estado" >
                   </i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
           </div>
+
+          <div class="formulario__mensaje1" id="formulario__mensaje1" >
+            <p><i class="fas fa-exclamation-triangle formulario__validacion-estado" >
+                </i><b>No existe un usuario con esos datos</p>
+        </div>
                </form>
            </div>
    
