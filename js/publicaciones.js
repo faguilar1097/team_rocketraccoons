@@ -30,3 +30,12 @@ function guardar_localstorage(){
 
      localStorage.setItem("nombre", JSON.stringify(viaje));
 }
+  
+const imagePreview = document.getElementById("img-preview");
+const imageUploader = document.getElementById("img-uploader");
+
+//como capturar cuando el usuario da clic y se abra la ventana
+imageUploader.addEventListener('change', (e)=>{
+    console.log(e)
+   const file= e.target.files[0];
+}); 
