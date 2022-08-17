@@ -242,7 +242,7 @@
     
     .formulario__mensaje{
       /* height: 45px; */
-      line-height: 45px;
+      /* line-height: 45px; */
       background-color: #e9636d;
       padding: 0 15px;
       border-radius: 10px;
@@ -254,6 +254,20 @@
     .formulario__mensaje p {
       margin: 0;
     }
+    .formulario__mensaje1{
+        text-align: center;
+        background-color: #e9636d;
+        padding: 0 15px;
+        border-radius: 10px;
+        display: none;
+      }
+      .formulario__mensaje1-activo {
+        display: block;
+      }
+      .formulario__mensaje1 p {
+        margin: 0;
+      }
+
     .formulario__grupo-btn-enviar{
       display: flex;
       flex-direction: column;
