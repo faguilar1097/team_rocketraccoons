@@ -1,275 +1,233 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Perfil de Usuario</title>
-    <!--Links-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/userprofile.css">
+    <title>Perfil de Usuario</title>
+  </head>
+  <body>
 
-    <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/userprofile.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <!--Encabezado-Navbar-->
-</head>
-
-<body>
-    <!--NAVBAR-->
-    <!-- <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #4BCEEB">
-        <div class="container-fluid" style="background-color: #4BCEEB">
-            <a class="navbar-brand" href="#" style="background-color: #4BCEEB">
-                <img id="img" src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png" id="img"class="w-75"alt="Logo de DViaje">
-            </a>
-            <button style="background-color: #4BCEEB" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon" style="background-color: #4BCEEB"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #4BCEEB">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link"
-                            style="background-color: #4BCEEB" href="#"><span class="iconify" class="col-sm-"
-                                data-icon="uiw:global"></span></a></li>
-                    <li class="iconos" ><a class="nav-link"
-                            style="background-color: #4BCEEB" href="#"><span class="iconify" data-icon="entypo:map"
-                                class="col-sm-6" ></span></a></li>
-                    <li class="iconos"><a class="nav-link"
-                          href="#" id="botton" class="col-sm-6"
-                           >Salir</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-<header class="fondo" style="background-color: #4BCEEB ;">
-<nav class="navbar navbar-expand-md fondo" style="background-color: #4BCEEB ;">
-    <div class="container-fluid fondo" style="background-color: #4BCEEB ;">
-        <a class="navbar-brand fondo" href="#" style="background-color: #4BCEEB ;">
-          <img
-            class="img-fluid fondo"
-            src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png"
-            alt="logo D'Viaje"
-            width="220px"
-            style="background-color: #4BCEEB ;"
-          />
-        </a>
-
-       
-         
-        <div
-          class="collapse navbar-collapse fondo"
-          id="navbarSupportedContent"
-          style="background-color: #4BCEEB ;"
-          
-        >
-          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link active fondo" aria-current="page" href="../index.html" style="background-color: #4BCEEB ;">
-                <span
-                  class="iconify"
-                  data-icon="uiw:global"
-                  style="color: white; background-color: #4bceeb"
-                ></span
-              ></a>
-            </li>
-          </ul>
-          <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-              <a href="../html/feed.html"> <span class="fondo iconify" data-icon="entypo:map" style="color: white;"></span>   </a>       
-              
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-</header>
-   
-    
-
-        
-    
-    
-    
-    <!--Imagen de perfil usuario-->
-    <!-- <div>
-  <img style="height: 208px; width: 200px;" class="mb-10" id="img_secundaria" class="img-thumbnail"
-        src="https://i.ibb.co/5W4YhRm/margarita.png"
-        alt="Imagen de perfil seleccionada por el usuario">
-    </div> -->
+    <header class="fondo">
+        <nav class="navbar navbar-expand-md fondo" >
+          <div class="container-fluid fondo">
+             
+                  <a class="navbar-brand fondo" href="#">
+                    <img
+                    class="img-fluid fondo"
+                    src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png" 
+                    alt="logo D'Viaje"
+                    width="150vw">
+                  </a>
   
-    <!--Cuadro principal de intereses-->
-    <!--columnas de imagenes GRID-->
-    <main>
-
-        <div class="container my-4" id="Presentate">
-            <div class="container fondo-imagen1">
-            </div>
-                <div class="row py-3 Cuadro_Interes_Principal">
-                    <div class="col-3 " style="background-color: transparent;">
-                        Margarita Flores<br>Mazatlán, Sinaloa<br> Local Traveler <br> 
-                    </div>
-                    <div class="col-3 " style="background-color: transparent;">
-                        Intereses</b><br> #Playa #Comida <br>
-                        #Paisaje #Ciclismo <br> #Friends
-                    </div>
-                    <div class="col-4 " style="text-align: center; background-color: transparent;">
-                       Lugares visitados<br> 
-                       
-                        <ul style=" text-align:center; background-color: white ;"> 
-                            <li style=" text-align:center; background-color: white ;">Cancún</li>
-                            <li style=" text-align:center; background-color: white ;">Cabo San Lucas</li>
-                            <li style=" text-align:center; background-color: white ;">Guadalajara</li>
-                            <li style=" text-align:center; background-color: white ;">Puebla</li>
-                        </ul>
-
-                    </div>
-                    <div class="col-2 " style="background-color: transparent;">
-                        Seg. <br> 4K
-                    </div>
-                </div>
-            
-
-        </div>
-
-        <div class="container">
-            <div class="row">
+              
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fondo" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item ">
+                  <a class="nav-link active fondo" aria-current="page" href="../index.html"> <span
+                      class="iconify"
+                      data-icon="uiw:global"
+                      style="color: white; background-color: #4bceeb"  
+                    ></span></a>
+                </li>
                 
-                <div class="col-sm-4 my-4">
-                    <!--Columna de Perfiles de Amigos-->
-                    <div id="Cuadro_Amigos" class="">
-                        <!-- Encabezado -->
-                        <h1 style="background-color: white; color:#E9636D" class="Wish my-2">Amigos</h1>
-<!-- Fila contenedor de las dos filas de amigos -->
-                        <div class="my-4 " style="background-color: white">
-                            <!-- Amigos Fila de arriba -->
-                                <div class="row mx-0 ps-0 my-3" style="background-color: white">
-                                    <div class="col-3 "id="" style="background-color: white">
-                                            <img class=" friends mx-auto d-block" id="" src="https://i.ibb.co/gRWz9pH/francisco.jpg" alt="">
-                                    </div>
-                                    <div class="col-3" id="" style="background-color: white ;" >
-                                        <img class=" friends mx-auto d-block"id="friends"src="https://i.ibb.co/54kC5dY/jorge.jpg"  alt="">
-                                    </div>
-                                    <div class="col-3" id="" style="background-color: white ;">
-                                        <img class ="friends mx-auto d-block"id="friends"src="https://i.ibb.co/Dt8sxh0/rafa.png" alt="">
-                                    </div>
-                                    <div class="col-3"id="" style="background-color: transparent ;">
-                                        <img class=" friends mx-auto d-block"id="friends" src="https://i.ibb.co/6mjmGqz/beyra.png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Amigos fila de abajo -->
-                                <div class="row mx-0 ps-0 my-3 " style="background-color: white">
-                                    <div class="col-3" style="background-color: white ;">
-                                        <img class="friends mx-auto d-block" src="https://i.ibb.co/wCjTfdD/max.jpg" alt="">
-                                    </div>
-                                    <div class="col-3" style="background-color: white ;">
-                                     <img class="friends mx-auto d-block"src="https://i.ibb.co/LPmCLm4/lupita.jpg" alt="">
-                                    </div>
-                                    <div class="col-3" style="background-color: white ;">
-                                        <img class="friends mx-auto d-block" src="https://i.ibb.co/YhM1w9B/juancarlos.jpg" alt="">
-                                    </div>
-                                    <div class="col-3" style="background-color: transparent ;">
-                                        <img class="mx-auto d-block friends"id="friends"src="https://i.ibb.co/5W4YhRm/margarita.png" alt="">
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    <!--Columna de Wish-->
-                    <div id="friendsto1" class="my-3" style="background-color: white">
-                        <h1 style="background-color: white; color:#E9636D" class="Wish mt-2">Wishlist</h1>
-                        <div class=" my-4" style="background-color: white">
-                            <!-- Fila de arriba wishlist -->
-                            <div class="row mx-0 ps-0 my-3" style="background-color: white;">
-                                <div class="col-6" style="background-color: white" >
-                                    <img src="https://www.eternal-expat.com/wp-content/uploads/2022/03/Oaxaca-beaches-9-720x540.jpg.webp"
-                                        alt="Lugar de anelo por visitar" id="Place1" class="fotosW mx-auto d-block" />
-                                </div>
-                                <div style="background-color: transparent" class="col-6">
-                                    <img src="https://i0.wp.com/blog.vivaaerobus.com/wp-content/uploads/2019/11/Playas-en-Merida.jpg?fit=1024%2C576&ssl=1"
-                                        alt="Lugar de anelo por visitar" id="Place2" class="fotosW mx-auto d-block" />
-                                </div>
+              </ul>
+              <form class="text-center fondo" role="salir">
+              
+                <button
+                type="button"
+                class=" btn rounded-pill boton"
+                id="boton"
+                width="100px"
+              >
+                <a href="../html/pagError.html" class="text-muted text-decoration-none"><strong style="background-color: white" >Salir</strong></a>
+              </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+   
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-sm-12">
+                <div  class="container-lg fondo-imagen1">  
+                </div>
+<div class="container-lg" style="position: relative; margin-top:-5em; background-color: transparent;">
+    <div style="background-color: transparent" class="">
+        <img style="background-color: white;" class="img-thumbnail mx-auto d-block" id="img_secundaria"
+        src=""
+        alt="Imagen de perfil seleccionada por el usuario">
+    </div>
+</div>
+
+                <div class="container my-4" id="Presentate">
+                    
+                        <div class="row py-3 Cuadro_Interes_Principal">
+                            <div class="col-3 " style="background-color: transparent;" id="nombre">
+                                Margarita Flores<br>Mazatlán, Sinaloa<br> Local Traveler <br> 
                             </div>
-                            <!-- Fila de abajo wishlist -->
-                                <div class="row mx-0 ps-0 my-3" style="background-color:transparent;">
-                                    <div style="background-color: white" class="col-6">
-                                       
-                                        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2019/11/termas-san-joaquin-aguas-termales-coahuila-1200.jpg"
-                                            alt="Lugar de anelo por visitar" id="Place1" class="fotosW mx-auto d-block" />
-                                    </div>
-                                    <div style="background-color: white" class="col-6">
-                                        <img src="https://digitalnomads.world/wp-content/uploads/2021/12/puerto-escondido-digital-nomads.jpg"
-                                            alt="Lugar de anelo por visitar" id="Place2" class="fotosW mx-auto d-block" />
-                                    </div>
-                                </div>
+                            <div class="col-4 " style="background-color: transparent;">
+                                Intereses</b><br> #Playa #Comida <br>
+                                #Paisaje #Ciclismo <br> #Friends
+                            </div>
+                            <div class="col-5 " style="text-align: center; background-color: transparent;">
+                               Lugares visitados<br> 
+                               
+                                <ul style=" text-align:center; background-color: white ;"> 
+                                    <li style=" text-align:center; background-color: white ;">Cancún</li>
+                                    <li style=" text-align:center; background-color: white ;">Cabo San Lucas</li>
+                                    <li style=" text-align:center; background-color: white ;">Guadalajara</li>
+                                    <li style=" text-align:center; background-color: white ;">Puebla</li>
+                                </ul>
+        
+                            </div>
                             
                         </div>
-                    </div>
+                    
+        
                 </div>
-                    <!--collage-->
-                    <div class="col-sm-8 my-4 text-center" id="collage">
-                        <div class="row mx-2" style="background-color:white">
-                            <div class="col-3  my-2" id="iconos_collage">
-                                <a href="../html/publicaciones.html"> <span class="iconify w-25" data-icon="bi:plus-square" id="iconos_collage"></span></a>
-                            </div>
-                            <div class="col-3  my-2" id="iconos_collage">
-                                <span class="iconify w-25" data-icon="icon-park-outline:picture-one"
-                                    id="iconos_collage"></span>
-                            </div>
-                            <div class="col-3  my-2" id="iconos_collage">
-                                <span class="iconify w-25" data-icon="ep:map-location" id="iconos_collage"></span>
-                            </div>
-                            <div class="col-3  my-2 " id="iconos_collage">
-                                <span class="iconify w-25" data-icon="bi:layout-text-window-reverse"
-                                    id="iconos_collage"></span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row my-lg-3 ms-lg-5">
-                            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="background-color: white;">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                                    class="w-75 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
-                                    id="first_image" />
-
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                                    class="w-75 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"
-                                    id="second_image" />
-                            </div>
-
-                            <div class="col-lg-4 mb-4 mb-lg-0" style="background-color: white;">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                                    class="w-75 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"
-                                    id="third_image" />
-
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                                    class="w-75 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
-                                    id="four_image" />
-                            </div>
-
-                            <div class="col-lg-4 mb-4 mb-lg-0" style="background-color: white;">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                                    class="w-75 shadow-1-strong rounded mb-4" alt="Waves at Sea" id="five_image" />
-
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                                    class="w-75 shadow-1-strong rounded mb-4" alt="Yosemite National Park"
-                                    id="six_image" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
+            <div class="col-sm-4 border">
+                <div class="sticky-top">
 
-    </main>
-</body>
-<!--Scriptsß-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-<script src="../js/userProfile.js"></script>
+                    <!--Columna de Perfiles de Amigos-->
+                    <div id="Cuadro_Amigos" class=" mt-2">
+                       <!-- Encabezado -->
+                       <h1 style="text-align: center;background-color: transparent; color:#E9636D" class="Wish my-2">Amigos</h1>
+   <!-- Fila contenedor de las dos filas de amigos -->
+                       <div class="my-4 " style="background-color: white">
+                           <!-- Amigos Fila de arriba -->
+                               <div class="row mx-0 ps-0 my-3" style="background-color: white">
+                                   <div class="col-3 "id="" style="background-color: white">
+                                           <img class=" friends mx-auto d-block" id="amigo1" src="https://i.ibb.co/gRWz9pH/francisco.jpg" alt="">
+                                   </div>
+                                   <div class="col-3" id="" style="background-color: white ;" >
+                                       <img class=" friends mx-auto d-block" id="amigo2"src=""  alt="">
+                                   </div>
+                                   <div class="col-3" id="" style="background-color: white ;">
+                                       <img class ="friends mx-auto d-block" id="amigo3" src="" alt="">
+                                   </div>
+                                   <div class="col-3"id="" style="background-color: transparent ;">
+                                       <img class=" friends mx-auto d-block" id="amigo4" src="" alt="">
+                                   </div>
+                               </div>
+                               <!-- Amigos fila de abajo -->
+                               <div class="row mx-0 ps-0 my-3 " style="background-color: white">
+                                   <div class="col-3" style="background-color: white ;">
+                                       <img class="friends mx-auto d-block" id="amigo5" src="" alt="">
+                                   </div>
+                                   <div class="col-3" style="background-color: white ;">
+                                    <img class="friends mx-auto d-block" id="amigo6" src="" alt="">
+                                   </div>
+                                   <div class="col-3" style="background-color: white ;">
+                                       <img class="friends mx-auto d-block" id="amigo7" src="" alt="">
+                                   </div>
+                                   <div class="col-3" style="background-color: transparent ;">
+                                       <img class="mx-auto d-block friends" id="amigo8" src="" alt="">
+                                   </div>
+                               </div>
+                       </div>
+                   </div>
+                   <!--Columna de Wish-->
+                   <div id="friendsto1" class="my-3" style="background-color: white">
+                       <h1 style=" text-align: center; background-color: transparent; color:#E9636D" class="Wish mt-2">Wishlist</h1>
+                       <div class=" my-4" style="background-color: white">
+                           <!-- Fila de arriba wishlist -->
+                           <div class="row mx-0 ps-0 my-3" style="background-color: white;">
+                               <div class="col-6" style="background-color: white" >
+                                   <img src=""
+                                       alt="Lugar de anelo por visitar" id="Place1" class="fotosW mx-auto d-block" />
+                               </div>
+                               <div style="background-color: transparent" class="col-6">
+                                   <img src=""
+                                       alt="Lugar de anelo por visitar" id="Place2" class="fotosW mx-auto d-block" />
+                               </div>
+                           </div>
+                           <!-- Fila de abajo wishlist -->
+                               <div class="row mx-0 ps-0 my-3" style="background-color:transparent;">
+                                   <div style="background-color: white" class="col-6">
+                                      
+                                       <img src=""
+                                           alt="Lugar de anelo por visitar" id="Place3" class="fotosW mx-auto d-block" />
+                                   </div>
+                                   <div style="background-color: white" class="col-6">
+                                       <img src=""
+                                           alt="Lugar de anelo por visitar" id="Place4" class="fotosW mx-auto d-block" />
+                                   </div>
+                               </div>
+                           
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col-sm-8 border">
+                <!-- Fila de botones -->
+                <div class="row mx-2 cuadro mb-2" style="background-color:white; text-align: center;">
+                    <div class="col-3  my-2 iconos_collage">
+                        <a style="background-color:white" href="../html/publicaciones.html"> <span class="iconify w-25 iconos_collage" data-icon="bi:plus-square" id="iconos_collage"></span></a>
+                    </div>
+                    <div class="col-3  my-2 iconos_collage">
+                        <span class="iconify w-25 iconos_collage" data-icon="icon-park-outline:picture-one"
+                            id="iconos_collage"></span>
+                    </div>
+                    <div class="col-3  my-2 iconos_collage">
+                        <span class="iconify w-25 iconos_collage" data-icon="ep:map-location" id="iconos_collage"></span>
+                    </div>
+                    <div class="col-3  my-2 iconos_collage ">
+                        <span class="iconify w-25 iconos_collage" data-icon="bi:layout-text-window-reverse"
+                            id="iconos_collage"></span>
 
+                    </div>
+
+                </div>
+<!-- Columnas de Collage -->
+<div class="container cuadro" style="text-align: center; background-color: white;">
+   <div class="row my-3" style="text-align:center; background-color: white;">
+                    <div class="col-lg-4 col-md-12 my-lg-4 mb-md-0" style="background-color: white;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                            class="w-75 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
+                            id="image1" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                            class="w-75 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"
+                            id="image2" />
+                    </div>
+
+                    <div class="col-lg-4 mb-md-0 my-lg-4" style="background-color: white;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                            class="w-75 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"
+                            id="image3" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                            class="w-75 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
+                            id="image4" />
+                    </div>
+
+                    <div class="col-lg-4 mb-md-0 my-lg-4" style="background-color: white;">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                            class="w-75 shadow-1-strong rounded mb-4" alt="Waves at Sea" id="image5" />
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                            class="w-75 shadow-1-strong rounded mb-4" alt="Yosemite National Park"
+                            id="image6" />
+                    </div>
+                </div> 
+</div>
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/userProfile.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
