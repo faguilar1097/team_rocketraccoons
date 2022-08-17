@@ -214,10 +214,7 @@ Estilos para validacion
     width: 100px;
     height: 35px;
   }
-  .formulario{
-    grid-template-columns: 1fr;
-  }
-
+ 
   .formulario__mensaje,
   .formulario__grupo-btn-enviar{
     grid-column: 1;
@@ -241,5 +238,16 @@ Estilos para validacion
     height: 25px;
     font-size: 15px;
   }
-  
+  .formulario{
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+}
+@media(max-width: 300px){
+  .formulario{
+  margin: 0 10px 0 0;
+    width: 50%;
+  }
 }
