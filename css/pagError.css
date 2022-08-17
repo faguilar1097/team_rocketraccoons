@@ -14,6 +14,7 @@
 #icono{
     width: 75px;
     height: 75px;
+   
 }
 .hea{
     background-color: #4BCEEB;
@@ -23,6 +24,7 @@
 .iconify{
     width: 18%;
     height: auto;
+    cursor:pointer;
 }
 
 
