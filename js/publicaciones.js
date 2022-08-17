@@ -1,41 +1,62 @@
 console.log("probando");
 
-obtener_localstorage();
-guardar_localstorage();
+// function captura() {
+//     let tituloViaje=document.getElementById("titulo").value;
+//     let rutaViaje=document.getElementById("ruta").value;
+//     let tipoClima=document.getElementById("clima").value;
+//     let categoriaV=document.getElementById("catego").value;   
+//     let mejorFecha=document.getElementById("fecha").value;
+//     let desViaje=document.getElementById("descripcion").value;
+//     let tipsViajes=document.getElementById("tips").value;
+//     let vipsViajes=document.getElementById("seguridad").value;
+//     let estadoRep=document.getElementById("estado").value;
+    
+// console.log(tituloViaje);
+// console.log(rutaViaje);
+// console.log(tipoClima);
+// console.log(categoriaV);
+// console.log(mejorFecha);
+// console.log(desViaje)
+// console.log(tipsViajes);
+// console.log(segViajes);
+// console.log(estadoRep);
+// }
 
-function obtener_localstorage(){
+// function VinJSON() {
+//     // fetch('./assets/users/users.json')
+//     fetch('publicaciones.json')
+//   .then(responseJSON =>{ return responseJSON.json()} )
+//   .then(publicaciones => {
+//     console.log(publicaciones) 
+//     let num = 1; 
+//     for (publi of publicaciones){
+//         console.log(`titulo: ${publi.titulo } ruta:${publi.ruta}  clima: ${publi.clima}  
+//        catego: ${publi.catego} fecha: ${publi.fecha} descripcion: ${publi.fecha} tips: ${publi.tips} 
+//         seguridad:${publi.seguridad} estado: ${publi.estado}`)
+//         localStorage.setItem("Publicaciones "+num,JSON.stringify(publi));
+//         num++;
+//     }
+// });
 
-if(localStorage.getItem("nombre")){
-    let viaje=JSON.parse(localStorage.getItem("nombre"));
-        console.log(viaje);
-}else{
-    console.log("No hay entradas en el local storage");
-}
-}
 
-function guardar_localstorage(){
+// }
 
-    let viaje ={
-     título: "En el mar la vida es más sabrosa",  
-     ruta: "https://goo.gl/maps/a4MzPDLVbtBHnzz48",
-     clima: "Parcialmente nublado",
-     categoría: "",
-     fecha: "cualquiera", 
-     descripcion: "Antiguo pueblo de pescadores",
-     tips: "Animada vida nocturna", 
-     seguridad: "Zona segura",
-     estado:"Oaxaca"
-        
-    };
+const express = require('express')
+const app = express();
+const path = require('path')
+const multer = require('multer')
+const upload = multer({ dest: 'images/' })
 
-     localStorage.setItem("nombre", JSON.stringify(viaje));
-}
-  
-const imagePreview = document.getElementById("img-preview");
-const imageUploader = document.getElementById("img-uploader");
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve('index.html'))
+})
 
-//como capturar cuando el usuario da clic y se abra la ventana
-imageUploader.addEventListener('change', (e)=>{
-    console.log(e)
-   const file= e.target.files[0];
-}); 
+app.post('/', upload.single('image'), (req, res) => {
+  console.log(req.file)
+  console.log(req.body.username)
+  res.status(200)
+})
+
+app.listen(3005, () => {
+  console.log('app en el puerto 3005')
+})
