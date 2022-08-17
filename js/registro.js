@@ -89,7 +89,7 @@ inputs.forEach((input) =>{
 
 /*Validar para que ningún campo se encuentre vacío*/
 formulario.addEventListener("submit",(e) =>{
-    e.preventDefault(); //Quitar
+    e.preventDefault();//Quitar
   
     if(campos.nombre && campos.apellido && campos.intereses && campos.password && campos.telefono && campos.correo){
         formulario.reset();
@@ -98,6 +98,7 @@ formulario.addEventListener("submit",(e) =>{
         setTimeout(()=>{
             document.getElementById("formulario__mensaje-exito").classList.remove("formulario__mensaje-exito-activo");
         },5000);
+        location.href = "../html/inicioSesion.html"; 
     
         document.querySelectorAll(".formulario__grupo-correcto").forEach((icono)=>{
             icono.classList.remove("formulario__grupo-correcto");
@@ -107,4 +108,5 @@ formulario.addEventListener("submit",(e) =>{
     }
 
 });
+
 
