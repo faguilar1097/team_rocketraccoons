@@ -13,6 +13,7 @@ import lombok.Data;
 @Data
 @Table(name="resena")
 public class Resena {
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
