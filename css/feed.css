@@ -25,6 +25,7 @@
     width: 7vw; /* | 75px;*/    
     height: 7vw; /* | 75px;*/
     margin-top: 1vw;
+    cursor: pointer;
 }
 
 #boton{
