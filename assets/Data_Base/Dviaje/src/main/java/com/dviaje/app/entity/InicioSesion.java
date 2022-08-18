@@ -14,9 +14,12 @@ public class InicioSesion implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="idinicio_sesion")
-	private Long idestado;
+	private Long idinicioSesion;
+	
 	
 	private String correo;
 	private String contrasena;
+
+	
 
 }
