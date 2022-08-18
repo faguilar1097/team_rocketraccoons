@@ -74,7 +74,7 @@
             <div class="formulario__grupo" id="grupo__estado">
                 <label for="estado" class="formulario__label">Selecciona tu estado</label>
                 <div class="formulario__grupo-input">
-                    <select id="inputState" class="formulario__input" id="estado" name="estado" required>
+                    <select  class="formulario__input" id="estado" name="estado" required>
                         <option selected>Estado</option>
                         <option value="Aguascalientes">Aguascalientes</option>
                         <option value="Baja California">Baja California</option>
@@ -161,7 +161,7 @@
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="telefono" id="telefono"
-                        placeholder="66911223456">
+                        placeholder="Ej. 6691-456">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error"> El teléfono solo puede contener números y el máximo son 14 caracteres.</p>
@@ -174,7 +174,7 @@
             </div>
             <!--Botones-->
             <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button onclick="Funcion();" type="submit" class="formulario__btn ">Registrate</button>
+                <button  type="submit" class="formulario__btn" id="elements">Registrate</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente.</p>
             </div>
         </form>

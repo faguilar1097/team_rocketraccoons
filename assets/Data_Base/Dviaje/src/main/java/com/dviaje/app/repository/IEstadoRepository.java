@@ -7,4 +7,5 @@ import com.dviaje.app.entity.Estado;
 
 public interface IEstadoRepository extends CrudRepository<Estado, Long>  {
 
+	
 }

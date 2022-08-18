@@ -1,6 +1,5 @@
 package com.dviaje.app.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,17 +10,16 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="resena")
-public class Resena {
+@Table(name="imagenes")
+public class Imagenes {
+
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_resena")
-	private Long idresena;
+	private Long idimagenes;
+	private String url;
+	private String lugar;
+	private Long idestado;
 	
-	private String description;
-	
-	
-
 }

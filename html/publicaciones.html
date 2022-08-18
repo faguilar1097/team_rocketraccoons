@@ -188,8 +188,8 @@
                  style="text-align: center; border-radius: 20px; border-block-end-width: 3px;"
                   type="text"
                   class="form-control"
-                  placeholder="Tips para este viaje"
-                  aria-label="Tips para este viaje"
+                  placeholder="Tips para éste viaje"
+                  aria-label="Tips para éste viaje"
                 />
               </div>
 
@@ -205,18 +205,61 @@
                   />
                      
                 </div>
-            
-              <div syle="padding: 15px" class="fondo2 col-md-12 text-center">
-                <img id="img-preview">
-                <input type="file" id="img-uploader">
-              </div>
 
+                <!-- carga de imagenes -->
+
+                <form id="form">
+                  <label>Completa tu información</label>
+                  <!-- <input type="text" name="username" placeholder="Nombre de usuario"> -->
+                  <input type="file" name="image" id="file">
+                  <div class="preview">
+                    <!-- <p id="username"></p> -->
+                    <img id="image">
+                  </div>
+                  <button>Enviar</button>
+                </form>
+                <script>
+                  const $form = document.querySelector('#form')
               
+                  const $image = document.querySelector('#image')
+                  const $file = document.querySelector('#file')
+                  function renderImage(formData) {
+                    const file = formData.get('image')
+                    const image = URL.createObjectURL(file)
+                    $image.setAttribute('src', image)
+                  }
+              
+                  // const $username = document.querySelector('#username')
+                  // function renderUsername(formData) {
+                  //   const username = formData.get('username')
+                  //   $username.textContent = username
+                  // }
+              
+                  $file.addEventListener('change', (event) => {
+                    const formData = new FormData($form)
+                    renderImage(formData)
+                    fetch('/', {
+                      // method: 'POST',
+                      // body: formData, 
+                   })
+                  })
+              
+                  // $form.addEventListener('submit', (event) => {
+                  //   event.preventDefault()
+                  //   const formData = new FormData(event.currentTarget)
+                  //   // renderUsername(formData)
+                  //   fetch('/', {
+                  //     method: 'POST',
+                  //     body: formData, 
+                  //   })
+                  // })
+                </script>
+
+                <!-- termina codigo carga imagenes -->
           <div style="padding: 20px;" class=" fondo2 col-md-12 text-center">
-                 
-          <button 
+           <button 
            onclick="captura()"
-           type="button"  
+           type="button" 
             style="background-color:#E8643E; border-color: #E8643E; border-radius: 20px;"
              class=" btn btn-success">Publicar</button>
              
@@ -225,8 +268,6 @@
         </div>
       </div>
     </section>
-
-
 
     <main></main>
 
