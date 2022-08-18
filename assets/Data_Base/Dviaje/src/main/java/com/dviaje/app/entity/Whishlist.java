@@ -13,17 +13,14 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="Amigo")
-public class Amigo implements Serializable {
-	
+@Table(name="Whishlist")
+public class Whishlist implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long idAmigo;
-	@Column(name="url_imagen")
-	private String urlimagen;
-	private String nombre;
-	
+	private Long idWhishlist;
+	@Column(name="usuario_id_usuario")
+	private Long usuarioIdUsuario;
 	
 
 }

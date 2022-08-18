@@ -16,7 +16,6 @@ public class ResenaServiceImp implements IResenaService {
 
 	@Override
 	public List<Resena> findAllResena() {
-		// TODO Auto-generated method stub
 		return  (List<Resena>) resenaRepository.findAll();
 	}
 

@@ -1,5 +1,7 @@
 package com.dviaje.app.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +13,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name="imagenes")
-public class Imagenes {
+public class Imagenes implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	

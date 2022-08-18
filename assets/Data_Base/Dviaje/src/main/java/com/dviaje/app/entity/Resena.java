@@ -1,5 +1,7 @@
 package com.dviaje.app.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +14,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name="resena")
-public class Resena {
+public class Resena implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
