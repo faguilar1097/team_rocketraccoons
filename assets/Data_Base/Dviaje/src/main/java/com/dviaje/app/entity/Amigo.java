@@ -13,16 +13,16 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="resena")
-public class Resena implements Serializable {
-	private static final long serialVersionUID = 1L;
+@Table(name="Amigo")
+public class Amigo implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_resena")
-	private Long idresena;
-	
-	private String description;
+	private Long idAmigo;
+	@Column(name="url_imagen")
+	private String urlimagen;
+	private String nombre;
 	
 	
 

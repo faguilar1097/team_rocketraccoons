@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet">
+    <link rel="shortcut icon" href="https://i.ibb.co/sWX3KVT/Rocket-Raccoons-removebg-preview.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
@@ -74,7 +75,7 @@
             <div class="formulario__grupo" id="grupo__estado">
                 <label for="estado" class="formulario__label">Selecciona tu estado</label>
                 <div class="formulario__grupo-input">
-                    <select id="inputState" class="formulario__input" id="estado" name="estado" required>
+                    <select  class="formulario__input" id="estado" name="estado" required>
                         <option selected>Estado</option>
                         <option value="Aguascalientes">Aguascalientes</option>
                         <option value="Baja California">Baja California</option>
@@ -161,7 +162,7 @@
                 <label for="telefono" class="formulario__label">Teléfono</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="telefono" id="telefono"
-                        placeholder="66911223456">
+                        placeholder="Ej. 6691-456">
                     <i class="fas fa-times-circle formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error"> El teléfono solo puede contener números y el máximo son 14 caracteres.</p>
@@ -174,7 +175,7 @@
             </div>
             <!--Botones-->
             <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button onclick="Funcion();" type="submit" class="formulario__btn ">Registrate</button>
+                <button  type="submit" class="formulario__btn" id="elements">Registrate</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente.</p>
             </div>
         </form>
@@ -186,8 +187,11 @@
         </div>
     </main>
     </section>
-    <footer class="text-center">
-        Developed by: Rocket Raccoons © 2022.
+    <footer class="text-center"> 
+        <marquee scrollamout="12" direction="right">
+          <img src="https://i.ibb.co/3yYXrTN/mapache-unscreen.gif" alt="mapache" width="200px" height="200px">
+        </marquee>
+        <p>Developed by: <br> Rocket Raccoons © 2022.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

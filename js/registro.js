@@ -88,11 +88,11 @@ inputs.forEach((input) =>{
 });
 
 /*Validar para que ningún campo se encuentre vacío*/
-formulario.addEventListener("submit",(e) =>{
-    e.preventDefault();//Quitar
+ formulario.addEventListener("submit",(e) =>{
+     e.preventDefault();//Quitar
   
     if(campos.nombre && campos.apellido && campos.intereses && campos.password && campos.telefono && campos.correo){
-        formulario.reset();
+        // formulario.reset();
 
         document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
         setTimeout(()=>{
@@ -106,7 +106,51 @@ formulario.addEventListener("submit",(e) =>{
     } else{
         document.getElementById("formulario__mensaje").classList.add("formulario__mensaje-activo");
     }
+ guardar_localstorage();
 
-});
+ });
 
+/**Local Storage */
+
+console.log("Introducir credenciales para Registro");
+
+function obtener_localstorage(){
+
+    if(localStorage.getItem("nombre")){
+        let persona =JSON.parse(localStorage.getItem("nombre"));
+            console.log(persona);
+    }else{
+        console.log("No hay entradas en el local storage");
+    }
+    }
+
+function guardar_localstorage(){
+    let name= document.getElementById("nombre").value;
+    let lastName= document.getElementById("apellido").value;
+    let estadoCiudad = document.getElementById("estado").value;
+    let favorito = document.getElementById("intereses").value;
+    let passwo = document.getElementById("password").value;
+    let number = document.getElementById("telefono").value;
+    let email = document.getElementById("correo").value;
+
+    let persona = {
+        nombre: name,
+        apellido: lastName,
+        estado: estadoCiudad,
+        intereses: favorito,
+        correo: email,
+        password: passwo,
+        telefono: number
+    };
+    localStorage.setItem("name", name);
+    localStorage.setItem("lastName", lastName);
+    localStorage.setItem("favorito", favorito);
+    localStorage.setItem("estadoCiudad", estadoCiudad);
+    localStorage.setItem("email", email);
+    localStorage.setItem("passwo", passwo);
+    localStorage.setItem("number", number);
+
+    localStorage.setItem("nombre", JSON.stringify(persona)); 
+  
+}
 
