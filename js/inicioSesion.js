@@ -30,6 +30,7 @@ function validacion(correo, contra) {
 
     let listaUsuarios = obtenerLista();
     let acceso = false;
+    
 
     for( let u=0; u < listaUsuarios.length; u++){
     console.log(listaUsuarios[u].email + "  " + listaUsuarios[u].contraseña);
@@ -39,6 +40,15 @@ function validacion(correo, contra) {
         console.log("ACCESO CONCEDIDO");
         document.getElementById("mensaje").innerHTML = "¡Bienvenido " + listaUsuarios[u].first_name + " " + listaUsuarios[u].last_name + "!";
         location.href = "../html/feed.html";
+    }
+    else{
+        
+        // document.getElementById("formulario__mensaje1").classList.add("formulario__mensaje1-activo");
+        // setTimeout(()=>{  document.getElementById("formulario__mensaje").classList.remove("formulario__mensaje-activo")
+
+        // },5000)
+        
+        
     }
 }
 return acceso;
@@ -65,20 +75,16 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
-   
+	
 }
 const campos = {
-    nombre: false,
-    apellido: false,
-    intereses: false,
+    
     correo: false,
     password: false,
-    telefono: false
+    
 }
 
 const validarFormulario = (e)=> {
@@ -123,9 +129,11 @@ inputs.forEach((input) =>{
 /*Validar para que ningún campo se encuentre vacío*/
 formulario.addEventListener("submit",(e) =>{
     e.preventDefault(); //Quitar
-  
+    
     if(campos.password && campos.correo){
+        
         formulario.reset();
+
 
         document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
         setTimeout(()=>{
@@ -135,6 +143,7 @@ formulario.addEventListener("submit",(e) =>{
         document.querySelectorAll(".formulario__grupo-correcto").forEach((icono)=>{
             icono.classList.remove("formulario__grupo-correcto");
         });
+        
     } else{
         
         document.getElementById("formulario__mensaje").classList.add("formulario__mensaje-activo");
@@ -142,8 +151,8 @@ formulario.addEventListener("submit",(e) =>{
 
         },5000)
         console.log("Sale mensaje de error");
+        
     }
-
 });
 
 
