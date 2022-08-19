@@ -1,15 +1,11 @@
-var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
 
-btnAbrirPopup.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');  
 });
 
-btnCerrarPopup.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
 });
