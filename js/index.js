@@ -1,6 +1,7 @@
 
 console.log("Succes!!");
 fotosDefault();
+infoApi();
 const estadosRep = ["Baja California","Baja California Sur","Coahuila","Chihuahua","Durango","Sinaloa",
 "Sonora","Zacatecas","Nuevo Leon","San Luis Potosi","Tamaulipas","Aguascalientes","Colima","Jalisco",
 "Michoacan","Nayarit","Campeche","Oaxaca","Puebla","Tabasco","Tlaxcala","CDMX","Guanajuato","Guerrero",
@@ -87,4 +88,27 @@ function llenarDatos(datosUsuarios){
     document.getElementById("TextoTarjeta3").innerHTML ="Faro,Mazatlán";
     document.getElementById("imgcard4").src ="https://noticiasenfasis.com.mx/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-12-at-9.44.24-AM.jpeg";
     document.getElementById("TextoTarjeta4").innerHTML ="La Quebrada Acapulco";
+ }
+
+ function infoApi(){
+    fetch('https://dviaje-prueba1.herokuapp.com/api/resena')
+    .then(responseJSON =>{ return responseJSON.json()} )
+    .then(resena => {
+        let i=1;
+        for (informacion of resena){
+  
+          
+          console.log(`INFO DE API:`);
+          console.log(informacion.description);
+          if (i<=3){
+          console.log("Experiencias"+i);
+          document.getElementById("Experiencias"+i).innerHTML=informacion.description;
+          i++;
+          }
+          
+      }
+  });
+
+
+
  }
