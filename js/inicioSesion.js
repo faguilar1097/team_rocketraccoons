@@ -2,7 +2,7 @@ console.log("Introducir credenciales para inicio de sesión");
 
 // FUNCION PARA ACCEDER AL JSON Y PONERLO EN LOCAL STORAGE
 function vincularJSON() {
-fetch('../assets/users/users.json')
+fetch('https://dviaje-prueba1.herokuapp.com/api/inicioSesion')
   .then(responseJSON =>{ return responseJSON.json()} )
   .then(usuarios => {
     // console.log(usuarios) 
@@ -33,12 +33,15 @@ function validacion(correo, contra) {
     
 
     for( let u=0; u < listaUsuarios.length; u++){
-    console.log(listaUsuarios[u].email + "  " + listaUsuarios[u].contraseña);
+    console.log(listaUsuarios[u].correo + "  " + listaUsuarios[u].contrasena);
 
-    if (correo == listaUsuarios[u].email && contra == listaUsuarios[u].contraseña){
+    if (correo == listaUsuarios[u].correo && contra == listaUsuarios[u].contrasena){
         acceso = true;
         console.log("ACCESO CONCEDIDO");
         document.getElementById("mensaje").innerHTML = "¡Bienvenido " + listaUsuarios[u].first_name + " " + listaUsuarios[u].last_name + "!";
+        //guardando datos en local storage
+        sessionStorage.setItem('correo', listaUsuarios[u].correo);
+        sessionStorage.setItem('contra',listaUsuarios[u].contrasena);
         location.href = "../html/feed.html";
     }
     else{

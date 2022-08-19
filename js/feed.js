@@ -1,7 +1,8 @@
 console.log("Leyendo datos de publicaciones ... ");
+// GET
 
 function VincularJSON() {
-    fetch("/js/ufeed.json")
+    fetch("../js/ufeed.json")
   .then(responseJSON =>{ return responseJSON.json()} )
 
   .then(publicacion =>{
@@ -42,6 +43,6 @@ function llenarDatos(informacion){
     document.getElementById("TextoTarjeta6").innerHTML =informacion[0].titleImg6 ;
 
 
-    console.log("Que está pasando?!!");
+    console.log("Que está pasaaaandooo?!!");
 }
 

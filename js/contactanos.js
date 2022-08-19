@@ -50,6 +50,7 @@ save_localStorage(myObject);
 
 let save_localStorage = function(myObj) {
   localStorage.setItem("miInfo", JSON.stringify(myObj));
+  console.log(myObject);
 }
 
 let read_localStorage = function() {
@@ -61,9 +62,40 @@ let read_localStorage = function() {
   document.querySelector("#mensaje").value = myObject.mensaje;
 }
 
-let reset = function() {
-  document.querySelector("#asunto").value = "";
-  document.querySelector("#mensaje").value = "";
-}
+// let reset = function() {
+//   document.querySelector("#asunto").value = "";
+//   document.querySelector("#mensaje").value = "";
+// }
 
 main(); //Método principal
+enviarFetch ();
+
+
+
+
+  function enviarFetch (){
+    let miInfo = localStorage.getItem("miInfo");
+  console.log(miInfo);
+  let myObject = JSON.parse(miInfo);
+  console.log(myObject);
+
+    // console.log(JSON.parse(localStorage.getItem("nombre")));
+
+    // personaFull = JSON.parse(localStorage.getItem("nombre"));
+    // persona = { 
+    //     "nombre":` ${personaFull.nombre}`,
+    //    "apellido":` ${personaFull.apellido}`,
+    //     "estadorep": ` ${personaFull.estado}`,
+    //     "intereses": ` ${personaFull.intereses}`
+    // }
+   
+    fetch ('https://dviaje-prueba1.herokuapp.com/api/contactanos',
+    {
+        method: "POST",
+        body: JSON.stringify(myObject),
+        headers: {"content-type": "application/json; charset=UTF-8"}
+    })
+        .then(Response => Response.json())
+        .then(json => console.log(json))
+        .catch(err => console.log(err));
+ }
