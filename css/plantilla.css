@@ -13,6 +13,7 @@
 #icono{
     width: 75px;
     height: 75px;
+    
 }
 .hea{
     background-color: #4BCEEB;
@@ -22,6 +23,10 @@
 .iconify{
     width: 75px;
     height: 75px;
+
+}
+#mundo{
+    background-color: #E9636D;
 }
 
 #boton{
