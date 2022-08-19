@@ -191,7 +191,7 @@ function enviarFetch (){
        "contrasena":` ${personaFull.password}`,
        "telefono":` ${personaFull.telefono}`
     }
-    console.log(persona);
+    console.log(personaFull);
             fetch ('https://dviaje-prueba1.herokuapp.com/api/inicioSesion',
             {
                 method: "POST",
