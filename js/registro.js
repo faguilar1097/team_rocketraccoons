@@ -127,7 +127,7 @@ function obtener_localstorage(){
 function guardar_localstorage(){
     let name= document.getElementById("nombre").value;
     let lastName= document.getElementById("apellido").value;
-    let estadoCiudad = document.getElementById("estado").value;
+    let estadorep = document.getElementById("estado").value;
     let favorito = document.getElementById("intereses").value;
     let passwo = document.getElementById("password").value;
     let number = document.getElementById("telefono").value;
@@ -136,7 +136,7 @@ function guardar_localstorage(){
     let persona = {
         nombre: name,
         apellido: lastName,
-        estado: estadoCiudad,
+        estado: estadorep,
         intereses: favorito,
         correo: email,
         password: passwo,
@@ -145,12 +145,49 @@ function guardar_localstorage(){
     localStorage.setItem("name", name);
     localStorage.setItem("lastName", lastName);
     localStorage.setItem("favorito", favorito);
-    localStorage.setItem("estadoCiudad", estadoCiudad);
+    localStorage.setItem("estadorep", estadorep);
     localStorage.setItem("email", email);
     localStorage.setItem("passwo", passwo);
     localStorage.setItem("number", number);
 
-    localStorage.setItem("nombre", JSON.stringify(persona)); 
-  
+    localStorage.setItem("nombre", JSON.stringify(persona));   
 }
 
+//Envian los datos a la API
+console.log(JSON.parse(localStorage.getItem("nombre")));
+
+persona = JSON.parse(localStorage.getItem("nombre"));
+fetch ('https://dviaje-prueba1.herokuapp.com/api/usuario',
+{
+    method: "POST",
+    body: persona,
+    headers: {"content-type": "application/json; charset=UTF-8"}
+})
+    .then(Response => Response.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err));
+
+window.alert( `
+${persona.name},
+${persona.lastName},
+${persona.favorito},
+${persona.estadorep},
+${persona.passwo},
+${persona.email},
+${persona.number},
+
+`)
+//Enviar datos
+// fetch('https://miapi.com/x/y', {
+//     method: `POST`, //Enviar la información al servidor
+//     //hearders añadir información de donde estoy pidiendo datos//
+//     headers: {
+//         'Contet-Type': 'application/json',
+//         'hdajdhajdhadsada': 'asdadsad',
+//     },
+//     body: JSON.stringify({
+//         name: 'leonidas',
+//         age:28,
+//     })
+// })
+//Recuperar datos
