@@ -31,6 +31,13 @@ function validacion(correo, contra) {
     let listaUsuarios = obtenerLista();
     let acceso = false;
     
+    if (correo == "admin_ch14@gmail.com" && contra == "1234")
+    {
+        location.href = "../html/administracion.html";
+    }
+    else{
+        
+    
 
     for( let u=0; u < listaUsuarios.length; u++){
     console.log(listaUsuarios[u].correo + "  " + listaUsuarios[u].contrasena);
@@ -53,6 +60,7 @@ function validacion(correo, contra) {
         
         
     }
+}
 }
 return acceso;
 }
@@ -160,7 +168,10 @@ formulario.addEventListener("submit",(e) =>{
 });
 
 
-
+if (correo == "admin_ch14@gmail.com" && contra == "1234")
+{
+    location.href = "../html/rContra.html";
+}
 
 
 
