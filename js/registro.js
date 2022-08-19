@@ -128,66 +128,80 @@ function guardar_localstorage(){
     let name= document.getElementById("nombre").value;
     let lastName= document.getElementById("apellido").value;
     let estadorep = document.getElementById("estado").value;
-    let favorito = document.getElementById("intereses").value;
+    let intereses = document.getElementById("intereses").value;
     let passwo = document.getElementById("password").value;
     let number = document.getElementById("telefono").value;
     let email = document.getElementById("correo").value;
 
     let persona = {
-        nombre: name,
-        apellido: lastName,
-        estado: estadorep,
-        intereses: favorito,
-        correo: email,
-        password: passwo,
-        telefono: number
+        "nombre": `${name}`,
+        "apellido":  `${lastName}`,
+        "estado":  `${estadorep}`,
+        "intereses":  `${intereses}`,
+        "correo":  `${email}`,
+        "password":  `${passwo}`,
+        "telefono":  `${number}`
     };
     localStorage.setItem("name", name);
     localStorage.setItem("lastName", lastName);
-    localStorage.setItem("favorito", favorito);
+    localStorage.setItem("intereses", intereses);
     localStorage.setItem("estadorep", estadorep);
     localStorage.setItem("email", email);
     localStorage.setItem("passwo", passwo);
     localStorage.setItem("number", number);
 
-    localStorage.setItem("nombre", JSON.stringify(persona));   
+    localStorage.setItem("nombre", JSON.stringify(persona)); 
+    enviarFetch();  
+    fetchInicioSesion();
 }
 
 //Envian los datos a la API
-console.log(JSON.parse(localStorage.getItem("nombre")));
 
-persona = JSON.parse(localStorage.getItem("nombre"));
-fetch ('https://dviaje-prueba1.herokuapp.com/api/usuario',
-{
-    method: "POST",
-    body: persona,
-    headers: {"content-type": "application/json; charset=UTF-8"}
-})
-    .then(Response => Response.json())
-    .then(json => console.log(json))
-    .catch(err => console.log(err));
+//Enviar datos a fetch
 
-window.alert( `
-${persona.name},
-${persona.lastName},
-${persona.favorito},
-${persona.estadorep},
-${persona.passwo},
-${persona.email},
-${persona.number},
+function enviarFetch (){
+    console.log(JSON.parse(localStorage.getItem("nombre")));
 
-`)
-//Enviar datos
-// fetch('https://miapi.com/x/y', {
-//     method: `POST`, //Enviar la información al servidor
-//     //hearders añadir información de donde estoy pidiendo datos//
-//     headers: {
-//         'Contet-Type': 'application/json',
-//         'hdajdhajdhadsada': 'asdadsad',
-//     },
-//     body: JSON.stringify({
-//         name: 'leonidas',
-//         age:28,
-//     })
-// })
-//Recuperar datos
+    personaFull = JSON.parse(localStorage.getItem("nombre"));
+    persona = { 
+        "nombre":` ${personaFull.nombre}`,
+       "apellido":` ${personaFull.apellido}`,
+        "estadorep": ` ${personaFull.estado}`,
+        "intereses": ` ${personaFull.intereses}`
+    }
+   
+    fetch ('https://dviaje-prueba1.herokuapp.com/api/usuario',
+    {
+        method: "POST",
+        body: JSON.stringify(persona),
+        headers: {"content-type": "application/json; charset=UTF-8"}
+    })
+        .then(Response => Response.json())
+        .then(json => console.log(json))
+        .catch(err => console.log(err));
+ }
+
+ //Enviar datos a inicio de sesión
+ function fetchInicioSesion(){
+    console.log(JSON.parse(localStorage.getItem("nombre")));
+
+    personaFull = JSON.parse(localStorage.getItem("nombre"));
+   persona = { 
+        "correo":` ${personaFull.correo}`,
+       "contrasena":` ${personaFull.password}`,
+       "telefono":` ${personaFull.telefono}`
+    }
+    console.log(persona);
+            fetch ('https://dviaje-prueba1.herokuapp.com/api/inicioSesion',
+            {
+                method: "POST",
+                body: JSON.stringify(persona),
+                headers: {"content-type": "application/json; charset=UTF-8"}
+            })
+                .then(Response => Response.json())
+                .then(json => console.log(json))
+                .catch(err => console.log(err));
+
+
+ }
+ 
