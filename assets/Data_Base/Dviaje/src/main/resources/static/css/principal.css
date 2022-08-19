@@ -1,0 +1,311 @@
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8D8;
+    font-family: 'Soleil', sans-serif;
+}
+
+.img{
+    /* width: 15vw; */
+    height: 5vw;
+ 
+}
+/* #icono{
+    width: 75px;
+    height: 75px;
+} */
+.hea{
+    background-color: #4BCEEB;
+    
+}
+
+.iconify{
+    width: 75px;
+    height: 75px;
+
+}
+.iconify :hover{
+    fill: white;
+}
+
+#boton{
+    background-color:white;
+    color: #E9633D;
+    font-family: 'Soleil', sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 12vw;
+    height:3.5vw;
+    margin-right: .5vw;
+    line-height:1px;
+    border: 0em;
+    border-radius: 20px;
+}
+#boton2{
+    background-color:white;
+    color: #E9633D;
+    font-family: 'Soleil', sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 15vw;
+    height:3.5vw;
+    margin-right: .5vw;
+    line-height:1px;
+    border: 0em;
+    border-radius: 20px;
+}
+#boton1d{
+    background-color: transparent;
+    font-size: 1.8vw;
+    transform: translate(0,-1.5px); 
+
+}
+#boton2d{
+    background-color: transparent;
+    font-size: 1.8vw;
+    transform: translate(0,-2px);
+    
+
+}
+@media (max-width:510px){
+    #boton{
+        width: 15vw;
+        height:3.5vw;
+    }
+    #boton2{
+        width: 18vw;
+        height:3.5vw;
+    }
+    #boton1d{
+        background-color: transparent;
+        font-size: 2.2vw;
+        transform: translate(0,-1.5px);
+    }
+    #boton2d{
+        background-color: transparent;
+        font-size: 2.1vw;
+        transform: translate(0,-2px);
+    }
+    /* .imgcard1 {
+        background-color:white;
+        padding: 1px;
+        width: 18vw;  
+        border-radius: 20px;
+    }
+    #TextoTarjeta{
+        background-color: transparent;
+        color:white;
+        font-weight: 800;
+        font-size: 1vw;
+        transform: translate(1.5vw,-3vw);
+    } */
+
+
+}
+ #iconoNav{
+   background-color: transparent;
+   margin-left: 5%;
+     width: 1.8vw;
+    height: 1.8vw;
+}
+#iconoNav2{
+    background-color: transparent;
+    margin-left: 5%;
+     width: 2vw;
+     height: 2vw;
+ }
+
+
+#bienvenida{
+    color: #E9633D;
+    font-size: 3vw;
+    font-weight: 1000;
+    /* padding:2vw; */
+    margin-left: 2vw;
+    align-self: center;
+  
+}
+#bienvenida2{
+    color: #E9633D;
+    font-size: 2vw;
+    /* padding:2vw; */
+    margin-left: 2vw;
+    align-self: center;
+  
+}
+path:hover{
+    fill: #DA0000;
+}
+#TituloPublicaciones{
+    color:#44BAA0;
+    font-weight: bolder;
+    margin-left: 2%;
+}
+
+.fondo{
+    background-color: white;
+    width: 20vw;  
+    height: 12vw;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius: 8%;
+
+}
+
+#tarjetasImgs{
+
+    background-color: white;
+    width: 20vw;  
+    height: 12vw;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    justify-content: center;
+   
+
+}
+
+.imgcard1 {
+
+    width: 18vw; 
+    height: 10vw; 
+    border-radius: 4%;
+
+}
+
+.TextoTarjeta{
+    background-color: transparent;
+    color:white;
+    font-weight: 800;
+    font-size: 1vw; 
+    position: absolute;
+    word-wrap: keep-all;
+    align-self: flex-end;
+   
+}
+
+#separador{
+
+    background-color: #E9633D;
+    width: 80vw;
+    height: 5vw;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: 15px;
+
+}
+#SeparadorTexto{
+    color:white;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 2.5vw;
+
+}
+#Experiencias{
+    font-weight: bolder;
+    font-size: 2vw;
+}
+#Experiencias1{
+    font-weight: bolder;
+    font-size: 2vw;
+}
+#Experiencias2{
+    font-weight: bolder;
+    font-size: 2vw;
+}
+#Experiencias3{
+    font-weight: bolder;
+    font-size: 2vw;
+}
+ #imgID{
+    width: 15vw;
+    height: 15vw;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0px auto;
+    display:inline-block;
+} 
+
+.conocenos{
+    background-color: white;
+    width: 95%;
+    height: 40%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    justify-self:start;
+    margin-top:5%;    
+}
+
+#infoConocenos{
+    color:#E9633D;
+    font-weight: bolder;
+    background-color: transparent;
+    font-size: 2.5vw;
+}
+.titlesConocenos{
+    font-size: 2vw;
+}
+.textConocenos{
+    font-size: 1.5vw;
+}
+
+#botonContacto{
+    background-color:#DA0000;
+    color: #ffffff;
+    font-family: 'Soleil', sans-serif;
+    font-size: 2vw;
+    font-weight: bolder;
+    width: 25vw;
+    height:6vw;
+    line-height:1px;
+    border: 0em;
+    border-radius: 20px;
+}
+.iconifyContactanos{
+    background-color: transparent;
+    color:white;
+    height: 3vw ;
+    width: 3vw;
+    margin-left: 1.5vw;
+
+
+}
+
+#divContacto :hover{
+    box-shadow: 5px 5px 10px rgba(100,100,100,1);
+ }
+ #teamRRText{
+    color:#E9633D;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+
+#mapacheLogo{
+    width: 16vw;
+
+}
+
+.fotosRR{
+    width: 10vw;
+    height: 10vw;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0px auto;
+    display:inline-block;
+}
+/* 
+
+ .publicaciones-individuales{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+} */
+/* 
+.img-public{
+    border-radius: 4%;
+    /* width: 355px;
+    height: 100px; 
+ } */
+/* 
+div, img-public {
+    display: block;
+    position: relative;		
+    width: 300px;
+    /* border: 0; 
+  }   */

@@ -22,7 +22,7 @@ public class UsuarioServiceImp implements IUsuarioService{
 
 	@Override
 	public Usuario saveUsuario(Usuario usuario) {
-		
+	
 		return usuarioRepository.save(usuario);
 	}
 
@@ -37,6 +37,14 @@ public class UsuarioServiceImp implements IUsuarioService{
 	public Usuario findUsuarioById(Long id) {
 	
 	return usuarioRepository.findById(id).orElse(null);
+	}
+
+	@Override
+	public Usuario updateUsuario(Long id, Usuario usuario) {
+	Usuario copyUser = findUsuarioById(id);
+	copyUser = usuario;
+	usuarioRepository.save(usuario);
+	return copyUser;
 	}
 
 

@@ -1,0 +1,202 @@
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8D8;
+    font-family: 'Soleil', sans-serif;
+}
+
+.img{
+    width: 355px;
+    height: 100px;
+}
+
+#icono{
+    width: 75px;
+    height: 75px;
+}
+
+.hea{
+    background-color: #4BCEEB;
+}
+
+.iconify{
+    color: white; 
+    background-color: #4bceeb;
+    width: 75px;
+    height: 75px;
+}
+
+.mapa{
+    background-color: #4BCEEB;
+    width: 75px;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.parche{
+    background-color: #D8D8D8;
+    color:#D8D8D8;
+    width: 100%;
+    max-width: 2500px;
+}
+
+form{
+    background-color: #E3AC97;
+    width: 76%;
+    margin: auto;
+    padding: 40px 80px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.error{
+    color:black;
+    text-align: center;
+    background-color: #E3AC97;
+}
+
+h3{
+    text-align: center;
+    margin-left: 23%;
+    margin-right: 23%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.textConocenos{
+    background-color: #FFFFFF;
+    color:#E9633D; 
+    font-weight: 600;
+}
+
+.atencion{
+    background-color: #FFFFFF; 
+    width: 23px;
+    height: 23px;
+}
+
+input{
+    background-color: #FFFFFF;
+    text-align: center;
+    border:none;
+    padding: 10px;
+}
+
+textarea{
+    text-align: center;
+    background-color: #FFFFFF;
+    border: none;
+    min-height:50px;
+    max-height: 100px;
+    padding: 15px;
+    color: black;
+}
+
+#enviar{
+    background: #148FD4;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#enviar:hover{
+    width: 155px;
+}
+
+.myButton{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+    background-color: #FFFFFF;
+    width: 76%;
+    margin: auto;
+    padding: 40px 80px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.accordion-body{
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 930px){
+    .img{
+        width: 180px;
+        height: 70px;
+    }
+    .iconify{
+        width: 45px;
+        height: 45px;
+    }
+    .mapa{
+        width: 45px;
+        height: 42px;
+    }
+    form{
+        width: 90%;
+        padding: 30px 60px;
+    }
+    .error{
+        font-size: 17px;
+    }
+    .textConocenos{
+        font-size: 19px; 
+    }
+    #enviar{
+        font-size: 18px;
+        height: 35px;
+        width: 100px;
+    }
+    .accordion{
+        width: 90%;
+        padding: 30px 60px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:530px){
+    .img{
+        width: 140px;
+        height: 50px;
+    }
+    .iconify{
+        width: 30px;
+        height: 30px;
+    }
+    .mapa{
+        width: 30px;
+        height: 28px;
+    }
+    form{
+        width: 90%;
+        padding: 25px 30px;
+        gap: 10px;
+    }
+    .error{
+        font-size: 15px;
+    }
+    .textConocenos{
+        font-size: 17px; 
+    }
+    #enviar{
+        font-size: 16px;
+        height: 30px;
+        width: 90px;
+    }
+    .accordion{
+        width: 90%;
+        padding: 25px 30px;
+        font-size: 16px;
+    }
+}
