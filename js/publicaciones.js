@@ -10,7 +10,9 @@ function captura() {
     let tipsViajes=document.getElementById("tips").value;
     let vipsViajes=document.getElementById("seguridad").value;
     let estadoRep=document.getElementById("estado").value;
-    
+    let image=document.getElementById("image").value;
+
+
 console.log(tituloViaje);
 console.log(rutaViaje);
 console.log(tipoClima);
@@ -20,6 +22,7 @@ console.log(desViaje)
 console.log(tipsViajes);
 console.log(segViajes);
 console.log(estadoRep);
+console-log(image);
 }
 
 function VinJSON() {
@@ -32,7 +35,7 @@ function VinJSON() {
     for (publi of publicaciones){
         console.log(`titulo: ${publi.titulo } ruta:${publi.ruta}  clima: ${publi.clima}  
        catego: ${publi.catego} fecha: ${publi.fecha} descripcion: ${publi.fecha} tips: ${publi.tips} 
-        seguridad:${publi.seguridad} estado: ${publi.estado}`)
+        seguridad:${publi.seguridad} estado: ${publi.estado} image: ${publi.file }`)
         localStorage.setItem("Publicaciones "+num,JSON.stringify(publi));
         num++;
     }
