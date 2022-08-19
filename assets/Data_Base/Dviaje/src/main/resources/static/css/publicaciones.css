@@ -1,0 +1,67 @@
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8D8;
+    font-family: 'Soleil', sans-serif;
+
+}
+
+.img{
+    width: 85%;
+    height: auto;
+}
+#icono{
+    width: 75px;
+    height: auto;
+}
+.hea{
+    background-color: #4BCEEB;
+    
+}
+
+.iconify{
+    width: 75px;;
+    height:auto;
+}
+
+
+
+.fondo{
+    background-color: #4bceeb;
+}
+
+.foto{
+    margin-right: 30px;
+    margin-bottom: 30px;;
+    width: 10%;
+    height:auto;
+    float:left;
+    margin-top: 20px;
+    background-color: white;
+    
+
+}
+.container{
+    
+    height: 85vh;
+    border-radius: 30px;
+    flex: 1000px;
+
+
+}
+.fondo2{
+    background-color: white;
+    
+}
+
+.stilo{
+    color: #44BAA0;
+    background-color:white;
+    text-shadow: 2px 3px rgb(123, 206, 174);
+}
+
+/* .card{
+    position: absolute;
+    text-align: center;
+} */

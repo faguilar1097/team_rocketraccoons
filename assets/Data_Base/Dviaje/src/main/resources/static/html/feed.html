@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plantilla</title>
+
+    <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/feed.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="header">
+      <header class="border "> <!-- menu-fixed-1 -->
+        <nav class="d-flex justify-content-between hea">
+          <!-- LOGO D' VIAJE -->
+          <div class="col-4 bordr text-start align-self-center hea">
+            <img
+              class="img-logo hea"
+              src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png"
+              alt="logo de viaje"
+            />
+          </div>
+          <!-- ICONO MUNDO -->
+          <div class="col-4 text-center align-self-center hea">
+            <span
+              class="iconify"
+              data-icon="uiw:global"
+              alt="Página Principal"
+            ></span>
+          </div>
+          <!-- BOTÓN SALIR -->
+          <div class="col-4 borer text-end align-self-center hea">
+            <button
+              type="button"
+              class="btn rounded-pill justify-content:center"
+              id="boton"
+            >
+            <a href="../html/pagError.html"><strong style="background-color: white">Salir</strong>
+            </button>
+          </div>
+        </nav>
+      </header>
+    </section>
+    
+    <!-- Espacio solución parche xD -->
+    <div  class="parche">.</div>
+    
+    <!-- NAVBAR y PUBLICACIONES -->
+    <main>
+      <!-- menu-fixed-2 -->
+      <div
+        style="background-color: white"
+        class="filtro container d-flex justify-content-center w-20 rounded-4"
+      >
+        <!-- Categorías Foto/Ruta/Tips -->
+        <div
+          style="background-color: white"
+          class="col-5 text-center align-self-center filtro"
+        >
+          <h3 class="titulo1 col-lg-12">
+            <strong class="titulo1">
+            Comparte tu aventura</strong>
+          </h3>
+          <!-- Icono Publicar -->
+          <a class="titulo1" href="../html/publicaciones.html"> <span
+            class="iconify icon2 mx-3"
+            data-icon="bi:plus-square"
+            alt="nueva publicación"
+          ></span></a>
+
+          <!-- Icono Foto -->
+          <span
+            class="iconify icon2 mx-3"
+            data-icon="icon-park-outline:picture-one"
+            alt="fotos"
+          ></span>
+              
+
+          <!-- Icono Ruta -->
+          <span
+            class="iconify icon2 mx-3"
+            data-icon="ep:map-location"
+            alt="ruta"
+          ></span>
+
+          <!-- Icono Tips -->
+          <span
+            class="iconify icon2 mx-3"
+            data-icon="bi:layout-text-window-reverse"
+            alt="tips de viaje"
+          ></span>
+        </div>
+
+        <!-- Foto de perfil -->
+        <div
+          class="navbar-filtro col-2 "
+        > <!-- ../html/userprofile.html -->
+          <a style="background-color: white;" href="https://ibb.co/KXLRMdT" 
+            ><img
+              class="perfil my-3"
+              id="imgPerfil"
+              
+              alt="foto de perfil"
+          /></a> <!-- src="https://i.ibb.co/KXLRMdT/rafa.png" -->
+        </div>
+        <!-- Filtros de busqueda -->
+        <div class="col-5" style="background-color: white;"><!-- navbar-filtro mt-4 text-end align-self-center filtro -->
+          <div class="navbar-filtro row mx-3 d-flex justify-content-center">
+            <!-- Busqueda de Estados -->
+            <div class="col-4 my-1"  style="background-color: transparent;">
+              <input
+                type="text"
+                name="Estado"
+                alt="Estado"
+                placeholder="Estado"
+                id="inputEstado"
+                class="text-center" 
+              /> <!-- form-control form-control-sm btn-outline-light rounded-pill -->
+            </div>
+
+            <!-- Busqueda de Municipio -->
+            <!-- <div class="navbar-filtro col">
+              <input
+                type="text"
+                name="Municipio"
+                alt="Municipio"
+                placeholder="Municipio"
+                class="form-control form-control-sm text-center rounded-pill"
+              />
+            </div> -->
+
+            <!-- Busqueda de Intereses -->
+            <div class="col-4 my-1"  style="background-color: transparent;">
+              <input
+                type="text"
+                name="Intereses"
+                alt="Intereses"
+                placeholder="Intereses"
+                id="inputInteres"
+                class="text-center"
+              /><!-- form-control form-control-sm rounded-pill -->
+            </div>
+          </div>
+
+          <!-- Botón de busqueda -->
+              <div 
+                style="background-color:transparent" 
+                class="navbar-filtro my-3 row align-content-end justify-content-center">
+                <button
+                type="button"
+                class="btn rounded-pill justify-content:center my-1"
+                id="boton2">
+                <strong class="boton-letra">Buscar</strong>
+                </button>
+              </div>
+        </div>
+      </div>
+
+      <div class="publicaciones-general row container-fluid  mx-1 justify-content-center">
+        
+        <!-- PRUEBAS JS --><!-- PRUEBAS JS --><!-- PRUEBAS JS -->
+
+        <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center ">
+          <img class="img-public" id="imgcard1" alt="CDMX" ><!-- src="https://i.ibb.co/T15g49P/CDMX.png" -->
+          <p id="TextoTarjeta1"></p> <!-- CDMX -->
+          <!-- Icono Pin -->
+          <span class="iconify icon3" data-icon="bi:pin-angle-fill" ></span>
+          <!-- Icono Like -->
+          <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div>
+
+        <!-- PRUEBAS JS --><!-- PRUEBAS JS --><!-- PRUEBAS JS -->
+
+        <!-- <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center ">
+          <img class="img-public" src="https://i.ibb.co/T15g49P/CDMX.png" alt="CDMX" >
+          <p>CDMX</p> -->
+          <!-- Icono Pin -->
+          <!-- <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span> -->
+          <!-- Icono Like -->
+          <!-- <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div> -->
+        <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center ">
+          <img class="img-public" id="imgcard2"  alt="GDL" >
+          <p id="TextoTarjeta2"></p>
+          <!-- Icono Pin -->
+          <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+          <!-- Icono Like -->
+          <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div>
+        <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+          <img class="img-public" id="imgcard3"  alt="MZT">
+          <p id="TextoTarjeta3"></p>
+          <!-- Icono Pin -->
+          <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+          <!-- Icono Like -->
+          <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div>
+        <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+            
+          <img class="img-public" id="imgcard4"  alt="CANCUN">
+          <a href="/html/postPopup.html"> <p id="TextoTarjeta4"></p> </a>
+          <!-- Icono Pin -->
+          <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+          <!-- Icono Like -->
+          <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div>
+        <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+          <img class="img-public" id="imgcard5"  alt="QRO">
+          <p id="TextoTarjeta5"></p>
+          <!-- Icono Pin -->
+          <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+          <!-- Icono Like -->
+          <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div>
+        <div class="publicaciones-individuales card-body card col-4 col-sm-4 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+          <img class="img-public" id="imgcard6"  alt="PUE">
+          <p id="TextoTarjeta6"></p>
+          <!-- Icono Pin -->
+          <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+          <!-- Icono Like -->
+          <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+        </div>
+
+    </div>
+
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+        distinctio aperiam autem modi in, officia soluta expedita accusantium
+        fuga esse, odio quaerat itaque quos nemo. Ipsum nulla velit laborum
+        enim.
+      </p> -->
+    
+    </main>
+    
+    <!-- <footer class="text-center">
+    Developed by: Rocket Raccoons © 2022.
+  </footer> -->
+
+      <!-- Scripts de JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+      </script>
+      
+      <!-- Iconos Iconify -->
+      <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+      <!-- Link con JS -->
+      <script src="/js/feed.js"></script>
+
+     
+  </body>
+</html>

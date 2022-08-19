@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Data;
 
 @Entity
@@ -19,7 +21,11 @@ public class InicioSesion implements Serializable {
 	
 	private String correo;
 	private String contrasena;
+	private Long telefono;
 
 	
-
+	@OneToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name = "usuario_id_usuario")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	private Usuario usuario;
 }

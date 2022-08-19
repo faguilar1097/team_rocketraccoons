@@ -30,4 +30,6 @@ public interface IUsuarioService {
 	 * @return
 	 */
 	public Usuario findUsuarioById(Long id);
+	
+	public Usuario updateUsuario(Long id, Usuario usuario);
 }

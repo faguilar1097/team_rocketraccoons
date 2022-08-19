@@ -1,0 +1,242 @@
+*{
+  box-sizing: none;
+  margin: 0;
+  padding: 0;
+  background-color: #D8D8D8;
+  font-family: 'Soleil', sans-serif;
+}
+.img{
+  width: 10vw;
+  height: 1.5vh;
+}
+#icono{
+  width: 75px;
+  height: 75px;
+}
+.hea{
+  background-color: #4BCEEB;
+  
+}
+
+.iconify{
+  width: 3em;
+  height: 3em;
+}
+
+#boton{
+  background-color: white;
+  color: #E9636D;
+  /* margin-right: 10px; */
+  font-family: 'Soleil', sans-serif;
+  font-size: 1.3em;
+  width: 100px;
+  height:35px;
+  line-height:1px;
+}
+
+.fondo{
+  background-color: #4bceeb;
+}
+
+
+.fotosW{
+  border-radius: 0.55rem;
+  width: 6em;
+  height: 4em;
+}
+
+
+/*Pantallas mas grandes*/
+@media (max-width: 1840px) {
+html {
+  font-size: 1.3em;
+}
+.avion{
+  height: 2em;
+  width: 2em;
+}
+.forma2{
+  border-radius: 35px;
+  margin-bottom: 2.2em;
+}
+
+.friends{ 
+width: 4vw;
+height: 4vw;
+/* background-size: cover; */
+border-radius: 50%;
+/* margin: 0px auto; */
+
+background-color: white; 
+}
+.fotosW{
+  border-radius: 0.55rem;
+  width: 5.5em;
+  height: 4em;
+}
+}
+
+/*Pantallas lg */
+@media (max-width: 992px) {
+  html {
+    font-size: 1.1em;
+  }
+  .avion{
+    height: 2em;
+    width: 2em;
+  }
+  .forma2{
+    border-radius: 35px;
+    margin-bottom: 2.2em;
+}
+
+.friends{ 
+  width: 4vw;
+  height: 4vw;
+  /* background-size: cover; */
+  border-radius: 50%;
+  /* margin: 0px auto; */
+  
+  background-color: white; 
+}
+.fotosW{
+  border-radius: 0.55rem;
+  width: 5.5em;
+  height: 4em;
+}
+
+}
+
+/* // Tabletas  */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 1.0125em;
+  }
+  .avion{
+    height: 2em;
+    width: 2em;
+  }
+  .forma2{
+    border-radius: 35px;
+    margin-bottom: 2.2em;
+}
+
+.friends{ 
+  width: 4vw;
+  height: 4vw;
+  /* background-size: cover; */
+  border-radius: 50%;
+  /* margin: 0px auto; */
+  display:block;  
+  background-color: transparent; 
+}
+.fotosW{
+  border-radius: 0.55rem;
+  width: 4em;
+  height: 4em;
+}
+}
+
+/* // Celulares  */
+
+@media (max-width: 574px) {
+  html {
+    font-size: 0.9125em;
+  }
+  .avion{
+    height: 2em;
+    width: 2em;
+  }
+  .forma2{
+    border-radius: 35px;
+    margin-bottom: 2.2em;
+}
+.friends{ 
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  background-color: white; 
+}
+.fotosW{
+  border-radius: 0.55rem;
+  width: 6em;
+  height: 4em;
+}
+.text-barra{
+  font-size: 2.9125em;
+}
+}
+
+#Cuadro_Amigos{
+  background-color: white;
+  border:1px solid #e3ac97;
+  border-radius: 1.5rem; 
+  /* width; */
+ 
+ }
+ 
+ 
+ #friendsto1{
+     background-color: white;
+     border:1px solid #e3ac97;
+     border-radius: 1.5rem;
+     /* width: 360px; */
+     /* height: 315px; */
+    
+     
+ }
+ #Presentate{
+     background-color: white;
+     border:1px solid #e3ac97;
+     border-radius: 1.5em;
+     margin-top: 40px;
+ 
+    }
+ 
+    #collage{
+     background-color: white;
+     border:1px solid #e3ac97;
+     border-radius: 1.5em;
+     /* width: 800px; */
+     /* height: 550px; */
+    }
+ 
+ .Cuadro_Interes_Principal{
+     background-color: transparent;
+     border-radius: 1.5em;
+     text-align: center;
+     
+    
+ }
+
+ .iconos_collage{
+  background-color: transparent;
+  color:#44BAA0;
+ }
+
+ .cuadro{
+  background-color: white;
+  border:1px solid #e3ac97;
+  border-radius: 1.5rem; 
+
+ }
+ .fondo-imagen1{
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_1280.jpg");
+  background-position: center center;
+  width: 40m;
+  height: 20em;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+#img_secundaria{
+z-index: 1;
+background: lightgray;
+height: 10em;  
+width: 10em;
+border-radius: 50%;
+
+}
+ 

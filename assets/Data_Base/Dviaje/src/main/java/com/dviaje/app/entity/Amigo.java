@@ -19,6 +19,7 @@ public class Amigo implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id_Amigo")
 	private Long idAmigo;
 	@Column(name="url_imagen")
 	private String urlimagen;

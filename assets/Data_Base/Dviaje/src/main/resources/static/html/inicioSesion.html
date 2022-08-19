@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio de Sesión</title>
+
+    <link rel="stylesheet" href="../css/inicioSesion.css"/>
+    
+    <link rel="shortcut icon" href="https://i.ibb.co/sWX3KVT/Rocket-Raccoons-removebg-preview.png" type="image/x-icon">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: #D8D8D8;">
+
+    <header class="fondo">
+      <nav class="navbar navbar-expand-md fondo" >
+        <div class="container-fluid fondo">
+           
+                <a class="navbar-brand fondo" href="#">
+                  <img
+                  class="img-fluid fondo"
+                  src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png" 
+                  alt="logo D'Viaje"
+                  width="150vw">
+                </a>
+
+            
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fondo" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item ">
+                <a class="nav-link active fondo" aria-current="page" href="../index.html"> <span
+                    class="iconify"
+                    data-icon="uiw:global"
+                    style="color: white; background-color: #4bceeb"  
+                  ></span></a>
+              </li>
+              
+            </ul>
+            <form class="text-center fondo" role="salir">
+            
+              <button
+              type="button"
+              class=" btn rounded-pill boton"
+              id="boton"
+              width="100px"
+            >
+              <a href="../index.html" class="text-muted text-decoration-none"><strong style="background-color: white; color:#E9633D" >Salir</strong></a>
+            </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- </section> -->
+
+    <main>
+
+      <div class="container w-75 mt-4 rounded shadow" id="contenedor">
+       <div class="row align-items-stretch">
+           <div class="col imagenIzq d-none d-lg-block col-md-6 col-lg-6 col-xl-7 rounded m-0 p-0 h-auto" style="background-position:center center;">
+               <!-- Aqui debo colocar el carrousel -->
+
+               <div id="carouselExampleDark" class="carousel carousel-dark slide h-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators transparente">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="7000">
+                    <img src="https://d3tf9yuhsp2bpn.cloudfront.net/images/2020/08/29/20200829-1598670367-Paseo-al-Mercado-de-Tlacolula-tu-experiencia.jpg" class="d-block carrusel" alt="tlacolula">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: transparent;">
+                      <!-- <h5 class="transparente">First slide label</h5>
+                      <p class="transparente">Some representative placeholder content for the first slide.</p> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://cdn.pixabay.com/photo/2022/05/30/16/50/couple-7231599_960_720.jpg" class="d-block carrusel" alt="agarrados">
+                    <div class="carousel-caption d-none d-md-block transparente">
+                      <!-- <h5 class="transparente">Second slide label</h5>
+                      <p class="transparente">Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://heraldodemexico.com.mx/u/fotografias/m/2021/3/24/f925x521-343400_412264_5050.jpg" class="d-block carrusel" alt="Yerbabuena">
+                    <div class="carousel-caption d-none d-md-block bg-transparent">
+                      <!-- <h5 class="transparente">Third slide label</h5>
+                      <p class="transparente">Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+           </div>
+           <div class="col p-5 rounded-end" id="colDer">
+               <div class="fw-bold text-center my-4 mx-2 border" id="inicio">
+                   <!-- Aqui va ir el encabezado de incio -->
+                   Inicio de Sesión <span class="iconify rounded-5 avion" data-icon="clarity:airplane-solid" style="background-color: white; color: #E9633D;"></span>
+                   
+               </div>
+
+               <h2 id="mensaje">  </h2>
+               <!-- FORMULARIO -->
+               <form class="my-5 forma formulario" id="formulario">
+                  <!--Correo-->
+            <div class="formulario__grupo" id="grupo__correo" style="background-color: transparent;">
+              
+              <div class="formulario__grupo-input mx-2 forma2">
+                  <input type="text" class="formulario__input" name="correo" id="correo" placeholder="Email">
+                  <i class="fas fa-times-circle formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error mb-2">El correo solo puede contener letras, números, puntos y guiones.  
+              </p>
+          </div>
+          <!--/ Finalización Correo-->
+            <!--Contraseña-->
+            <div class="formulario__grupo" id="grupo__password" style="background-color: transparent;">
+              
+              <div class="formulario__grupo-input mx-2 forma2">
+                  <input type="password" class="formulario__input" name="password" id="password" placeholder="Contraseña">
+                  <i class="fas fa-times-circle formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error mb-2">La contraseña tiene que ser de 4 a 12 caracteres  
+              </p>
+          </div>
+          <!--/ Finalización Contraseña-->
+                   <!-- <div class="mx-2 forma2 position-relative">
+                       <input type="text" id="usuario"class=" form-control text-center " name="usuario" placeholder="Usuario" required>
+                       <div class="invalid-tooltip">Ingrese su correo</div>
+                   </div>
+                   <div class=" mx-2 forma2 position-relative">
+                       <input type="password" id="password" class="form-control text-center" name="password" placeholder="Contraseña" required>
+                       <div class="invalid-tooltip">Ingrese su contraseña</div>
+                   </div> -->
+                   <!--mensaje error-->
+            <div class="formulario__mensaje my-4" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle formulario__validacion-estado">
+                  </i><b>Llene los datos correctamente</b></p>
+          </div>
+                  
+                   <div class="text-center forma">
+
+                       <button type="submit" class="btn rounded-pill justify-content:center fw-bold" id="boton2">Iniciar Sesión</button>
+                   </div>
+                   <div class="text-center my-2 forma">
+                       <span ><a style="color: white;" href="../html/rContra.html"><i class="forma text-decoration-none">¿Olvidaste tu contraseña?</i></a></span>
+
+                   </div>
+
+                           <!--mensaje error-->
+            <div class="formulario__mensaje" id="formulario__mensaje" >
+              <p><i class="fas fa-exclamation-triangle formulario__validacion-estado" >
+                  </i><b>Error:</b> Por favor rellena el formulario correctamente.</p>
+          </div>
+
+          <div class="formulario__mensaje1" id="formulario__mensaje1" >
+            <p><i class="fas fa-exclamation-triangle formulario__validacion-estado" >
+                </i><b>No existe un usuario con esos datos</p>
+        </div>
+               </form>
+           </div>
+   
+       </div>
+      </div>
+    </main>
+<div>
+  <footer class="text-center"> 
+    <marquee scrollamout="12" direction="right">
+      <img src="https://i.ibb.co/3yYXrTN/mapache-unscreen.gif" alt="mapache" width="200px" height="200px">
+    </marquee>
+    <p>Developed by: <br> Rocket Raccoons © 2022.</p>
+  </footer>
+</div>
+    
+
+    <script src="../js/inicioSesion.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </body>
+</html>

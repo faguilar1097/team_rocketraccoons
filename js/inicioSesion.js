@@ -31,6 +31,13 @@ function validacion(correo, contra) {
     let listaUsuarios = obtenerLista();
     let acceso = false;
     
+    if (correo == "admin_ch14@gmail.com" && contra == "1234")
+    {
+        location.href = "../html/administracion.html";
+    }
+    else{
+        
+    
 
     for( let u=0; u < listaUsuarios.length; u++){
     console.log(listaUsuarios[u].correo + "  " + listaUsuarios[u].contrasena);
@@ -42,7 +49,7 @@ function validacion(correo, contra) {
         //guardando datos en local storage
         sessionStorage.setItem('correo', listaUsuarios[u].correo);
         sessionStorage.setItem('contra',listaUsuarios[u].contrasena);
-        location.href = "../html/feed.html";
+        location.href = "../html/feedF.html";
     }
     else{
         
@@ -53,6 +60,7 @@ function validacion(correo, contra) {
         
         
     }
+}
 }
 return acceso;
 }
@@ -158,7 +166,6 @@ formulario.addEventListener("submit",(e) =>{
         
     }
 });
-
 
 
 

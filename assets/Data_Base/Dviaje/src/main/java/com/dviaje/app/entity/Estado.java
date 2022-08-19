@@ -17,9 +17,7 @@ public class Estado implements Serializable{
 	@Column(name="id_estado")
 	private Long idestado;
 	
-	private String estado;
+	private String state;
 	
 	
-	
-
 }
