@@ -2,7 +2,7 @@ console.log("Leyendo datos de publicaciones ... ");
 // GET
 
 function VincularJSON() {
-    fetch("ufeed.json")
+    fetch("../js/ufeed.json")
   .then(responseJSON =>{ return responseJSON.json()} )
 
   .then(publicacion =>{
