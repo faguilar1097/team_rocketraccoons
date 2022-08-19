@@ -1,18 +1,11 @@
 console.log("probando");
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f9fa40024d78bbefd7fd33eb67b62fb660c60154
     const tituloViaje=document.getElementById("titulo");
     const rutaViaje=document.getElementById("ruta");
     const tipoClima=document.getElementById("clima");
     const categoriaV=document.getElementById("catego");   
-<<<<<<< HEAD
     const mejorFecha=document.getElementById("apoca");
-=======
-    const mejorFecha=document.getElementById("fecha");
->>>>>>> f9fa40024d78bbefd7fd33eb67b62fb660c60154
     const desViaje=document.getElementById("descripcion");
     const tipsViajes=document.getElementById("tips");
     const vipsViajes=document.getElementById("seguridad");
@@ -43,7 +36,6 @@ const nombre = {
     estadoRep
 }
 
-<<<<<<< HEAD
 // /*Validar para que ningún campo se encuentre vacío*/
 // formulario.addEventListener("Publicar",(e) =>{
     // e.preventDefault();//Quitar
@@ -52,16 +44,6 @@ const nombre = {
 // guardar_localstorage();
 // 
 // });
-=======
-/*Validar para que ningún campo se encuentre vacío*/
-formulario.addEventListener("submit",(e) =>{
-    e.preventDefault();//Quitar
- 
-   if(campos.tituloViaje && campos.rutaViaje && campos.tipoClima && campos.categoriaV && campos.mejorFecha && campos.desViaje && campos.tipsViajes && campos.vipsViajes && campos.estadoRep)
-guardar_localstorage();
-
-});
->>>>>>> f9fa40024d78bbefd7fd33eb67b62fb660c60154
 
 /**Local Storage */
 
@@ -77,14 +59,9 @@ function obtener_localstorage(){
    }
    }
 
-<<<<<<< HEAD
    
    function guardar_localstorage() {
     
-=======
-
-   function guardar_localstorage() {
->>>>>>> f9fa40024d78bbefd7fd33eb67b62fb660c60154
     let tituloViaje=document.getElementById("titulo").value;
     let rutaViaje=document.getElementById("ruta").value;
     let tipoClima=document.getElementById("clima").value;
@@ -102,84 +79,6 @@ function obtener_localstorage(){
 //    let passwo = document.getElementById("password").value;
 //    let number = document.getElementById("telefono").value;
 //    let email = document.getElementById("correo").value;
-<<<<<<< HEAD
-=======
-
-   let persona = {
-       "titulo": `${tituloViaje}`,
-       "ruta":  `${rutaViaje}`,
-       "clima":  `${tipoClima}`,
-       "catego":  `${categoriaV}`,
-       "fecha":  `${mejorFecha}`,
-       "descripcion":  `${desViaje}`,
-       "tips":  `${tipsViajes}`,
-       "seguridad":  `${vipsViajes}`,
-       "estado":  `${estadoRep}`
-   };
-   localStorage.setItem("titulo", tituloViaje);
-   localStorage.setItem("ruta", rutaViaje);
-   localStorage.setItem("clima", tipoClima);
-   localStorage.setItem("catego", categoriaV);
-   localStorage.setItem("fecha", mejorFecha);
-   localStorage.setItem("descripcion", desViaje);
-   localStorage.setItem("tips", tipsViajes);
-   localStorage.setItem("seguridad", vipsViajes);
-   localStorage.setItem("estado", estadoRep);
-
-   localStorage.setItem("nombre", JSON.stringify(persona)); 
-   enviarFetch();  
-   fetchInicioSesion();
-}
-
-//Envian los datos a la API
-
-//Enviar datos a fetch
-
-function enviarFetch (){
-   console.log(JSON.parse(localStorage.getItem("nombre")));
-
-   personaFull = JSON.parse(localStorage.getItem("nombre"));
-   persona = { 
-
-       "titulo": `${personaFull.titulo}`,
-       "ruta":  `${personaFull.ruta}`,
-       "clima":  `${personaFull.clima}`,
-       "catego":  `${personaFull.catego}`,
-       "fecha":  `${personaFull.fecha}`,
-       "descripcion":  `${personaFull.descripcion}`,
-       "tips":  `${personaFull.tips}`,
-       "seguridad":  `${personaFull.seguridad}`,
-       "estado":  `${personaFull.estado}`
-   }
-  
-   fetch ('https://dviaje-prueba1.herokuapp.com/api/publicaciones',
-   {
-       method: "POST",
-       body: JSON.stringify(persona),
-       headers: {"content-type": "application/json; charset=UTF-8"}
-   })
-       .then(Response => Response.json())
-       //.then(json => console.log(json))
-       .catch(err => console.log(err));
-}
-
-//Enviar datos a inicio de sesión
-function fetchInicioSesion(){
-   console.log(JSON.parse(localStorage.getItem("nombre")));
-
-   personaFull = JSON.parse(localStorage.getItem("nombre"));
-
-           fetch ('https://dviaje-prueba1.herokuapp.com/api/publicaciones',
-           {
-               method: "POST",
-               body: JSON.stringify(persona),
-               headers: {"content-type": "application/json; charset=UTF-8"}
-           })
-               .then(Response => Response.json())
-               //.then(json => console.log(json))
-               .catch(err => console.log(err));
-
->>>>>>> f9fa40024d78bbefd7fd33eb67b62fb660c60154
 
    let persona = {
        "titulo": `${tituloViaje}`,
