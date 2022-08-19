@@ -69,6 +69,14 @@ function obtener_localstorage(){
     let tipsViajes=document.getElementById("tips").value;
     let vipsViajes=document.getElementById("seguridad").value;
     let estadoRep=document.getElementById("estado").value;
+// function guardar_localstorage(){
+//    let name= document.getElementById("nombre").value;
+//    let lastName= document.getElementById("apellido").value;
+//    let estadorep = document.getElementById("estado").value;
+//    let intereses = document.getElementById("intereses").value;
+//    let passwo = document.getElementById("password").value;
+//    let number = document.getElementById("telefono").value;
+//    let email = document.getElementById("correo").value;
 
    let persona = {
        "titulo": `${tituloViaje}`,
@@ -105,6 +113,7 @@ function enviarFetch (){
 
    personaFull = JSON.parse(localStorage.getItem("nombre"));
    persona = { 
+
        "titulo": `${personaFull.titulo}`,
        "ruta":  `${personaFull.ruta}`,
        "clima":  `${personaFull.clima}`,
@@ -140,7 +149,7 @@ function fetchInicioSesion(){
                headers: {"content-type": "application/json; charset=UTF-8"}
            })
                .then(Response => Response.json())
-               
+               //.then(json => console.log(json))
                .catch(err => console.log(err));
 
 
