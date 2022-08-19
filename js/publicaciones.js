@@ -1,10 +1,11 @@
 console.log("probando");
 
+
     const tituloViaje=document.getElementById("titulo");
     const rutaViaje=document.getElementById("ruta");
     const tipoClima=document.getElementById("clima");
     const categoriaV=document.getElementById("catego");   
-    const mejorFecha=document.getElementById("fecha");
+    const mejorFecha=document.getElementById("apoca");
     const desViaje=document.getElementById("descripcion");
     const tipsViajes=document.getElementById("tips");
     const vipsViajes=document.getElementById("seguridad");
@@ -35,14 +36,14 @@ const nombre = {
     estadoRep
 }
 
-/*Validar para que ningún campo se encuentre vacío*/
-formulario.addEventListener("submit",(e) =>{
-    e.preventDefault();//Quitar
- 
-   if(campos.tituloViaje && campos.rutaViaje && campos.tipoClima && campos.categoriaV && campos.mejorFecha && campos.desViaje && campos.tipsViajes && campos.vipsViajes && campos.estadoRep)
-guardar_localstorage();
-
-});
+// /*Validar para que ningún campo se encuentre vacío*/
+// formulario.addEventListener("Publicar",(e) =>{
+    // e.preventDefault();//Quitar
+//  
+//    if(campos.tituloViaje && campos.rutaViaje && campos.tipoClima && campos.categoriaV && campos.mejorFecha && campos.desViaje && campos.tipsViajes && campos.vipsViajes && campos.estadoRep)
+// guardar_localstorage();
+// 
+// });
 
 /**Local Storage */
 
@@ -58,13 +59,14 @@ function obtener_localstorage(){
    }
    }
 
-
+   
    function guardar_localstorage() {
+    
     let tituloViaje=document.getElementById("titulo").value;
     let rutaViaje=document.getElementById("ruta").value;
     let tipoClima=document.getElementById("clima").value;
     let categoriaV=document.getElementById("catego").value;   
-    let mejorFecha=document.getElementById("fecha").value;
+    let mejorFecha=document.getElementById("epoca").value;
     let desViaje=document.getElementById("descripcion").value;
     let tipsViajes=document.getElementById("tips").value;
     let vipsViajes=document.getElementById("seguridad").value;
@@ -83,7 +85,7 @@ function obtener_localstorage(){
        "ruta":  `${rutaViaje}`,
        "clima":  `${tipoClima}`,
        "catego":  `${categoriaV}`,
-       "fecha":  `${mejorFecha}`,
+       "epoca":  `${mejorFecha}`,
        "descripcion":  `${desViaje}`,
        "tips":  `${tipsViajes}`,
        "seguridad":  `${vipsViajes}`,
@@ -93,7 +95,7 @@ function obtener_localstorage(){
    localStorage.setItem("ruta", rutaViaje);
    localStorage.setItem("clima", tipoClima);
    localStorage.setItem("catego", categoriaV);
-   localStorage.setItem("fecha", mejorFecha);
+   localStorage.setItem("epoca", mejorFecha);
    localStorage.setItem("descripcion", desViaje);
    localStorage.setItem("tips", tipsViajes);
    localStorage.setItem("seguridad", vipsViajes);
@@ -102,8 +104,8 @@ function obtener_localstorage(){
    localStorage.setItem("nombre", JSON.stringify(persona)); 
    enviarFetch();  
    fetchInicioSesion();
-}
 
+}
 //Envian los datos a la API
 
 //Enviar datos a fetch
@@ -118,7 +120,7 @@ function enviarFetch (){
        "ruta":  `${personaFull.ruta}`,
        "clima":  `${personaFull.clima}`,
        "catego":  `${personaFull.catego}`,
-       "fecha":  `${personaFull.fecha}`,
+       "epoca":  `${personaFull.fecha}`,
        "descripcion":  `${personaFull.descripcion}`,
        "tips":  `${personaFull.tips}`,
        "seguridad":  `${personaFull.seguridad}`,
@@ -137,20 +139,19 @@ function enviarFetch (){
 }
 
 //Enviar datos a inicio de sesión
-function fetchInicioSesion(){
-   console.log(JSON.parse(localStorage.getItem("nombre")));
-
-   personaFull = JSON.parse(localStorage.getItem("nombre"));
-
-           fetch ('https://dviaje-prueba1.herokuapp.com/api/publicaciones',
-           {
-               method: "POST",
-               body: JSON.stringify(persona),
-               headers: {"content-type": "application/json; charset=UTF-8"}
-           })
-               .then(Response => Response.json())
-               //.then(json => console.log(json))
-               .catch(err => console.log(err));
-
-
-}
+// function fetchInicioSesion(){
+//    console.log(JSON.parse(localStorage.getItem("nombre")));
+// 
+//    personaFull = JSON.parse(localStorage.getItem("nombre"));
+// 
+        //    fetch ('https://dviaje-prueba1.herokuapp.com/api/publicaciones',
+        //    {
+            //    method: "POST",
+            //    body: JSON.stringify(persona),
+            //    headers: {"content-type": "application/json; charset=UTF-8"}
+        //    })
+            //    .then(Response => Response.json())
+            //    .then(json => console.log(json))
+            //    .catch(err => console.log(err));
+// 
+// 
