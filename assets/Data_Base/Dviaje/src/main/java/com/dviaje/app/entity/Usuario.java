@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.Data;
 
 @Entity
@@ -18,11 +20,21 @@ public class Usuario implements Serializable {
 	
 	private String nombre;
 	private String apellido;
-	private String estado;
+	private String estadorep;
 	private String imagen_perfil;
 	private String lugares_visitados;
-	private Long amigos;
+	private String intereses;
 	private Long wishlist;
-	private Long publicaciones;
+	
+	
+	@OneToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name = "resena_id_resena",referencedColumnName="id_resena")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	private Resena resena;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name = "estado_id_estado")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	private Estado estado;
 
 }

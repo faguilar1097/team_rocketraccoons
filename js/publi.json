@@ -1,0 +1,28 @@
+
+[
+    {
+     "titulo":"En el mar la vida es mas saborsa",  
+     "ruta":"https://goo.gl/maps/a4MzPDLVbtBHnzz48",
+     "clima":"Parcialmente nublado",
+     "catego":"",
+     "fecha": "cualquiera", 
+     "descripcion":"Antiguo pueblo de pescadores",
+     "tips": "Animada vida nocturna", 
+     "seguridad": "Zona segura",
+     "estado":"Oaxaca"
+   },
+
+   {
+     "titulo":"pueblo magico",  
+     "ruta":"https://goo.gl/maps/kD9oREshKmDvvHRHA",
+     "clima":"Parcialmente nublado",
+     "catego":"",
+     "fecha": "cualquiera", 
+     "descripcion":"economico",
+     "tips": "visita los primas basalticos", 
+     "seguridad": "Zona segura",
+     "estado":"Hidalgo"
+  }
+  
+  ]
+

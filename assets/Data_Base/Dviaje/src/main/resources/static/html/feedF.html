@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="http://fonts.cdnfonts.com/css/soleil" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="../css/feedmod.css" /> 
+  <title>Feed</title>
+  <link rel="shortcut icon" href="https://i.ibb.co/sWX3KVT/Rocket-Raccoons-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body><!-- style="background-color: #D8D8D8;" -->
+<!-- RAFA ------------------------------------------------------- -->
+   <!-- Navbar -->
+   <section id="header">
+    <header class="border "> <!-- menu-fixed-1 -->
+      <nav class="d-flex justify-content-between hea">
+        <!-- LOGO D' VIAJE -->
+        <div class="col-4 bordr text-start align-self-center hea">
+          <img
+            class="img-logo navbar"
+            src="https://i.ibb.co/bj458Pw/Logo-D-Viaje-Rocket-Raccoons-01.png"
+            alt="logo de viaje"
+          />
+        </div>
+        <!-- ICONO MUNDO -->
+        <div class="col-4 text-center align-self-center hea">
+          <span
+            class="iconify icon1"
+            data-icon="uiw:global"
+            alt="Página Principal"
+          ></span>
+        </div>
+        <!-- BOTÓN SALIR -->
+        <div class="col-4 borer text-end align-self-center hea">
+          <button
+            type="button"
+            class="btn rounded-pill justify-content:center boton1"
+            id="boton"
+
+          >
+          <a class="text-muted text-decoration-none" style="color: #E9636D" href="../html/pagError.html"><strong style="background-color: white; color: #E9636D">Salir</strong>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+      
+<br>
+
+<!-- BANNER DE INTERACCION  NO TOCAR DE AQUI PA ABAJOOOOO--> 
+<div class="container border_1 rounded-4 d-flex my-2">
+  <div class="row rounded-3" style="background-color:WHITE ;">
+      <!-- Categorías Foto/Ruta/Tips -->
+        <div style="background-color: transparent "class="col-lg-5 col-sm-6 text-center align-self-center filtro ">
+            <h3 class="titulo1 col-lg-12">
+            <strong class="titulo1">
+            Comparte tu aventura</strong>
+            </h3>
+            <!-- Icono Publicar -->
+            <a class="titulo1" href="../html/publicaciones.html"> <span
+            class="iconify icon2 mx-3"
+            data-icon="bi:plus-square"
+            alt="nueva publicación"> </span></a>
+        </div>
+
+        <div
+            class="navbar-filtro col-lg-2 col-sm-6 text-center" 
+            style="background-color: white;"
+             > 
+            <a style="background-color: white;" href="../html/userprofile.html" 
+            ><img
+             class="perfil my-3"
+            id="imgPerfil"
+        
+            alt="foto de perfil"
+            /></a> <!-- src="https://i.ibb.co/KXLRMdT/rafa.png" -->
+        </div>
+        <!-- FORMULARIO -->
+        <form class="col-lg-5 col-sm-12 px-5 my-2 forma formulario" id="formulario" style="background-color: white;">
+         <!--Interés-->
+          <div class="row" style="background-color: transparent;">
+            <div class="formulario__grupo col-lg-6 mt-2" id="" style="background-color: transparent;">
+                <div class="formulario__grupo-input mx-2 forma2 ">
+                    <input type="text" class="formulario__input" name="Intereses" id="" placeholder="Intereses">
+                </div>               
+            </div>
+           
+              <!--Estado-->
+            <div class="formulario__grupo col-lg-6  mt-2" id="" style="background-color: transparent;">               
+                    <div class="formulario__grupo-input mx-2 forma2 ">
+                    <input type="text" class="formulario__input" name="Estado" id="Estado" placeholder="Estado" >
+                    </div>             
+            </div>
+                <!-- Botón -->
+            <div class="text-center" style="background-color: transparent ;">
+                    <button type="submit" class="btn rounded-pill justify-content:center fw-bold" id="boton2">Buscar</button>
+            </div>
+          </div>
+  
+        </form>
+  
+    </div>
+</div>
+
+   
+<div class="container mt-4 " style="background-color: transparent ;">
+  <div class="row rounded-4 "><!-- border_1 -->
+    <!-- IMAGEN 1 -->
+    <div class="publicaciones-individuales card-body card col-lg-4 col-md-6 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center ">
+        <!-- <a src="http://"></a> -->
+        <img class="img-public" id="imgcard1" alt="CDMX" ><!-- src="https://i.ibb.co/T15g49P/CDMX.png" -->
+        <p id="TextoTarjeta1"></p> <!-- CDMX -->
+        <!-- Icono Pin -->
+        <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+        <!-- Icono Like -->
+        <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+      </div>
+      <!-- IMAGEN 2 -->
+      <div class="publicaciones-individuales card-body card col-lg-4 col-md-6 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center ">
+        <img class="img-public" id="imgcard2"  alt="GDL" >
+        <p id="TextoTarjeta2"></p>
+        <!-- Icono Pin -->
+        <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+        <!-- Icono Like -->
+        <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+      </div>
+      <!-- IMAGEN 3 -->
+      <div class="publicaciones-individuales card-body card col-lg-4 col-md-6 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center ">
+        <img class="img-public" id="imgcard3"  alt="GDL" >
+        <p id="TextoTarjeta3"></p>
+        <!-- Icono Pin -->
+        <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+        <!-- Icono Like -->
+        <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+      </div>
+      <!-- IMAGEN 4 -->
+      <div class="publicaciones-individuales card-body card col-lg-4 col-md-6 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+        <img class="img-public" id="imgcard4"  alt="CANCUN">
+        <a href="postPopup.html"><p id="TextoTarjeta4" style="color:white"></p></a>
+        <!-- Icono Pin -->
+        <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+        <!-- Icono Like -->
+        <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+      </div>
+      <!-- IMAGEN 5 -->
+      <div class="publicaciones-individuales card-body card col-lg-4 col-md-6 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+        <img class="img-public" id="imgcard5"  alt="QRO">
+        <p id="TextoTarjeta5"></p>
+        <!-- Icono Pin -->
+        <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+        <!-- Icono Like -->
+        <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+      </div>
+      <!-- IMAGEN 6 -->
+      <div class="publicaciones-individuales card-body card col-6 col-lg-4 col-md-6 my-4 mx-3 container rounded-4 text-white bg-ligt mb-3 text-center">
+        <img class="img-public" id="imgcard6"  alt="PUE">
+        <p id="TextoTarjeta6"></p>
+        <!-- Icono Pin -->
+        <span class="iconify icon3" data-icon="bi:pin-angle-fill"></span>
+        <!-- Icono Like -->
+        <span class="iconify icon4" data-icon="ant-design:heart-filled"></span>
+      </div>
+  </div>
+</div>
+
+
+<!-- Iconos Iconify -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+ <!-- Link con JS -->
+ <script src="../js/feed.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

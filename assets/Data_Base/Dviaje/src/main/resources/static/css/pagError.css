@@ -1,0 +1,50 @@
+*{
+    box-sizing: none;
+    margin: 0;
+    padding: 0;
+    /* background-color: #D8D8D8; */
+    font-family: 'Soleil', sans-serif;
+}
+
+.img{
+    
+    width: 85%;
+    height: auto;
+}
+#icono{
+    width: 75px;
+    height: 75px;
+   
+}
+.hea{
+    background-color: #4BCEEB;
+    
+}
+
+.iconify{
+    width: 18%;
+    height: auto;
+    cursor:pointer;
+}
+
+
+
+.centro{
+     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 31px;
+   }
+
+.container{
+    align-content:center;
+}
+
+  img{
+    transition: all 0.5s linear;
+  }
+
+ img:hover{
+    transform: scale(0.9);
+ }
