@@ -1,6 +1,6 @@
 console.log("Leyendo la información del usuario");
 
-let URL = '../user.json'
+let URL = 'user.json'
 // FUNCION PARA ACCEDER AL JSON Y PONERLO EN LOCAL STORAGE
 function vincularJSON() {
 fetch(URL)
